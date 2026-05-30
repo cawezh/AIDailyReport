@@ -373,7 +373,8 @@ def generate_index_html() -> Path:
                 var badges = '';
                 if (it.stars) badges += '<span class="inline-flex items-center gap-1 ml-2 px-1.5 py-0.5 rounded-md text-xs bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">⭐ ' + it.stars + '</span>';
                 if (it.is_novel) badges += '<span class="ml-1.5 px-1.5 py-0.5 rounded-md text-xs bg-amber-500/10 text-amber-400 border border-amber-500/20">潜力股</span>';
-                if (it.innovation_score && it.innovation_score >= 7) badges += '<span class="ml-1.5 px-1.5 py-0.5 rounded-md text-xs bg-purple-500/10 text-purple-400 border border-purple-500/20">创新 ' + it.innovation_score + '</span>';
+                var innov = it.innovation_score || it.creativity_score || 0;
+                if (innov && innov >= 7) badges += '<span class="ml-1.5 px-1.5 py-0.5 rounded-md text-xs bg-purple-500/10 text-purple-400 border border-purple-500/20">创新 ' + innov + '</span>';
                 if (it.value_score && it.value_score >= 7) badges += '<span class="ml-1.5 px-1.5 py-0.5 rounded-md text-xs bg-sky-500/10 text-sky-400 border border-sky-500/20">实用 ' + it.value_score + '</span>';
                 var sourceLabel = (it.source || '').replace('github_', '');
                 return '<div class="card group bg-zinc-900 border border-zinc-800 rounded-xl p-4 mb-2 hover:border-zinc-700 transition-colors" data-keywords="' + (it.title + ' ' + (it.cn_summary||'') + ' ' + (it.source||'')).toLowerCase() + '">'
