@@ -158,21 +158,12 @@ def _curate_daily(items: list[dict]) -> list[dict]:
 def run_daily():
     print("=== AI Daily Light ===")
     today = date.today().isoformat()
+    keywords = get_keywords()
 
     items = _fetch_all()
+    print(f"[fetch] Total raw items: {len(items)}")
 
-    # 周内去重
-    seen = _load_seen_weekly()
-    before = len(items)
-    items = [it for it in items if it["url"] not in seen]
-    print(f"[dedup] Removed {before - len(items)} seen-this-week, {len(items)} remaining")
-
-    if not items:
-        print("[daily] No new items today")
-        return
-
-    # 关键词预筛选
-    keywords = get_keywords()
+    # 关键词预筛选（全部数据，不去重 — Dashboard 展示当天全部）
     filtered = pre_filter(items, keywords)
     print(f"[filter] After keyword filter: {len(filtered)}")
 
@@ -184,10 +175,9 @@ def run_daily():
     summarized = summarize(filtered)
     print(f"[llm] Summarized: {len(summarized)}")
 
-    # 更新周内已见
-    for it in summarized:
-        seen.add(it["url"])
-    _save_seen_weekly(seen)
+    # 精选日报展示（当天数据，每 L1 最多 5 项，每 L2 最多 1 项）
+    curated = _curate_daily(summarized)
+    print(f"[curate] Daily highlights: {len(curated)} items")
 
     # 推送：每 L1 各取 1 个 Top（游戏/AI/互联网/产品/科研）
     l1_order = ['游戏', 'AI', '互联网', '产品', '科研']
@@ -199,32 +189,29 @@ def run_daily():
             top5.append(l1_items[0])
     print(f"[push] Selected {len(top5)} items (1 per category)")
 
-    # 推送
     dashboard_url = get_env("DASHBOARD_URL", "https://cawezh.github.io/AIDailyReport/")
     send_feishu(top5, dashboard_url)
     send_wechat(top5, dashboard_url)
 
-    # 存入本周 pool（完整数据）
+    # 存入本周 pool（去重追加）
+    seen = _load_seen_weekly()
     pool = _load_pool()
     existing_urls = {it["url"] for it in pool["items"]}
     for it in summarized:
-        if it["url"] not in existing_urls:
+        if it["url"] not in existing_urls and it["url"] not in seen:
             pool["items"].append(it)
+            seen.add(it["url"])
+    _save_seen_weekly(seen)
     pool["daily_top5"][today] = [it["title"] for it in top5]
     _save_pool(pool)
 
-    # 精选日报展示（当天数据，每 L1 最多 5 项，每 L2 最多 1 项）
-    curated = _curate_daily(summarized)
-    print(f"[curate] Daily highlights: {len(curated)} items")
-
+    # 生成 Dashboard
     overview = generate_overview(curated)
-    data_path = save_daily_data(curated, overview=overview)
-    print(f"[dashboard] Saved curated data to {data_path}")
+    save_daily_data(curated, overview=overview)
     update_manifest(curated, overview=overview)
     generate_index_html()
-    print("[dashboard] Generated SPA index")
 
-    print(f"[daily] Top 5 pushed, pool has {len(pool['items'])} items, dashboard shows {len(curated)} picks")
+    print(f"[daily] Dashboard {len(curated)} picks · Pool {len(pool['items'])} items · Pushed {len(top5)}")
     print(f"=== Done: {today} ===")
 
 
