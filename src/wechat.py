@@ -101,20 +101,61 @@ def send_wechat(top5: list[dict], dashboard_url: str, overview: dict = None) -> 
 
     # 组装日报摘要
     overview = overview or {}
-    lines = [f"AI 技术日报 ({date.today().isoformat()})", ""]
+    today_str = date.today().strftime("%m/%d")
+    lines = [f"📡 AI 日报 | {today_str}", ""]
     overview_text = overview.get("overview", "")
     if overview_text:
-        lines.append(f"📊 {overview_text}")
+        lines.append(overview_text[:60])
         lines.append("")
     for i, item in enumerate(top5, 1):
-        title = item["title"]
-        summary = item.get("cn_summary", "")[:50]
+        title = item["title"][:40]
+        summary = item.get("cn_summary", "")[:30]
+        innov = item.get("innovation_score", 0)
+        star = "🔥" if innov >= 8 else ""
         lines.append(f"{i}. {title}")
-        lines.append(f"   {summary}")
+        lines.append(f"   {summary} {star}")
         lines.append("")
-    lines.append(f"查看完整日报: {dashboard_url}")
-    full_text = "\n".join(lines).strip()
+    lines.append(f"周报: {dashboard_url}")
+    return _send_text(bot_token, client_id, user_contexts, "\n".join(lines).strip())
 
+
+def send_wechat_weekly(top5: list[dict], dashboard_url: str, overview: dict, week_range: str, total: int, counts: dict = None) -> bool:
+    """推送周报摘要到微信"""
+    bot_token = get_env("WECHAT_BOT_TOKEN")
+    client_id = get_env("WECHAT_CLIENT_ID")
+    if not bot_token or not client_id:
+        print("[wechat] WECHAT_BOT_TOKEN/CLIENT_ID not set, skipping weekly")
+        return False
+
+    user_contexts = _fetch_recent_contexts(bot_token)
+    if not user_contexts:
+        print("[wechat] no recent users for weekly push")
+        return False
+
+    overview = overview or {}
+    cat_parts = []
+    if counts:
+        for cat, n in sorted(counts.items(), key=lambda x: -x[1]):
+            cat_parts.append(f"{cat}{n}")
+    cat_line = " · ".join(cat_parts[:5])
+
+    lines = [f"📊 AI 周报 | {week_range}", ""]
+    if overview.get("overview"):
+        lines.append(overview["overview"][:80])
+        lines.append("")
+    lines.append(f"收录 {total} 项 | {cat_line}")
+    lines.append("")
+    lines.append("🏆 本周精选:")
+    for i, item in enumerate(top5, 1):
+        lines.append(f"{i}. {item['title'][:40]}")
+        lines.append(f"   {item.get('cn_summary', '')[:40]}")
+        lines.append("")
+    lines.append(f"完整周报: {dashboard_url}")
+    return _send_text(bot_token, client_id, user_contexts, "\n".join(lines).strip())
+
+
+def _send_text(bot_token: str, client_id: str, user_contexts: dict, full_text: str) -> bool:
+    """发送文本消息到微信用户"""
     sent = 0
     for user_id, context_token in user_contexts.items():
         try:
@@ -122,15 +163,10 @@ def send_wechat(top5: list[dict], dashboard_url: str, overview: dict = None) -> 
                 "msg": {
                     "to_user_id": user_id,
                     "client_id": client_id,
-                    "message_type": 2,       # BOT
-                    "message_state": 2,      # FINISH
+                    "message_type": 2,
+                    "message_state": 2,
                     "context_token": context_token,
-                    "item_list": [
-                        {
-                            "type": 1,       # TEXT
-                            "text_item": {"text": full_text},
-                        }
-                    ],
+                    "item_list": [{"type": 1, "text_item": {"text": full_text}}],
                 }
             }
             resp = requests.post(
@@ -146,6 +182,5 @@ def send_wechat(top5: list[dict], dashboard_url: str, overview: dict = None) -> 
                 print(f"[wechat] send to {user_id} failed: {data}")
         except requests.RequestException as e:
             print(f"[wechat] send error for {user_id}: {e}")
-
     print(f"[wechat] sent to {sent} users")
     return sent > 0

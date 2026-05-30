@@ -1,7 +1,7 @@
-"""主流程 — 编排全部步骤"""
+"""主流程 — 周一~周六轻推 Top 5，周日生成深度周报"""
 import sys
 import json
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 from src.config import get_keywords, get_sources, get_env
 from src.fetchers import (
@@ -16,184 +16,239 @@ from src.fetchers import (
     fetch_steam,
 )
 from src.filter import pre_filter
-from src.dedup import load_seen, save_seen
 from src.llm import summarize, generate_overview
 from src.reporter import generate_report
 from src.dashboard import save_daily_data, update_manifest, generate_index_html
-from src.feishu import send_feishu
-from src.wechat import send_wechat
+from src.feishu import send_feishu, send_feishu_weekly
+from src.wechat import send_wechat, send_wechat_weekly
 
-CACHE_FILE = Path(__file__).resolve().parent.parent / "reports" / "daily_cache.json"
-
-
-def _load_cache() -> list[dict]:
-    """加载当天已缓存的 items"""
-    if not CACHE_FILE.exists():
-        return []
-    try:
-        data = json.loads(CACHE_FILE.read_text())
-        today = date.today().isoformat()
-        if data.get("date") == today:
-            return data.get("items", [])
-    except (json.JSONDecodeError, KeyError):
-        pass
-    return []
+ROOT = Path(__file__).resolve().parent.parent
+POOL_FILE = ROOT / "reports" / "weekly_pool.json"
+SEEN_WEEKLY_FILE = ROOT / "reports" / "seen_weekly.json"
 
 
-def _save_cache(items: list[dict]):
-    """保存当天所有 items 到缓存"""
-    CACHE_FILE.parent.mkdir(parents=True, exist_ok=True)
-    json.dump({"date": date.today().isoformat(), "items": items}, CACHE_FILE.open("w"), ensure_ascii=False)
-
-
-def main():
-    print("=== AI Daily Report ===")
+def _fetch_all() -> list[dict]:
+    """拉取所有数据源"""
     cfg = get_sources()
     sources_cfg = cfg["sources"]
-    report_cfg = cfg["report"]
-
-    # ---- Fetch ----
     all_items = []
 
+    def _run(name, fn, **kw):
+        print(f"[fetch] {name}...")
+        try:
+            return fn(**kw)
+        except Exception as e:
+            print(f"[fetch] {name} failed: {e}")
+            return []
+
     if sources_cfg.get("github_trending", {}).get("enabled"):
-        print("[fetch] GitHub Trending...")
-        try:
-            all_items.extend(fetch_github_trending(max_items=sources_cfg["github_trending"].get("max_items", 25)))
-        except Exception as e:
-            print(f"[fetch] GitHub Trending failed: {e}")
-
+        all_items.extend(_run("GitHub Trending", fetch_github_trending, max_items=sources_cfg["github_trending"].get("max_items", 25)))
     if sources_cfg.get("github_search", {}).get("enabled"):
-        print("[fetch] GitHub Search...")
-        try:
-            all_items.extend(fetch_github_search(
-                queries=sources_cfg["github_search"].get("queries", []),
-                per_query=sources_cfg["github_search"].get("per_query", 10),
-            ))
-        except Exception as e:
-            print(f"[fetch] GitHub Search failed: {e}")
-
+        all_items.extend(_run("GitHub Search", fetch_github_search, queries=sources_cfg["github_search"].get("queries", []), per_query=sources_cfg["github_search"].get("per_query", 10)))
     if sources_cfg.get("hackernews", {}).get("enabled"):
-        print("[fetch] Hacker News...")
-        try:
-            all_items.extend(fetch_hackernews(max_items=sources_cfg["hackernews"].get("max_items", 100)))
-        except Exception as e:
-            print(f"[fetch] Hacker News failed: {e}")
-
+        all_items.extend(_run("Hacker News", fetch_hackernews, max_items=sources_cfg["hackernews"].get("max_items", 30)))
     if sources_cfg.get("reddit", {}).get("enabled"):
-        print("[fetch] Reddit...")
-        try:
-            all_items.extend(fetch_reddit(
-                subreddits=sources_cfg["reddit"].get("subreddits", []),
-                per_subreddit=sources_cfg["reddit"].get("per_subreddit", 25),
-            ))
-        except Exception as e:
-            print(f"[fetch] Reddit failed: {e}")
-
+        all_items.extend(_run("Reddit", fetch_reddit, subreddits=sources_cfg["reddit"].get("subreddits", []), per_subreddit=sources_cfg["reddit"].get("per_subreddit", 25)))
     if sources_cfg.get("producthunt", {}).get("enabled"):
-        print("[fetch] ProductHunt...")
-        try:
-            all_items.extend(fetch_producthunt(max_items=sources_cfg["producthunt"].get("max_items", 30)))
-        except Exception as e:
-            print(f"[fetch] ProductHunt failed: {e}")
-
+        all_items.extend(_run("ProductHunt", fetch_producthunt, max_items=sources_cfg["producthunt"].get("max_items", 20)))
     if sources_cfg.get("huggingface", {}).get("enabled"):
-        print("[fetch] HuggingFace...")
-        try:
-            all_items.extend(fetch_huggingface(max_items=sources_cfg["huggingface"].get("max_items", 20)))
-        except Exception as e:
-            print(f"[fetch] HuggingFace failed: {e}")
-
+        all_items.extend(_run("HuggingFace", fetch_huggingface, max_items=sources_cfg["huggingface"].get("max_items", 20)))
     if sources_cfg.get("indie_games", {}).get("enabled"):
-        print("[fetch] itch.io...")
-        try:
-            all_items.extend(fetch_indie_games(max_items=sources_cfg["indie_games"].get("max_items", 20)))
-        except Exception as e:
-            print(f"[fetch] itch.io failed: {e}")
-
+        all_items.extend(_run("itch.io", fetch_indie_games, max_items=sources_cfg["indie_games"].get("max_items", 20)))
     if sources_cfg.get("arxiv", {}).get("enabled"):
-        print("[fetch] arXiv...")
-        try:
-            all_items.extend(fetch_arxiv(max_items=sources_cfg["arxiv"].get("max_items", 20)))
-        except Exception as e:
-            print(f"[fetch] arXiv failed: {e}")
-
+        all_items.extend(_run("arXiv", fetch_arxiv, max_items=sources_cfg["arxiv"].get("max_items", 20)))
     if sources_cfg.get("steam", {}).get("enabled"):
-        print("[fetch] Steam...")
-        try:
-            all_items.extend(fetch_steam(max_items=sources_cfg["steam"].get("max_items", 20)))
-        except Exception as e:
-            print(f"[fetch] Steam failed: {e}")
+        all_items.extend(_run("Steam", fetch_steam, max_items=sources_cfg["steam"].get("max_items", 20)))
 
     print(f"[fetch] Total raw items: {len(all_items)}")
+    return all_items
 
-    # ---- Dedup (避免重复处理已见过的数据) ----
-    seen_urls = load_seen()
-    before = len(all_items)
-    all_items = [it for it in all_items if it["url"] not in seen_urls]
-    print(f"[dedup] Removed {before - len(all_items)} already-seen items, {len(all_items)} remaining")
 
-    if not all_items:
-        print("[dedup] No new items, using cached data")
-        cached = _load_cache()
-        if cached:
-            _gen_dashboard_and_notify(cached, cfg, report_cfg)
+# ── Weekly Pool ────────────────────────────────────────────
+
+def _week_key() -> str:
+    """返回 ISO 周标识，如 '2026-W22'"""
+    d = date.today()
+    return d.strftime("%G-W%V")
+
+
+def _load_pool() -> dict:
+    """加载本周 pool"""
+    if not POOL_FILE.exists():
+        return {"week": _week_key(), "items": [], "daily_top5": {}}
+    data = json.loads(POOL_FILE.read_text())
+    if data.get("week") != _week_key():
+        # 新的一周
+        return {"week": _week_key(), "items": [], "daily_top5": {}}
+    return data
+
+
+def _save_pool(data: dict):
+    POOL_FILE.parent.mkdir(parents=True, exist_ok=True)
+    POOL_FILE.write_text(json.dumps(data, ensure_ascii=False))
+
+
+def _load_seen_weekly() -> set[str]:
+    if not SEEN_WEEKLY_FILE.exists():
+        return set()
+    data = json.loads(SEEN_WEEKLY_FILE.read_text())
+    if data.get("week") != _week_key():
+        return set()
+    return set(data.get("urls", []))
+
+
+def _save_seen_weekly(urls: set):
+    SEEN_WEEKLY_FILE.parent.mkdir(parents=True, exist_ok=True)
+    SEEN_WEEKLY_FILE.write_text(json.dumps({"week": _week_key(), "urls": list(urls)}, ensure_ascii=False))
+
+
+# ── Daily (Mon-Sat) ─────────────────────────────────────────
+
+def run_daily():
+    print("=== AI Daily Light ===")
+    today = date.today().isoformat()
+
+    items = _fetch_all()
+
+    # 周内去重
+    seen = _load_seen_weekly()
+    before = len(items)
+    items = [it for it in items if it["url"] not in seen]
+    print(f"[dedup] Removed {before - len(items)} seen-this-week, {len(items)} remaining")
+
+    if not items:
+        print("[daily] No new items today")
         return
 
-    # ---- Filter ----
+    # 关键词预筛选
     keywords = get_keywords()
-    filtered = pre_filter(all_items, keywords)
+    filtered = pre_filter(items, keywords)
     print(f"[filter] After keyword filter: {len(filtered)}")
 
     if not filtered:
-        print("[llm] No new items to summarize, using cached data")
-        cached = _load_cache()
-        if cached:
-            _gen_dashboard_and_notify(cached, cfg, report_cfg)
+        print("[daily] Nothing matched keywords today")
         return
 
-    # ---- LLM Summarize ----
+    # LLM 摘要
     summarized = summarize(filtered)
     print(f"[llm] Summarized: {len(summarized)}")
 
-    # ---- Save seen + Merge with cache ----
-    save_seen(summarized)
-    cached = _load_cache()
-    seen_urls = {it["url"] for it in cached}
-    merged = cached + [it for it in summarized if it["url"] not in seen_urls]
-    _save_cache(merged)
-    print(f"[cache] Merged: {len(cached)} cached + {len(summarized)} new = {len(merged)} total")
+    # 更新周内已见
+    for it in summarized:
+        seen.add(it["url"])
+    _save_seen_weekly(seen)
 
-    # ---- Generate & Notify (with merged/all data) ----
-    _gen_dashboard_and_notify(merged, cfg, report_cfg)
+    # 挑选 Top 5
+    top5 = sorted(summarized, key=lambda x: x.get("relevance_score", 0), reverse=True)[:5]
+
+    # 推送
+    dashboard_url = get_env("DASHBOARD_URL", "https://cawezh.github.io/AIDailyReport/")
+    send_feishu(top5, dashboard_url)
+    send_wechat(top5, dashboard_url)
+
+    # 存入本周 pool
+    pool = _load_pool()
+    # 去重后追加
+    existing_urls = {it["url"] for it in pool["items"]}
+    for it in summarized:
+        if it["url"] not in existing_urls:
+            pool["items"].append(it)
+    pool["daily_top5"][today] = [it["title"] for it in top5]
+    _save_pool(pool)
+
+    print(f"[daily] Top 5 pushed, pool now has {len(pool['items'])} items")
+    print(f"=== Done: {today} ===")
 
 
-def _gen_dashboard_and_notify(items: list[dict], cfg: dict, report_cfg: dict):
-    """用完整 items 生成 dashboard 和推送"""
+# ── Weekly (Sunday) ────────────────────────────────────────
 
-    # ---- Generate Overview (整体摘要) ----
+def run_weekly():
+    print("=== AI Weekly Report ===")
+    today = date.today()
+    week = _week_key()
+    cfg = get_sources()
+
+    # 加载本周 pool
+    pool = _load_pool()
+    items = pool.get("items", [])
+
+    # 如果今天还有新抓取的数据，也加入
+    fresh = _fetch_all()
+    seen = _load_seen_weekly()
+    fresh = [it for it in fresh if it["url"] not in seen]
+    if fresh:
+        keywords = get_keywords()
+        fresh = pre_filter(fresh, keywords)
+        if fresh:
+            fresh = summarize(fresh)
+            existing = {it["url"] for it in items}
+            for it in fresh:
+                if it["url"] not in existing:
+                    items.append(it)
+
+    print(f"[weekly] Pool: {len(items)} items")
+
+    if not items:
+        print("[weekly] No items this week, nothing to report")
+        return
+
+    # 去重 + 按 relevance 排序
+    seen_urls = set()
+    unique = []
+    for it in sorted(items, key=lambda x: x.get("relevance_score", 0), reverse=True):
+        if it["url"] not in seen_urls:
+            unique.append(it)
+            seen_urls.add(it["url"])
+    items = unique
+    print(f"[weekly] Deduplicated: {len(items)} unique items")
+
+    # 周报概览
     overview = generate_overview(items)
     print(f"[overview] {overview.get('overview', '')}")
 
-    # ---- Generate ----
-    report_path = generate_report(items, output_dir=cfg["output"]["reports_dir"], overview=overview)
+    # 生成周报
+    week_start = today - timedelta(days=today.weekday())
+    week_end = today
+    week_range = f"{week_start.strftime('%m.%d')} - {week_end.strftime('%m.%d')}"
+
+    report_path = generate_report(items, output_dir=cfg["output"]["reports_dir"], overview=overview, week_label=week_range)
     print(f"[report] Saved to {report_path}")
 
+    # Dashboard
     data_path = save_daily_data(items, overview=overview)
-    print(f"[dashboard] Saved daily data to {data_path}")
+    print(f"[dashboard] Saved data to {data_path}")
     manifest_path = update_manifest(items, overview=overview)
     print(f"[dashboard] Updated manifest at {manifest_path}")
-    index_path = generate_index_html()
-    print(f"[dashboard] Generated SPA index at {index_path}")
+    generate_index_html()
+    print("[dashboard] Generated SPA index")
 
-    # ---- Notify ----
-    top_n = report_cfg.get("top_n", 10)
-    top_items = sorted(items, key=lambda x: x.get("relevance_score", 0), reverse=True)[:top_n]
-    dashboard_url = get_env("DASHBOARD_URL", "https://<user>.github.io/ai-daily-report/")
+    # 推送周报摘要
+    dashboard_url = get_env("DASHBOARD_URL", "https://cawezh.github.io/AIDailyReport/")
+    top5 = items[:5]
+    counts = {}
+    for it in items:
+        pc = it.get("primary_category", "other")
+        counts[pc] = counts.get(pc, 0) + 1
 
-    send_feishu(top_items[:5], dashboard_url, overview=overview)
-    send_wechat(top_items[:5], dashboard_url, overview=overview)
+    send_feishu_weekly(top5, dashboard_url, overview, week_range, len(items), counts)
+    send_wechat_weekly(top5, dashboard_url, overview, week_range, len(items), counts)
 
-    print(f"=== Done: {date.today().isoformat()} ===")
+    # 清空 pool
+    _save_pool({"week": week, "items": [], "daily_top5": {}})
+    _save_seen_weekly(set())
+
+    print(f"=== Week {week} done ===")
+
+
+# ── Entry ──────────────────────────────────────────────────
+
+def main():
+    today = date.today()
+    # Sunday = 6
+    if today.weekday() == 6:
+        run_weekly()
+    else:
+        run_daily()
 
 
 if __name__ == "__main__":

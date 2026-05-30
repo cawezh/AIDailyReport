@@ -10,6 +10,7 @@ def generate_report(
     items: list[dict],
     output_dir: str = "reports",
     overview: dict = None,
+    week_label: str = None,
 ) -> Path:
     """
     根据分类好的 items 生成 Markdown 日报。
@@ -19,6 +20,7 @@ def generate_report(
     template = env.get_template("report.md.j2")
 
     today = date.today().isoformat()
+    display_date = week_label if week_label else today
 
     # 按 primary_category 分类
     ai_items = [it for it in items if it.get("primary_category") == "ai"]
@@ -59,9 +61,11 @@ def generate_report(
     # Top 10
     top10 = sorted(items, key=lambda x: (x.get("relevance_score", 0), x.get("stars", 0)), reverse=True)[:10]
 
+    is_weekly = week_label is not None
     content = template.render(
-        date=today,
+        date=display_date,
         total=len(items),
+        is_weekly=is_weekly,
         overview=overview or {"overview": "", "hot_trends": []},
         counts={
             "ai": len(ai_items),
@@ -87,7 +91,8 @@ def generate_report(
         producthunt_items=producthunt_items,
     )
 
-    out_path = Path(output_dir) / f"{today}.md"
+    filename = f"{date.today().strftime('%G-W%V')}.md" if week_label else f"{today}.md"
+    out_path = Path(output_dir) / filename
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(content, encoding="utf-8")
 

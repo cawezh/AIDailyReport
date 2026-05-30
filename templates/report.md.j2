@@ -1,4 +1,4 @@
-# AI 技术日报 — {{ date }}
+# {{ 'AI 周报' if is_weekly else 'AI 技术日报' }} — {{ date }}
 
 {% if overview.overview %}
 ## 📈 今日技术趋势
@@ -12,7 +12,7 @@
 ---
 {% endif %}
 
-## 📊 今日概览
+## 📊 {{ '本周概览' if is_weekly else '今日概览' }}
 
 | 指标 | 数值 |
 |------|------|
