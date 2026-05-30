@@ -4,7 +4,7 @@ from datetime import date, timedelta
 from pathlib import Path
 
 SEEN_FILE = Path(__file__).resolve().parent.parent / "reports" / "seen_items.json"
-KEEP_DAYS = 30  # 保留最近 30 天的记录
+KEEP_DAYS = 3  # 保留最近 3 天的记录，3 天后允许重现
 
 
 def load_seen() -> set[str]:

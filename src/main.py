@@ -186,13 +186,13 @@ def run_daily():
     summarized = summarize(filtered)
     print(f"[llm] Summarized: {len(summarized)}")
 
-    # 更新历史已见
-    save_seen(summarized)
-    print(f"[dedup] Saved {len(summarized)} URLs to history")
-
     # 精选日报展示（当天数据，每 L1 最多 5 项，每 L2 最多 1 项）
     curated = _curate_daily(summarized)
     print(f"[curate] Daily highlights: {len(curated)} items")
+
+    # 只对最终展示的精选去重（不对原始数据去重）
+    save_seen(curated)
+    print(f"[dedup] Saved {len(curated)} curated URLs to history")
 
     # 推送：每 L1 各取 1 个 Top（游戏/AI/互联网/产品/科研）
     l1_order = ['游戏', 'AI', '互联网', '产品', '科研']
@@ -248,7 +248,6 @@ def run_weekly():
         fresh = pre_filter(fresh, keywords)
         if fresh:
             fresh = summarize(fresh)
-            save_seen(fresh)
             existing = {it["url"] for it in items}
             for it in fresh:
                 if it["url"] not in existing:
