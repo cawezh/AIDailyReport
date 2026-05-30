@@ -3,3 +3,6 @@ __pycache__/
 *.pyo
 .env
 .wechat_state.json
+reports/daily_cache.json
+reports/seen_items.json
+*.bak
