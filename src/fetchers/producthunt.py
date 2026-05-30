@@ -6,7 +6,7 @@ API_URL = "https://api.producthunt.com/v2/api/graphql"
 
 POSTS_QUERY = """
 {
-  posts(order: FEATURED, first: 30) {
+  posts(order: VOTES, first: 30) {
     edges {
       node {
         id
