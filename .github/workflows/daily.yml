@@ -34,6 +34,7 @@ jobs:
           WECHAT_BOT_TOKEN: ${{ secrets.WECHAT_BOT_TOKEN }}
           WECHAT_CLIENT_ID: ${{ secrets.WECHAT_CLIENT_ID }}
           DASHBOARD_URL: ${{ secrets.DASHBOARD_URL }}
+          PRODUCTHUNT_TOKEN: ${{ secrets.PRODUCTHUNT_TOKEN }}
         run: PYTHONPATH=. python src/main.py
 
       - name: Commit and push
