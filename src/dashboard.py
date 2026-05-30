@@ -187,7 +187,10 @@ def generate_index_html() -> Path:
     """生成自包含 SPA 首页 docs/index.html"""
     _ensure_data_dir()
 
+    import time
     import textwrap
+
+    ts = int(time.time())
 
     html = textwrap.dedent(f"""\
     <!DOCTYPE html>
@@ -273,11 +276,13 @@ def generate_index_html() -> Path:
     var ACTIVE_L1 = '全部';
     var ACTIVE_L2 = '全部';
     var ALL_DATES = [];
+    var ALL_L2 = []; // all unique L2 names across all categories
+    var CACHE_VER = '{ts}';
 
     async function init() {{
       var hash = window.location.hash.slice(1);
       try {{
-        var r = await fetch('data/manifest.json');
+        var r = await fetch('data/manifest.json?v=' + CACHE_VER);
         MANIFEST = await r.json();
         ALL_DATES = MANIFEST.dates.map(function(d) {{ return d.date; }}).sort();
       }} catch(e) {{ console.log('No manifest yet'); }}
@@ -304,7 +309,7 @@ def generate_index_html() -> Path:
       window.location.hash = d;
       document.getElementById('content').innerHTML = '<div class="loading">加载中...</div>';
       try {{
-        var r = await fetch('data/' + d + '.json');
+        var r = await fetch('data/' + d + '.json?v=' + CACHE_VER);
         CURRENT_DATA = await r.json();
       }} catch(e) {{
         document.getElementById('content').innerHTML = '<div class="loading">暂无该日数据</div>';
@@ -383,8 +388,21 @@ def generate_index_html() -> Path:
           + '</div>';
       }}).join('');
 
-      // After rendering content, render L2 tabs for active L1
-      renderL2Tabs(ACTIVE_L1 === '全部' ? l1Order[0] : ACTIVE_L1);
+      // After rendering content, collect all unique L2 names + render L2 tabs
+      ALL_L2 = [];
+      var seen = {{}};
+      l1Order.forEach(function(l1) {{
+        var l1Data = (d.categories || {{}})[l1];
+        if (!l1Data) return;
+        (l1Data.children || []).forEach(function(ch) {{
+          if (!seen[ch.name]) {{ seen[ch.name] = true; ALL_L2.push(ch.name); }}
+        }});
+      }});
+      if (ACTIVE_L1 === '全部') {{
+        renderAllL2Tabs();
+      }} else {{
+        renderL2Tabs(ACTIVE_L1);
+      }}
     }}
 
     function _lastActiveL2(l1) {{
@@ -420,6 +438,26 @@ def generate_index_html() -> Path:
       applyL2Filter();
     }}
 
+    function renderAllL2Tabs() {{
+      var l2Tabs = document.getElementById('l2Tabs');
+      l2Tabs.innerHTML = ['全部'].concat(ALL_L2).map(function(t) {{
+        return '<div class="l2-tab' + (t === ACTIVE_L2 ? ' active' : '') + '" onclick="switchL2(this.textContent.trim())">'
+          + t + '</div>';
+      }}).join('');
+      applyAllL2Filter();
+    }}
+
+    function applyAllL2Filter() {{
+      // In "全部" L1 mode, show/hide L2 panels across all categories
+      document.querySelectorAll('.l2-panel').forEach(function(lp) {{
+        if (ACTIVE_L2 === '全部') {{
+          lp.classList.add('active');
+        }} else {{
+          lp.classList.toggle('active', lp.getAttribute('data-l2') === ACTIVE_L2);
+        }}
+      }});
+    }}
+
     function switchL1(l1) {{
       ACTIVE_L1 = l1;
       ACTIVE_L2 = '全部';
@@ -440,7 +478,7 @@ def generate_index_html() -> Path:
       }});
 
       if (l1 === '全部') {{
-        document.getElementById('l2Tabs').innerHTML = '';
+        renderAllL2Tabs();
       }} else {{
         renderL2Tabs(l1);
       }}
@@ -458,18 +496,17 @@ def generate_index_html() -> Path:
     }}
 
     function applyL2Filter() {{
-      // Find visible L1 panels
-      var visiblePanels = document.querySelectorAll('.l1-panel.active');
-      visiblePanels.forEach(function(panel) {{
-        var l1 = panel.getAttribute('data-l1');
-        var l2Panels = panel.querySelectorAll('.l2-panel');
-        l2Panels.forEach(function(lp) {{
-          if (ACTIVE_L2 === '全部') {{
-            lp.classList.add('active');
-          }} else {{
-            lp.classList.toggle('active', lp.getAttribute('data-l2') === ACTIVE_L2);
-          }}
-        }});
+      if (ACTIVE_L1 === '全部') {{
+        applyAllL2Filter();
+        return;
+      }}
+      // Only filter within visible L1 panels
+      document.querySelectorAll('.l1-panel.active .l2-panel').forEach(function(lp) {{
+        if (ACTIVE_L2 === '全部') {{
+          lp.classList.add('active');
+        }} else {{
+          lp.classList.toggle('active', lp.getAttribute('data-l2') === ACTIVE_L2);
+        }}
       }});
     }}
 
