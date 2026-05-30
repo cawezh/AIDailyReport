@@ -83,15 +83,9 @@ def send_wechat(top5: list[dict], dashboard_url: str, overview: dict = None) -> 
     仅能回复 24h 内有过互动的用户。
     """
     bot_token = get_env("WECHAT_BOT_TOKEN")
-    client_id = get_env("WECHAT_CLIENT_ID")
 
     if not bot_token:
         print("[wechat] WECHAT_BOT_TOKEN not set, skipping")
-        return False
-
-    if not client_id:
-        # 尝试从 getupdates 中提取 client_id
-        print("[wechat] WECHAT_CLIENT_ID not set, skipping (set to your bot ID, e.g. xxx@im.bot)")
         return False
 
     # 获取最近有对话的用户
@@ -118,15 +112,14 @@ def send_wechat(top5: list[dict], dashboard_url: str, overview: dict = None) -> 
         lines.append(f"   {summary} {star}")
         lines.append("")
     lines.append(f"周报: {dashboard_url}")
-    return _send_text(bot_token, client_id, user_contexts, "\n".join(lines).strip())
+    return _send_text(bot_token, user_contexts, "\n".join(lines).strip())
 
 
 def send_wechat_weekly(top5: list[dict], dashboard_url: str, overview: dict, week_range: str, total: int, counts: dict = None) -> bool:
     """推送周报摘要到微信"""
     bot_token = get_env("WECHAT_BOT_TOKEN")
-    client_id = get_env("WECHAT_CLIENT_ID")
-    if not bot_token or not client_id:
-        print("[wechat] WECHAT_BOT_TOKEN/CLIENT_ID not set, skipping weekly")
+    if not bot_token:
+        print("[wechat] WECHAT_BOT_TOKEN not set, skipping weekly")
         return False
 
     user_contexts = _fetch_recent_contexts(bot_token)
@@ -153,10 +146,10 @@ def send_wechat_weekly(top5: list[dict], dashboard_url: str, overview: dict, wee
         lines.append(f"   {item.get('cn_summary', '')[:40]}")
         lines.append("")
     lines.append(f"完整周报: {dashboard_url}")
-    return _send_text(bot_token, client_id, user_contexts, "\n".join(lines).strip())
+    return _send_text(bot_token, user_contexts, "\n".join(lines).strip())
 
 
-def _send_text(bot_token: str, client_id: str, user_contexts: dict, full_text: str) -> bool:
+def _send_text(bot_token: str, user_contexts: dict, full_text: str) -> bool:
     """发送文本消息到微信用户"""
     sent = 0
     for user_id, context_token in user_contexts.items():
@@ -164,7 +157,7 @@ def _send_text(bot_token: str, client_id: str, user_contexts: dict, full_text: s
             payload = {
                 "msg": {
                     "to_user_id": user_id,
-                    "client_id": client_id,
+                    "client_id": "weixin",
                     "message_type": 2,
                     "message_state": 2,
                     "context_token": context_token,
