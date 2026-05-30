@@ -212,9 +212,9 @@ def generate_index_html() -> Path:
       .trend {{ background: #1f3a5f; color: var(--accent); padding: 2px 10px; border-radius: 12px; font-size: 0.78rem; }}
       /* ── L1 Tabs ── */
       .l1-tabs {{ display: flex; gap: 6px; margin: 14px 0 8px; flex-wrap: wrap; justify-content: center; }}
-      .l1-tab {{ padding: 6px 16px; background: var(--card); border: 1px solid var(--border); border-radius: 16px; cursor: pointer; font-size: 0.88rem; user-select: none; white-space: nowrap; }}
+      .l1-tab {{ padding: 6px 16px; background: var(--card); border: 1px solid var(--border); border-radius: 16px; cursor: pointer; font-size: 0.88rem; user-select: none; white-space: nowrap; transition: all 0.15s; }}
       .l1-tab:hover {{ border-color: var(--accent); }}
-      .l1-tab.active {{ background: var(--accent); color: #fff; border-color: var(--accent); }}
+      .l1-tab.active {{ background: var(--accent) !important; color: #fff !important; border-color: var(--accent) !important; }}
       .l1-tab .cnt {{ font-size: 0.75rem; opacity: 0.7; margin-left: 2px; }}
       /* ── L2 Tabs ── */
       .l2-tabs {{ display: flex; gap: 4px; margin: 6px 0 12px; flex-wrap: wrap; }}
@@ -352,7 +352,7 @@ def generate_index_html() -> Path:
       var l1Tabs = document.getElementById('l1Tabs');
       l1Tabs.innerHTML = ['全部'].concat(l1Order).map(function(c) {{
         var icon = {{'游戏':'🎮','AI':'🤖','互联网':'🌐','产品':'🚀','科研':'📄'}}[c] || '';
-        return '<div class="l1-tab' + (c === ACTIVE_L1 ? ' active' : '') + '" data-cat="' + c + '" onclick="switchL1(\\'' + c + '\\')">'
+        return '<div class="l1-tab' + (c === ACTIVE_L1 ? ' active' : '') + '" data-cat="' + c + '" onclick="switchL1(this.dataset.cat)">'
           + icon + ' ' + c + ' <span class="cnt">' + (counts[c] || 0) + '</span></div>';
       }}).join('');
 
@@ -406,7 +406,7 @@ def generate_index_html() -> Path:
       var tabs = ['全部'];
       children.forEach(function(ch) {{ tabs.push(ch.name); }});
       l2Tabs.innerHTML = tabs.map(function(t) {{
-        return '<div class="l2-tab' + (t === ACTIVE_L2 ? ' active' : '') + '" onclick="switchL2(\\'' + t + '\\')">'
+        return '<div class="l2-tab' + (t === ACTIVE_L2 ? ' active' : '') + '" onclick="switchL2(this.textContent.trim())">'
           + t + '</div>';
       }}).join('');
 
