@@ -51,6 +51,11 @@ def generate_report(
     # 潜力新兴项目
     novel_items = [it for it in items if it.get("is_novel")]
 
+    # 按数据源分类
+    arxiv_items = [it for it in items if it.get("source") == "arxiv"]
+    steam_items = [it for it in items if it.get("source") == "steam"]
+    producthunt_items = [it for it in items if it.get("source") == "producthunt"]
+
     # Top 10
     top10 = sorted(items, key=lambda x: (x.get("relevance_score", 0), x.get("stars", 0)), reverse=True)[:10]
 
@@ -63,6 +68,9 @@ def generate_report(
             "game": len(game_items),
             "android": len(android_items),
             "internet": len(internet_items),
+            "arxiv": len(arxiv_items),
+            "steam": len(steam_items),
+            "producthunt": len(producthunt_items),
         },
         top10=top10,
         ai_items=ai_items[:8],
@@ -74,6 +82,9 @@ def generate_report(
         multi_agent_items=multi_agent_items[:5],
         highlights=highlights,
         novel_items=novel_items[:10],
+        arxiv_items=arxiv_items,
+        steam_items=steam_items,
+        producthunt_items=producthunt_items,
     )
 
     out_path = Path(output_dir) / f"{today}.md"

@@ -19,6 +19,9 @@
 | 收录项目 | {{ total }} |
 | AI 相关 | {{ counts.ai }} |
 | 游戏相关 | {{ counts.game }} |
+| 📄 arXiv 论文 | {{ counts.arxiv }} |
+| 🎮 Steam 游戏 | {{ counts.steam }} |
+| 🚀 ProductHunt | {{ counts.producthunt }} |
 | Android 相关 | {{ counts.android }} |
 | 互联网/基础设施 | {{ counts.internet }} |
 | 重点关注 | {{ highlights|length }} 个（创新游戏/多智能体） |
@@ -114,4 +117,36 @@
 
 ---
 
+---
+## 🚀 ProductHunt 热门产品
+
+| 产品 | 票数 | 摘要 |
+|------|------|------|
+{% for item in producthunt_items %}
+| [{{ item.title }}]({{ item.url }}) | 👍 {{ item.votes }} | {{ item.cn_summary }} |
+{% else %}
+> 今日暂无 ProductHunt 产品（需设置 PRODUCTHUNT_TOKEN）
+{% endfor %}
+
+---
+## 🎮 Steam 热门游戏
+
+| 游戏 | 信息 | 摘要 |
+|------|------|------|
+{% for item in steam_items %}
+| [{{ item.title }}]({{ item.url }}) | {{ item.description }} | {{ item.cn_summary }} |
+{% endfor %}
+
+---
+## 📄 arXiv 论文
+
+| 论文 | 分类 | 摘要 |
+|------|------|------|
+{% for item in arxiv_items %}
+| [{{ item.title }}]({{ item.url }}) | {{ item.categories|join(', ') }} | {{ item.cn_summary }} |
+{% else %}
+> 今日暂无新的 arXiv 论文
+{% endfor %}
+
+---
 > 自动生成于 {{ date }} | 数据来源: GitHub, HN, Reddit, ProductHunt, HuggingFace, itch.io, arXiv
