@@ -165,17 +165,24 @@ def update_manifest(items: list[dict], overview: dict = None):
         data = json.loads(mf.read_text())
         dates = data.get("dates", [])
 
-    existing_dates = {d["date"] for d in dates}
-    if today not in existing_dates:
-        import collections
-        l1_counts = collections.Counter(_pick_l1(it) for it in items)
-        dates.append({
-            "date": today,
-            "total": len(items),
-            "overview": overview.get("overview", "")[:80],
-            "counts": dict(l1_counts),
-        })
-        dates.sort(key=lambda d: d["date"], reverse=True)
+    import collections
+    l1_counts = collections.Counter(_pick_l1(it) for it in items)
+    entry = {
+        "date": today,
+        "total": len(items),
+        "overview": overview.get("overview", "")[:80],
+        "counts": dict(l1_counts),
+    }
+    # upsert: 更新已有日期或新增
+    replaced = False
+    for i, d in enumerate(dates):
+        if d["date"] == today:
+            dates[i] = entry
+            replaced = True
+            break
+    if not replaced:
+        dates.append(entry)
+    dates.sort(key=lambda d: d["date"], reverse=True)
 
     mf.write_text(json.dumps({"dates": dates}, ensure_ascii=False))
     return mf
