@@ -150,7 +150,11 @@
     "https://store.steampowered.com/app/2215200/",
     "https://store.steampowered.com/app/4310660/",
     "https://store.steampowered.com/app/4651070/",
-    "https://store.steampowered.com/app/4563360/"
+    "https://store.steampowered.com/app/4563360/",
+    "https://store.steampowered.com/app/3527290/",
+    "https://store.steampowered.com/app/54029/",
+    "https://store.steampowered.com/app/1608730/",
+    "https://store.steampowered.com/app/4686350/"
   ],
   "records": {
     "https://github.com/harry0703/MoneyPrinterTurbo": "2026-05-30",
@@ -303,6 +307,10 @@
     "https://store.steampowered.com/app/2215200/": "2026-05-30",
     "https://store.steampowered.com/app/4310660/": "2026-05-30",
     "https://store.steampowered.com/app/4651070/": "2026-05-30",
-    "https://store.steampowered.com/app/4563360/": "2026-05-30"
+    "https://store.steampowered.com/app/4563360/": "2026-05-30",
+    "https://store.steampowered.com/app/3527290/": "2026-05-30",
+    "https://store.steampowered.com/app/54029/": "2026-05-30",
+    "https://store.steampowered.com/app/1608730/": "2026-05-30",
+    "https://store.steampowered.com/app/4686350/": "2026-05-30"
   }
 }
