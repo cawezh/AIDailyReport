@@ -16,6 +16,7 @@ from src.fetchers import (
     fetch_steam,
 )
 from src.filter import pre_filter
+from src.dedup import load_seen, save_seen
 from src.llm import summarize, generate_overview
 from src.reporter import generate_report
 from src.dashboard import save_daily_data, update_manifest, generate_index_html, _pick_l1, L2_RULES
@@ -163,7 +164,17 @@ def run_daily():
     items = _fetch_all()
     print(f"[fetch] Total raw items: {len(items)}")
 
-    # 关键词预筛选（全部数据，不去重 — Dashboard 展示当天全部）
+    # 历史去重（30天 seen_items）
+    seen_history = load_seen()
+    before = len(items)
+    items = [it for it in items if it["url"] not in seen_history]
+    print(f"[dedup] Removed {before - len(items)} seen in history, {len(items)} remaining")
+
+    if not items:
+        print("[daily] No new items today")
+        return
+
+    # 关键词预筛选
     filtered = pre_filter(items, keywords)
     print(f"[filter] After keyword filter: {len(filtered)}")
 
@@ -174,6 +185,10 @@ def run_daily():
     # LLM 摘要
     summarized = summarize(filtered)
     print(f"[llm] Summarized: {len(summarized)}")
+
+    # 更新历史已见
+    save_seen(summarized)
+    print(f"[dedup] Saved {len(summarized)} URLs to history")
 
     # 精选日报展示（当天数据，每 L1 最多 5 项，每 L2 最多 1 项）
     curated = _curate_daily(summarized)
@@ -193,15 +208,12 @@ def run_daily():
     send_feishu(top5, dashboard_url)
     send_wechat(top5, dashboard_url)
 
-    # 存入本周 pool（去重追加）
-    seen = _load_seen_weekly()
+    # 存入本周 pool（pool 内去重）
     pool = _load_pool()
     existing_urls = {it["url"] for it in pool["items"]}
     for it in summarized:
-        if it["url"] not in existing_urls and it["url"] not in seen:
+        if it["url"] not in existing_urls:
             pool["items"].append(it)
-            seen.add(it["url"])
-    _save_seen_weekly(seen)
     pool["daily_top5"][today] = [it["title"] for it in top5]
     _save_pool(pool)
 
@@ -229,13 +241,14 @@ def run_weekly():
 
     # 如果今天还有新抓取的数据，也加入
     fresh = _fetch_all()
-    seen = _load_seen_weekly()
-    fresh = [it for it in fresh if it["url"] not in seen]
+    seen_history = load_seen()
+    fresh = [it for it in fresh if it["url"] not in seen_history]
     if fresh:
         keywords = get_keywords()
         fresh = pre_filter(fresh, keywords)
         if fresh:
             fresh = summarize(fresh)
+            save_seen(fresh)
             existing = {it["url"] for it in items}
             for it in fresh:
                 if it["url"] not in existing:
@@ -296,7 +309,6 @@ def run_weekly():
 
     # 清空 pool
     _save_pool({"week": week, "items": [], "daily_top5": {}})
-    _save_seen_weekly(set())
 
     print(f"=== Week {week} done ===")
 
