@@ -33,7 +33,21 @@
     "https://www.producthunt.com/products/own-page?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
     "https://arxiv.org/abs/2605.30345",
     "https://arxiv.org/abs/2605.30337",
-    "https://arxiv.org/abs/2605.30346"
+    "https://arxiv.org/abs/2605.30346",
+    "https://github.com/langchain-ai/langchain",
+    "https://github.com/ollama/ollama",
+    "https://github.com/godotengine/godot-docs",
+    "https://github.com/facebook/react-native",
+    "https://github.com/bytedance/deer-flow",
+    "https://www.producthunt.com/products/tycoon-us?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://koenvangilst.nl/lab/mistral-ai-now-summit",
+    "https://www.producthunt.com/products/shadow-6/launches/shadow-2-0-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2605.30343",
+    "https://arxiv.org/abs/2605.30338",
+    "https://store.steampowered.com/app/275850/",
+    "https://github.com/hydralauncher/hydra",
+    "https://s-macke.github.io/VoxelSpace/",
+    "https://gbpatch.itch.io/our-life-nf"
   ],
   "records": {
     "https://github.com/harry0703/MoneyPrinterTurbo": "2026-05-30",
@@ -69,6 +83,20 @@
     "https://www.producthunt.com/products/own-page?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-05-31",
     "https://arxiv.org/abs/2605.30345": "2026-05-31",
     "https://arxiv.org/abs/2605.30337": "2026-05-31",
-    "https://arxiv.org/abs/2605.30346": "2026-05-31"
+    "https://arxiv.org/abs/2605.30346": "2026-05-31",
+    "https://github.com/langchain-ai/langchain": "2026-05-30",
+    "https://github.com/ollama/ollama": "2026-05-30",
+    "https://github.com/godotengine/godot-docs": "2026-05-30",
+    "https://github.com/facebook/react-native": "2026-05-30",
+    "https://github.com/bytedance/deer-flow": "2026-05-30",
+    "https://www.producthunt.com/products/tycoon-us?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-05-30",
+    "https://koenvangilst.nl/lab/mistral-ai-now-summit": "2026-05-30",
+    "https://www.producthunt.com/products/shadow-6/launches/shadow-2-0-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-05-30",
+    "https://arxiv.org/abs/2605.30343": "2026-05-30",
+    "https://arxiv.org/abs/2605.30338": "2026-05-30",
+    "https://store.steampowered.com/app/275850/": "2026-05-30",
+    "https://github.com/hydralauncher/hydra": "2026-05-30",
+    "https://s-macke.github.io/VoxelSpace/": "2026-05-30",
+    "https://gbpatch.itch.io/our-life-nf": "2026-05-30"
   }
 }
