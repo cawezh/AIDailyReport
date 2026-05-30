@@ -35,7 +35,7 @@ jobs:
           WECHAT_CLIENT_ID: ${{ secrets.WECHAT_CLIENT_ID }}
           DASHBOARD_URL: ${{ secrets.DASHBOARD_URL }}
           PRODUCTHUNT_TOKEN: ${{ secrets.PRODUCTHUNT_TOKEN }}
-        run: PYTHONPATH=. python src/main.py
+        run: PYTHONPATH=. python3 src/main.py
 
       - name: Commit and push
         run: |

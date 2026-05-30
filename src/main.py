@@ -19,7 +19,7 @@ from src.filter import pre_filter
 from src.dedup import load_seen, save_seen
 from src.llm import summarize, generate_overview
 from src.reporter import generate_report
-from src.dashboard import generate_dashboard
+from src.dashboard import save_daily_data, update_manifest, generate_index_html
 from src.feishu import send_feishu
 from src.wechat import send_wechat
 
@@ -178,8 +178,12 @@ def _gen_dashboard_and_notify(items: list[dict], cfg: dict, report_cfg: dict):
     report_path = generate_report(items, output_dir=cfg["output"]["reports_dir"], overview=overview)
     print(f"[report] Saved to {report_path}")
 
-    dashboard_path = generate_dashboard(items, output_dir=cfg["output"]["docs_dir"], overview=overview)
-    print(f"[dashboard] Saved to {dashboard_path}")
+    data_path = save_daily_data(items, overview=overview)
+    print(f"[dashboard] Saved daily data to {data_path}")
+    manifest_path = update_manifest(items, overview=overview)
+    print(f"[dashboard] Updated manifest at {manifest_path}")
+    index_path = generate_index_html()
+    print(f"[dashboard] Generated SPA index at {index_path}")
 
     # ---- Notify ----
     top_n = report_cfg.get("top_n", 10)
