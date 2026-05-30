@@ -423,6 +423,8 @@ def generate_index_html() -> Path:
     function switchL1(l1) {{
       ACTIVE_L1 = l1;
       ACTIVE_L2 = '全部';
+      SEARCHING = false;
+      document.getElementById('search').value = '';
 
       // Update L1 tab active states
       document.querySelectorAll('.l1-tab').forEach(function(t) {{
@@ -470,15 +472,26 @@ def generate_index_html() -> Path:
       }});
     }}
 
+    var SEARCHING = false;
+
     function filterCards(query) {{
       var q = query.toLowerCase().trim();
-      // 搜索时展开全部显示
-      if (q && ACTIVE_L1 !== '全部') {{
-        switchL1('全部');
+      if (q && !SEARCHING) {{
+        SEARCHING = true;
+        // 展开所有 L1 + L2 面板，这样搜索能命中所有卡片
+        document.querySelectorAll('.l1-panel').forEach(function(p) {{ p.classList.add('active'); }});
+        document.querySelectorAll('.l2-panel').forEach(function(p) {{ p.classList.add('active'); }});
+      }} else if (!q && SEARCHING) {{
+        SEARCHING = false;
+        // 恢复之前的 tab 状态
+        switchL1(ACTIVE_L1);
       }}
+      var count = 0;
       document.querySelectorAll('.card').forEach(function(card) {{
         var kw = (card.getAttribute('data-keywords') || '').toLowerCase();
-        card.style.display = (!q || kw.includes(q)) ? '' : 'none';
+        var match = !q || kw.includes(q);
+        card.style.display = match ? '' : 'none';
+        if (match) count++;
       }});
     }}
 
