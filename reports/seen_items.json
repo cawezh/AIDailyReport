@@ -158,7 +158,14 @@
     "https://store.steampowered.com/app/4435490/",
     "https://store.steampowered.com/app/70424/",
     "https://store.steampowered.com/app/2537590/",
-    "https://mobilegym.dev/"
+    "https://mobilegym.dev/",
+    "https://github.com/bevyengine/bevy",
+    "https://github.com/BabylonJS/Babylon.js",
+    "https://github.com/libgdx/libgdx",
+    "https://github.com/kitao/pyxel",
+    "https://store.steampowered.com/app/1579999/",
+    "https://store.steampowered.com/app/4654680/",
+    "https://store.steampowered.com/app/4701820/"
   ],
   "records": {
     "https://github.com/harry0703/MoneyPrinterTurbo": "2026-05-30",
@@ -319,6 +326,13 @@
     "https://store.steampowered.com/app/4435490/": "2026-05-30",
     "https://store.steampowered.com/app/70424/": "2026-05-30",
     "https://store.steampowered.com/app/2537590/": "2026-05-30",
-    "https://mobilegym.dev/": "2026-05-30"
+    "https://mobilegym.dev/": "2026-05-30",
+    "https://github.com/bevyengine/bevy": "2026-05-30",
+    "https://github.com/BabylonJS/Babylon.js": "2026-05-30",
+    "https://github.com/libgdx/libgdx": "2026-05-30",
+    "https://github.com/kitao/pyxel": "2026-05-30",
+    "https://store.steampowered.com/app/1579999/": "2026-05-30",
+    "https://store.steampowered.com/app/4654680/": "2026-05-30",
+    "https://store.steampowered.com/app/4701820/": "2026-05-30"
   }
 }
