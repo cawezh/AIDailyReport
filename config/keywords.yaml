@@ -24,6 +24,22 @@ categories:
     - text-to-video
     - speech-to-text
     - tts
+    - gpt
+    - chatgpt
+    - copilot
+    - ai-assistant
+    - artificial-intelligence
+    - machine-learning
+    - deep-learning
+    - neural-network
+    - computer-vision
+    - nlp
+    - natural-language
+    - llama
+    - mistral
+    - gemini
+    - chatbot
+    - ai-agent
 
   game:
     - godot
@@ -45,6 +61,15 @@ categories:
     - pixel-art
     - voxel
     - game-jam
+    - unreal-engine
+    - unity3d
+    - game-dev
+    - game-development
+    - game-design
+    - rpg
+    - strategy-game
+    - retro-game
+    - game-framework
 
   android:
     - android
@@ -57,6 +82,13 @@ categories:
     - android-security
     - gradle
     - kotlin-multiplatform
+    - mobile-app
+    - mobile-development
+    - cross-platform
+    - swift
+    - xamarin
+    - capacitor
+    - expo
 
   internet:
     - distributed-system
@@ -73,3 +105,23 @@ categories:
     - wasm
     - serverless
     - microservices
+    - cloud-native
+    - api
+    - graphql
+    - grpc
+    - open-source
+    - postgresql
+    - redis
+    - mongodb
+    - compiler
+    - programming-language
+    - framework
+    - security
+    - authentication
+    - monitoring
+    - observability
+    - testing
+    - ci-cd
+    - dev-tools
+    - developer-tools
+    - cli

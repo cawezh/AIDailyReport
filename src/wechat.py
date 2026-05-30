@@ -96,6 +96,7 @@ def send_wechat(top5: list[dict], dashboard_url: str) -> bool:
     user_contexts = _fetch_recent_contexts(bot_token)
     if not user_contexts:
         print("[wechat] no recent users to push to")
+        print("[wechat] 请先用微信给 bot 发一条消息建立对话，24h 内可收到推送")
         return False
 
     # 组装日报摘要
