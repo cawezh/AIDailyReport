@@ -2,6 +2,7 @@
 import json
 import random
 import base64
+from datetime import date
 import requests
 from pathlib import Path
 from src.config import get_env
@@ -98,18 +99,15 @@ def send_wechat(top5: list[dict], dashboard_url: str) -> bool:
         return False
 
     # 组装日报摘要
-    lines = []
+    lines = [f"AI 技术日报 ({date.today().isoformat()})", ""]
     for i, item in enumerate(top5, 1):
         title = item["title"]
-        url = item["url"]
-        summary = item.get("cn_summary", "")[:40]
+        summary = item.get("cn_summary", "")[:50]
         lines.append(f"{i}. {title}")
         lines.append(f"   {summary}")
-        lines.append(f"   {url}")
         lines.append("")
-    report_text = "\n".join(lines)
-
-    full_text = f"AI 技术日报\n\n{report_text}\n查看完整日报: {dashboard_url}"
+    lines.append(f"查看完整日报: {dashboard_url}")
+    full_text = "\n".join(lines).strip()
 
     sent = 0
     for user_id, context_token in user_contexts.items():

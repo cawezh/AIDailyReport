@@ -18,13 +18,8 @@ def pre_filter(items: list[dict], keywords_map: dict[str, list[str]]) -> list[di
         compiled[cat] = pattern
 
     filtered = []
-    seen_urls = set()
 
     for item in items:
-        if item["url"] in seen_urls:
-            continue
-        seen_urls.add(item["url"])
-
         text = f"{item['title']} {item['description']} {item.get('language', '')}"
         matched_categories = []
         matched_keywords = []

@@ -13,6 +13,7 @@ from src.fetchers import (
     fetch_indie_games,
 )
 from src.filter import pre_filter
+from src.dedup import load_seen, save_seen
 from src.llm import summarize
 from src.reporter import generate_report
 from src.dashboard import generate_dashboard
@@ -86,6 +87,12 @@ def main():
 
     print(f"[fetch] Total raw items: {len(all_items)}")
 
+    # ---- Cross-day Dedup ----
+    seen_urls = load_seen()
+    before = len(all_items)
+    all_items = [it for it in all_items if it["url"] not in seen_urls]
+    print(f"[dedup] Removed {before - len(all_items)} already-seen items, {len(all_items)} remaining")
+
     # ---- Filter ----
     keywords = get_keywords()
     filtered = pre_filter(all_items, keywords)
@@ -94,6 +101,9 @@ def main():
     # ---- LLM Summarize ----
     summarized = summarize(filtered)
     print(f"[llm] Summarized: {len(summarized)}")
+
+    # ---- Save seen ----
+    save_seen(summarized)
 
     # ---- Generate ----
     report_path = generate_report(summarized, output_dir=cfg["output"]["reports_dir"])

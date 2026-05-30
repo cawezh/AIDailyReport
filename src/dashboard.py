@@ -16,15 +16,22 @@ def generate_dashboard(
 
     today = date.today().isoformat()
 
-    categorized = {"ai": [], "game": [], "android": [], "internet": []}
-    for it in items:
-        cat = it.get("primary_category", "internet")
-        if cat in categorized:
-            categorized[cat].append(it)
-
     # 热度统一
     for it in items:
         it["stars"] = it.get("stars", 0) or it.get("points", 0) or it.get("score", 0) or it.get("votes", 0)
+
+    # 按分类整理
+    categorized = {"ai": [], "game": [], "godot": [], "android": [], "internet": []}
+    for it in items:
+        cat = it.get("primary_category", "internet")
+        if cat == "game":
+            # GODOT 项目从 game 中分离出来
+            if "godot" in it.get("matched_keywords", []) or "godot" in it["title"].lower():
+                categorized["godot"].append(it)
+            else:
+                categorized["game"].append(it)
+        elif cat in categorized:
+            categorized[cat].append(it)
 
     highlights = [it for it in items if it.get("is_highlight")]
 
@@ -36,7 +43,13 @@ def generate_dashboard(
         counts=counts,
         categorized=categorized,
         highlights=highlights,
-        cat_labels={"ai": "AI 相关", "game": "游戏相关", "android": "Android 相关", "internet": "互联网/基础设施"},
+        cat_labels={
+            "ai": "AI 相关",
+            "game": "游戏相关",
+            "godot": "GODOT 项目",
+            "android": "Android 相关",
+            "internet": "互联网/基础设施",
+        },
     )
 
     out_path = Path(output_dir) / "index.html"
