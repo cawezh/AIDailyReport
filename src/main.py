@@ -199,10 +199,6 @@ def run_daily():
             top5.append(l1_items[0])
     print(f"[push] Selected {len(top5)} items (1 per category)")
 
-    # 精选日报展示 (每 L1 最多 5 项，每 L2 最多 1 项)
-    curated = _curate_daily(summarized)
-    print(f"[curate] Daily highlights: {len(curated)} items")
-
     # 推送
     dashboard_url = get_env("DASHBOARD_URL", "https://cawezh.github.io/AIDailyReport/")
     send_feishu(top5, dashboard_url)
@@ -217,7 +213,10 @@ def run_daily():
     pool["daily_top5"][today] = [it["title"] for it in top5]
     _save_pool(pool)
 
-    # 生成精选 Dashboard
+    # 精选日报展示（当天数据，每 L1 最多 5 项，每 L2 最多 1 项）
+    curated = _curate_daily(summarized)
+    print(f"[curate] Daily highlights: {len(curated)} items")
+
     overview = generate_overview(curated)
     data_path = save_daily_data(curated, overview=overview)
     print(f"[dashboard] Saved curated data to {data_path}")
