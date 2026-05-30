@@ -3,7 +3,16 @@ name: Daily AI Report
 on:
   schedule:
     - cron: '17 1 * * *'     # UTC 01:17 = CST 09:17
-  workflow_dispatch:           # 支持手动触发
+  workflow_dispatch:
+    inputs:
+      force_run:
+        description: 'Force re-run even if already ran today'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
 
 permissions:
   contents: write
@@ -35,6 +44,7 @@ jobs:
           WECHAT_CLIENT_ID: ${{ secrets.WECHAT_CLIENT_ID }}
           DASHBOARD_URL: ${{ secrets.DASHBOARD_URL }}
           PRODUCTHUNT_TOKEN: ${{ secrets.PRODUCTHUNT_TOKEN }}
+          FORCE_RUN: ${{ inputs.force_run == 'true' && '1' || '0' }}
         run: PYTHONPATH=. python3 src/main.py
 
       - name: Commit and push
