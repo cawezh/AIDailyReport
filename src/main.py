@@ -18,7 +18,7 @@ from src.fetchers import (
 from src.filter import pre_filter
 from src.llm import summarize, generate_overview
 from src.reporter import generate_report
-from src.dashboard import save_daily_data, update_manifest, generate_index_html
+from src.dashboard import save_daily_data, update_manifest, generate_index_html, _pick_l1, L2_RULES
 from src.feishu import send_feishu, send_feishu_weekly
 from src.wechat import send_wechat, send_wechat_weekly
 
@@ -104,7 +104,6 @@ def _save_seen_weekly(urls: set):
 
 def _curate_daily(items: list[dict]) -> list[dict]:
     """精选日报：每 L1 最多 5 项，每 L2 最多 1 项"""
-    from src.dashboard import _pick_l1, L2_RULES
 
     # 按 L1 分组
     l1_buckets = {}
@@ -190,8 +189,15 @@ def run_daily():
         seen.add(it["url"])
     _save_seen_weekly(seen)
 
-    # 挑选 Top 5 推送
-    top5 = sorted(summarized, key=lambda x: x.get("relevance_score", 0), reverse=True)[:5]
+    # 推送：每 L1 各取 1 个 Top（游戏/AI/互联网/产品/科研）
+    l1_order = ['游戏', 'AI', '互联网', '产品', '科研']
+    top5 = []
+    for l1 in l1_order:
+        l1_items = [it for it in summarized if _pick_l1(it) == l1]
+        l1_items.sort(key=lambda x: x.get("relevance_score", 0), reverse=True)
+        if l1_items:
+            top5.append(l1_items[0])
+    print(f"[push] Selected {len(top5)} items (1 per category)")
 
     # 精选日报展示 (每 L1 最多 5 项，每 L2 最多 1 项)
     curated = _curate_daily(summarized)
@@ -285,9 +291,15 @@ def run_weekly():
     generate_index_html()
     print("[dashboard] Generated SPA index")
 
-    # 推送周报摘要
+    # 推送周报摘要：每 L1 各取 1 个 Top
     dashboard_url = get_env("DASHBOARD_URL", "https://cawezh.github.io/AIDailyReport/")
-    top5 = items[:5]
+    l1_order = ['游戏', 'AI', '互联网', '产品', '科研']
+    top5 = []
+    for l1 in l1_order:
+        l1_items = [it for it in items if _pick_l1(it) == l1]
+        l1_items.sort(key=lambda x: x.get("relevance_score", 0), reverse=True)
+        if l1_items:
+            top5.append(l1_items[0])
     counts = {}
     for it in items:
         pc = it.get("primary_category", "other")
