@@ -9,6 +9,7 @@ TEMPLATE_DIR = Path(__file__).resolve().parent.parent / "templates"
 def generate_report(
     items: list[dict],
     output_dir: str = "reports",
+    overview: dict = None,
 ) -> Path:
     """
     根据分类好的 items 生成 Markdown 日报。
@@ -47,12 +48,16 @@ def generate_report(
     # 高光项目
     highlights = [it for it in items if it.get("is_highlight")]
 
+    # 潜力新兴项目
+    novel_items = [it for it in items if it.get("is_novel")]
+
     # Top 10
     top10 = sorted(items, key=lambda x: (x.get("relevance_score", 0), x.get("stars", 0)), reverse=True)[:10]
 
     content = template.render(
         date=today,
         total=len(items),
+        overview=overview or {"overview": "", "hot_trends": []},
         counts={
             "ai": len(ai_items),
             "game": len(game_items),
@@ -68,6 +73,7 @@ def generate_report(
         internet_items=internet_items[:8],
         multi_agent_items=multi_agent_items[:5],
         highlights=highlights,
+        novel_items=novel_items[:10],
     )
 
     out_path = Path(output_dir) / f"{today}.md"

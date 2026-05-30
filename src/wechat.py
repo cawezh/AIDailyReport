@@ -75,7 +75,7 @@ def _fetch_recent_contexts(token: str) -> dict[str, str]:
     return {uid: info["context_token"] for uid, info in state["users"].items() if info["context_token"]}
 
 
-def send_wechat(top5: list[dict], dashboard_url: str) -> bool:
+def send_wechat(top5: list[dict], dashboard_url: str, overview: dict = None) -> bool:
     """
     通过 iLink Bot API 向最近对话过的用户推送日报。
     仅能回复 24h 内有过互动的用户。
@@ -100,7 +100,12 @@ def send_wechat(top5: list[dict], dashboard_url: str) -> bool:
         return False
 
     # 组装日报摘要
+    overview = overview or {}
     lines = [f"AI 技术日报 ({date.today().isoformat()})", ""]
+    overview_text = overview.get("overview", "")
+    if overview_text:
+        lines.append(f"📊 {overview_text}")
+        lines.append("")
     for i, item in enumerate(top5, 1):
         title = item["title"]
         summary = item.get("cn_summary", "")[:50]

@@ -39,6 +39,12 @@ sources:
   indie_games:
     enabled: true
     max_items: 20
+  arxiv:
+    enabled: true
+    max_items: 20
+  steam:
+    enabled: true
+    max_items: 20
 
 llm:
   model: "deepseek-chat"

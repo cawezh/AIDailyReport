@@ -9,6 +9,7 @@ TEMPLATE_DIR = Path(__file__).resolve().parent.parent / "templates"
 def generate_dashboard(
     items: list[dict],
     output_dir: str = "docs",
+    overview: dict = None,
 ) -> Path:
     """生成 index.html Dashboard 页面"""
     env = Environment(loader=FileSystemLoader(str(TEMPLATE_DIR)))
@@ -43,6 +44,7 @@ def generate_dashboard(
         counts=counts,
         categorized=categorized,
         highlights=highlights,
+        overview=overview or {"overview": "", "hot_trends": []},
         cat_labels={
             "ai": "AI 相关",
             "game": "游戏相关",

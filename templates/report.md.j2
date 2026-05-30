@@ -1,5 +1,17 @@
 # AI 技术日报 — {{ date }}
 
+{% if overview.overview %}
+## 📈 今日技术趋势
+
+{{ overview.overview }}
+
+{% if overview.hot_trends %}
+**热点方向：** {% for t in overview.hot_trends %}`{{ t }}` {% endfor %}
+
+{% endif %}
+---
+{% endif %}
+
 ## 📊 今日概览
 
 | 指标 | 数值 |
@@ -83,6 +95,15 @@
 
 ---
 
+## 🌱 潜力新兴项目
+{% for item in novel_items %}
+- **[{{ item.title }}]({{ item.url }})** — {{ item.cn_summary }} (⭐ {{ item.stars }})
+{% else %}
+> 今日暂无突出的新兴项目
+{% endfor %}
+
+---
+
 ## 📌 多智能体协同（重点关注）
 
 {% for item in multi_agent_items %}
@@ -93,4 +114,4 @@
 
 ---
 
-> 自动生成于 {{ date }} | 数据来源: GitHub, HN, Reddit, ProductHunt, HuggingFace, itch.io
+> 自动生成于 {{ date }} | 数据来源: GitHub, HN, Reddit, ProductHunt, HuggingFace, itch.io, arXiv

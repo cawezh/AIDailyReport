@@ -54,6 +54,20 @@
   <div class="stat"><div class="num">{{ counts.internet }}</div><div class="label">互联网</div></div>
 </div>
 
+{% if overview.overview %}
+<div style="background: linear-gradient(135deg, #1a2332, #16233a); border: 1px solid var(--accent); border-radius: 12px; padding: 20px; margin: 20px auto; max-width: 800px;">
+  <h2 style="color: var(--accent); font-size: 1.1rem; margin-bottom: 8px;">今日概览</h2>
+  <p style="line-height: 1.6; color: var(--text);">{{ overview.overview }}</p>
+  {% if overview.hot_trends %}
+  <div style="margin-top: 10px; display: flex; gap: 8px; flex-wrap: wrap;">
+    {% for trend in overview.hot_trends %}
+    <span style="background: #1f3a5f; color: var(--accent); padding: 3px 12px; border-radius: 12px; font-size: 0.8rem;">{{ trend }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>
+{% endif %}
+
 <div class="search-box">
   <input type="text" id="search" placeholder="搜索项目..." oninput="filterCards(this.value)">
 </div>
@@ -74,7 +88,7 @@
   <h2>重点关注</h2>
   {% for item in highlights %}
   <div class="card" data-keywords="{{ item.title }} {{ item.cn_summary }}">
-    <div class="title"><a href="{{ item.url }}" target="_blank">{{ item.title }}</a><span class="badge badge-creative">创意 {{ item.creativity_score }}/10</span></div>
+    <div class="title"><a href="{{ item.url }}" target="_blank">{{ item.title }}</a><span class="badge badge-creative">创意 {{ item.creativity_score }}/10</span>{% if item.is_novel %}<span class="badge badge-creative">潜力股</span>{% endif %}</div>
     <div class="meta">来源: {{ item.source }} | 热度: {{ item.stars }}</div>
     <div class="summary">{{ item.cn_summary }}</div>
   </div>
@@ -92,6 +106,7 @@
       <div class="card" data-keywords="{{ item.title }} {{ item.cn_summary }}">
         <div class="title"><a href="{{ item.url }}" target="_blank">{{ item.title }}</a>
           {% if item.stars %}<span class="badge badge-star">⭐ {{ item.stars }}</span>{% endif %}
+          {% if item.is_novel %}<span class="badge badge-creative">潜力股</span>{% endif %}
         </div>
         <div class="meta">来源: {{ item.source }}{% if item.language %} | 语言: {{ item.language }}{% endif %}</div>
         <div class="summary">{{ item.cn_summary }}</div>
@@ -112,6 +127,7 @@
     <div class="card" data-keywords="{{ item.title }} {{ item.cn_summary }}">
       <div class="title"><a href="{{ item.url }}" target="_blank">{{ item.title }}</a>
         {% if item.stars %}<span class="badge badge-star">⭐ {{ item.stars }}</span>{% endif %}
+        {% if item.is_novel %}<span class="badge badge-creative">潜力股</span>{% endif %}
       </div>
       <div class="meta">来源: {{ item.source }}{% if item.language %} | 语言: {{ item.language }}{% endif %}</div>
       <div class="summary">{{ item.cn_summary }}</div>
@@ -123,7 +139,7 @@
 </div>
 {% endfor %}
 
-<footer>自动生成于 {{ date }} | 数据来源: GitHub, Hacker News, Reddit, ProductHunt, HuggingFace, itch.io</footer>
+<footer>自动生成于 {{ date }} | 数据来源: GitHub, Hacker News, Reddit, ProductHunt, HuggingFace, itch.io, arXiv</footer>
 
 <script>
 function switchTab(tabId) {

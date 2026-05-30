@@ -12,10 +12,12 @@ from src.fetchers import (
     fetch_producthunt,
     fetch_huggingface,
     fetch_indie_games,
+    fetch_arxiv,
+    fetch_steam,
 )
 from src.filter import pre_filter
 from src.dedup import load_seen, save_seen
-from src.llm import summarize
+from src.llm import summarize, generate_overview
 from src.reporter import generate_report
 from src.dashboard import generate_dashboard
 from src.feishu import send_feishu
@@ -108,6 +110,20 @@ def main():
         except Exception as e:
             print(f"[fetch] itch.io failed: {e}")
 
+    if sources_cfg.get("arxiv", {}).get("enabled"):
+        print("[fetch] arXiv...")
+        try:
+            all_items.extend(fetch_arxiv(max_items=sources_cfg["arxiv"].get("max_items", 20)))
+        except Exception as e:
+            print(f"[fetch] arXiv failed: {e}")
+
+    if sources_cfg.get("steam", {}).get("enabled"):
+        print("[fetch] Steam...")
+        try:
+            all_items.extend(fetch_steam(max_items=sources_cfg["steam"].get("max_items", 20)))
+        except Exception as e:
+            print(f"[fetch] Steam failed: {e}")
+
     print(f"[fetch] Total raw items: {len(all_items)}")
 
     # ---- Dedup (避免重复处理已见过的数据) ----
@@ -154,11 +170,15 @@ def main():
 def _gen_dashboard_and_notify(items: list[dict], cfg: dict, report_cfg: dict):
     """用完整 items 生成 dashboard 和推送"""
 
+    # ---- Generate Overview (整体摘要) ----
+    overview = generate_overview(items)
+    print(f"[overview] {overview.get('overview', '')}")
+
     # ---- Generate ----
-    report_path = generate_report(items, output_dir=cfg["output"]["reports_dir"])
+    report_path = generate_report(items, output_dir=cfg["output"]["reports_dir"], overview=overview)
     print(f"[report] Saved to {report_path}")
 
-    dashboard_path = generate_dashboard(items, output_dir=cfg["output"]["docs_dir"])
+    dashboard_path = generate_dashboard(items, output_dir=cfg["output"]["docs_dir"], overview=overview)
     print(f"[dashboard] Saved to {dashboard_path}")
 
     # ---- Notify ----
@@ -166,8 +186,8 @@ def _gen_dashboard_and_notify(items: list[dict], cfg: dict, report_cfg: dict):
     top_items = sorted(items, key=lambda x: x.get("relevance_score", 0), reverse=True)[:top_n]
     dashboard_url = get_env("DASHBOARD_URL", "https://<user>.github.io/ai-daily-report/")
 
-    send_feishu(top_items[:5], dashboard_url)
-    send_wechat(top_items[:5], dashboard_url)
+    send_feishu(top_items[:5], dashboard_url, overview=overview)
+    send_wechat(top_items[:5], dashboard_url, overview=overview)
 
     print(f"=== Done: {date.today().isoformat()} ===")
 

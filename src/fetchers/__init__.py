@@ -5,3 +5,5 @@ from .reddit import fetch_reddit
 from .producthunt import fetch_producthunt
 from .huggingface import fetch_huggingface
 from .indie_games import fetch_indie_games
+from .arxiv import fetch_arxiv
+from .steam import fetch_steam

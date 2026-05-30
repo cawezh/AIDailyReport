@@ -4,7 +4,7 @@ import requests
 from src.config import get_env
 
 
-def send_feishu(top5: list[dict], dashboard_url: str) -> bool:
+def send_feishu(top5: list[dict], dashboard_url: str, overview: dict = None) -> bool:
     """
     通过飞书 Webhook 发送日报卡片消息。
     top5: 前 5 个项目，每个含 title, url, cn_summary
@@ -16,11 +16,21 @@ def send_feishu(top5: list[dict], dashboard_url: str) -> bool:
 
     from datetime import date
     today = date.today().isoformat()
+    overview = overview or {}
 
     elements = [
         {"tag": "div", "text": {"tag": "lark_md", "content": f"**AI 技术日报 — {today}**"}},
-        {"tag": "hr"},
     ]
+
+    # 今日概览
+    overview_text = overview.get("overview", "")
+    if overview_text:
+        elements.append({
+            "tag": "div",
+            "text": {"tag": "lark_md", "content": f"📊 今日概览\n{overview_text}"},
+        })
+
+    elements.append({"tag": "hr"})
 
     for idx, item in enumerate(top5, 1):
         elements.append({

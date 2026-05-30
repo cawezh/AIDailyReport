@@ -1,4 +1,4 @@
-"""DeepSeek API — 精筛、分类、中文摘要、打分"""
+"""DeepSeek API — 精筛、分类、中文摘要、打分、整体概览"""
 import json
 import requests
 from src.config import get_env
@@ -9,11 +9,10 @@ DEEPSEEK_API_URL = "https://api.deepseek.com/chat/completions"
 def summarize(items: list[dict], batch_size: int = 10) -> list[dict]:
     """
     批量调用 DeepSeek 对抓取结果进行分类、打分、中文摘要。
-    返回增强后的 items，增加: cn_summary, relevance_score, creativity_score, is_highlight
+    返回增强后的 items，增加: cn_summary, relevance_score, creativity_score, is_highlight, is_novel
     """
     api_key = get_env("DEEPSEEK_API_KEY")
     if not api_key:
-        # 无 API Key 时降级为原始输出
         return _fallback_summary(items)
 
     results = []
@@ -45,12 +44,13 @@ def _summarize_batch(items: list[dict], api_key: str) -> list[dict]:
     prompt = f"""你是技术日报编辑。分析以下项目列表，用中文给出摘要和评分。
 
 返回 JSON 数组（只返回 JSON，不要任何其他文本）：
-[{{"id": <原id>, "cn_summary": "<30字中文摘要>", "relevance_score": 1-10, "creativity_score": 1-10, "is_highlight": true/false, "category": "<ai|game|android|internet>"}}]
+[{{"id": <原id>, "cn_summary": "<30字中文摘要>", "relevance_score": 1-10, "creativity_score": 1-10, "is_highlight": true/false, "is_novel": true/false, "category": "<ai|game|android|internet>"}}]
 
 评分标准：
 - relevance_score: 技术价值 + 热度 + 实用性
 - creativity_score: 创意新颖度（游戏项目重点看这个，全新玩法/机制得高分）
 - is_highlight: 属于"开源游戏创新创意"或"多智能体协同办公"领域时标记 true
+- is_novel: 是否属于"潜力股/新兴项目"。如果该项目已经非常知名（如 LangChain、AutoGPT、Flutter、Godot Engine 等成熟项目），则标记 false。如果是新兴的、少见的、有潜力的项目，则标记 true。目的是帮读者发现值得关注的新技术。
 - category: 选择最匹配的一个分类
 
 项目列表：
@@ -81,10 +81,65 @@ def _summarize_batch(items: list[dict], api_key: str) -> list[dict]:
         item["relevance_score"] = s.get("relevance_score", 5)
         item["creativity_score"] = s.get("creativity_score", 5)
         item["is_highlight"] = s.get("is_highlight", False)
+        item["is_novel"] = s.get("is_novel", False)
         if s.get("category"):
             item["primary_category"] = s["category"]
 
     return items
+
+
+def generate_overview(items: list[dict]) -> dict:
+    """
+    在所有 item 摘要完成后，再调用一次 DeepSeek，生成 2-3 句"今日技术趋势概述"。
+
+    返回: {"overview": "...", "hot_trends": ["...", "..."]}
+    """
+    api_key = get_env("DEEPSEEK_API_KEY")
+    if not api_key or not items:
+        return {"overview": "", "hot_trends": []}
+
+    # 取 top 20 个项目作为概览素材
+    top_items = sorted(items, key=lambda x: x.get("relevance_score", 0), reverse=True)[:20]
+    items_json = json.dumps([
+        {
+            "title": it["title"],
+            "cn_summary": it.get("cn_summary", ""),
+            "source": it.get("source", ""),
+            "is_novel": it.get("is_novel", False),
+        }
+        for it in top_items
+    ], ensure_ascii=False)
+
+    prompt = f"""你是技术日报主编。基于今天收录的以下项目，生成一份简短的"今日技术趋势概述"。
+
+返回 JSON（只返回 JSON，不要任何其他文本）：
+{{"overview": "<2-3句话的中文概述，总结今天的技术热点和趋势>", "hot_trends": ["<趋势1>", "<趋势2>", "<趋势3>"]}}
+
+今日项目：
+{items_json}"""
+
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json",
+    }
+    payload = {
+        "model": "deepseek-chat",
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0.5,
+        "max_tokens": 1000,
+    }
+
+    try:
+        resp = requests.post(DEEPSEEK_API_URL, headers=headers, json=payload, timeout=60)
+        resp.raise_for_status()
+        data = resp.json()
+        content = data["choices"][0]["message"]["content"]
+        result = json.loads(content)
+        print(f"[llm] Overview generated: {result.get('overview', '')[:60]}...")
+        return result
+    except Exception as e:
+        print(f"[llm] Overview generation failed: {e}")
+        return {"overview": "", "hot_trends": []}
 
 
 def _fallback_summary(items: list[dict]) -> list[dict]:
@@ -94,5 +149,6 @@ def _fallback_summary(items: list[dict]) -> list[dict]:
         item["relevance_score"] = 5
         item["creativity_score"] = 5
         item["is_highlight"] = False
+        item["is_novel"] = False
         item["primary_category"] = (item.get("categories") or ["internet"])[0]
     return items

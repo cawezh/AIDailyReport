@@ -40,6 +40,12 @@ categories:
     - gemini
     - chatbot
     - ai-agent
+    - large-language-model
+    - instruction-tuning
+    - reasoning
+    - retrieval-augmented
+    - arxiv
+    - paper
 
   game:
     - godot
