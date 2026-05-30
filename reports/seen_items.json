@@ -165,7 +165,8 @@
     "https://github.com/kitao/pyxel",
     "https://store.steampowered.com/app/1579999/",
     "https://store.steampowered.com/app/4654680/",
-    "https://store.steampowered.com/app/4701820/"
+    "https://store.steampowered.com/app/4701820/",
+    "https://store.steampowered.com/app/3159330/"
   ],
   "records": {
     "https://github.com/harry0703/MoneyPrinterTurbo": "2026-05-30",
@@ -333,6 +334,7 @@
     "https://github.com/kitao/pyxel": "2026-05-30",
     "https://store.steampowered.com/app/1579999/": "2026-05-30",
     "https://store.steampowered.com/app/4654680/": "2026-05-30",
-    "https://store.steampowered.com/app/4701820/": "2026-05-30"
+    "https://store.steampowered.com/app/4701820/": "2026-05-30",
+    "https://store.steampowered.com/app/3159330/": "2026-05-30"
   }
 }
