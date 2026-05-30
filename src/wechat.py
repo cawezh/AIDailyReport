@@ -43,7 +43,7 @@ def _fetch_recent_contexts(token: str) -> dict[str, str]:
 
     try:
         get_updates_buf = ""
-        for _ in range(5):  # 最多拉 5 页
+        for page in range(5):  # 最多拉 5 页
             resp = requests.post(
                 f"{ILINK_BASE}/ilink/bot/getupdates",
                 json={"get_updates_buf": get_updates_buf},
@@ -52,12 +52,14 @@ def _fetch_recent_contexts(token: str) -> dict[str, str]:
             )
             resp.raise_for_status()
             data = resp.json()
+            print(f"[wechat] getupdates page {page}: errcode={data.get('errcode')}, msgs={len(data.get('msgs',[]))}")
             get_updates_buf = data.get("get_updates_buf", get_updates_buf)
 
             for msg in data.get("msgs", []):
                 uid = msg.get("from_user_id", "")
                 if uid:
                     fresh[uid] = msg.get("context_token", "")
+                    print(f"[wechat]   found user: {uid}")
 
             if not data.get("msgs"):
                 break
@@ -178,8 +180,9 @@ def _send_text(bot_token: str, client_id: str, user_contexts: dict, full_text: s
             data = resp.json()
             if data.get("errcode", 0) == 0:
                 sent += 1
+                print(f"[wechat] sent OK to {user_id[:20]}")
             else:
-                print(f"[wechat] send to {user_id} failed: {data}")
+                print(f"[wechat] send FAILED to {user_id[:20]}: errcode={data.get('errcode')} errmsg={data.get('errmsg','')}")
         except requests.RequestException as e:
             print(f"[wechat] send error for {user_id}: {e}")
     print(f"[wechat] sent to {sent} users")
