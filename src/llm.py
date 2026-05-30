@@ -9,7 +9,7 @@ DEEPSEEK_API_URL = "https://api.deepseek.com/chat/completions"
 def summarize(items: list[dict], batch_size: int = 10) -> list[dict]:
     """
     批量调用 DeepSeek 对抓取结果进行分类、打分、中文摘要。
-    返回增强后的 items，增加: cn_summary, relevance_score, creativity_score, is_highlight, is_novel
+    返回增强后的 items，增加: cn_summary, relevance_score, innovation_score, value_score, is_highlight, is_novel
     """
     api_key = get_env("DEEPSEEK_API_KEY")
     if not api_key:
@@ -44,11 +44,20 @@ def _summarize_batch(items: list[dict], api_key: str) -> list[dict]:
     prompt = f"""你是技术日报编辑。分析以下项目列表，用中文给出摘要和评分。
 
 返回 JSON 数组（只返回 JSON，不要任何其他文本）：
-[{{"id": <原id>, "cn_summary": "<30字中文摘要>", "relevance_score": 1-10, "creativity_score": 1-10, "is_highlight": true/false, "is_novel": true/false, "category": "<ai|game|android|internet>"}}]
+[{{"id": <原id>, "cn_summary": "<30字中文摘要>", "relevance_score": 1-10, "innovation_score": 1-10, "value_score": 1-10, "is_highlight": true/false, "is_novel": true/false, "category": "<ai|game|android|internet>"}}]
 
 评分标准：
 - relevance_score: 技术价值 + 热度 + 实用性
-- creativity_score: 创意新颖度（游戏项目重点看这个，全新玩法/机制得高分）
+- innovation_score: 创新新颖度，按类型各有侧重：
+  * 论文：方法论/思路的原创性
+  * 游戏：玩法机制/交互方式的新意
+  * 产品：产品概念/商业模式的独特性
+  * 工具/框架：技术方案/架构的新颖程度
+- value_score: 实用落地价值，按类型各有侧重：
+  * 论文：学术影响力/引用潜力
+  * 游戏：可玩性/完成度/社区关注
+  * 产品：解决实际问题的程度/市场潜力
+  * 工具/框架：对开发效率的提升/生态价值
 - is_highlight: 属于"开源游戏创新创意"或"多智能体协同办公"领域时标记 true
 - is_novel: 是否属于"潜力股/新兴项目"。如果该项目已经非常知名（如 LangChain、AutoGPT、Flutter、Godot Engine 等成熟项目），则标记 false。如果是新兴的、少见的、有潜力的项目，则标记 true。目的是帮读者发现值得关注的新技术。
 - category: 选择最匹配的一个分类
@@ -79,7 +88,8 @@ def _summarize_batch(items: list[dict], api_key: str) -> list[dict]:
         s = score_map.get(idx, {})
         item["cn_summary"] = s.get("cn_summary", item.get("description", "")[:30])
         item["relevance_score"] = s.get("relevance_score", 5)
-        item["creativity_score"] = s.get("creativity_score", 5)
+        item["innovation_score"] = s.get("innovation_score", 5)
+        item["value_score"] = s.get("value_score", 5)
         item["is_highlight"] = s.get("is_highlight", False)
         item["is_novel"] = s.get("is_novel", False)
         if s.get("category"):
@@ -147,7 +157,8 @@ def _fallback_summary(items: list[dict]) -> list[dict]:
     for item in items:
         item["cn_summary"] = item.get("description", "")[:30] or item["title"]
         item["relevance_score"] = 5
-        item["creativity_score"] = 5
+        item["innovation_score"] = 5
+        item["value_score"] = 5
         item["is_highlight"] = False
         item["is_novel"] = False
         item["primary_category"] = (item.get("categories") or ["internet"])[0]

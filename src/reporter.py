@@ -39,8 +39,8 @@ def generate_report(
         if it not in godot_items and ("open-source" in it.get("description", "").lower() or "github" in it.get("url", ""))
     ]
 
-    # 创意新游（itch.io 来源 + 高创意分）
-    creative_games = [it for it in game_items if it.get("source") == "itch.io" or it.get("creativity_score", 0) >= 8]
+    # 创意新游（itch.io 来源 + 高创新分）
+    creative_games = [it for it in game_items if it.get("source") == "itch.io" or it.get("innovation_score", 0) >= 8]
 
     # 多智能体
     multi_agent_items = [it for it in items if it.get("is_highlight") and "agent" in it.get("matched_keywords", [])]
