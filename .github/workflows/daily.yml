@@ -31,9 +31,8 @@ jobs:
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
-          WECHAT_APPID: ${{ secrets.WECHAT_APPID }}
-          WECHAT_APPSECRET: ${{ secrets.WECHAT_APPSECRET }}
-          WECHAT_TEMPLATE_ID: ${{ secrets.WECHAT_TEMPLATE_ID }}
+          WECHAT_BOT_TOKEN: ${{ secrets.WECHAT_BOT_TOKEN }}
+          WECHAT_CLIENT_ID: ${{ secrets.WECHAT_CLIENT_ID }}
           DASHBOARD_URL: ${{ secrets.DASHBOARD_URL }}
         run: PYTHONPATH=. python src/main.py
 
