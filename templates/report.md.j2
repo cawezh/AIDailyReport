@@ -1,0 +1,96 @@
+# AI 技术日报 — {{ date }}
+
+## 📊 今日概览
+
+| 指标 | 数值 |
+|------|------|
+| 收录项目 | {{ total }} |
+| AI 相关 | {{ counts.ai }} |
+| 游戏相关 | {{ counts.game }} |
+| Android 相关 | {{ counts.android }} |
+| 互联网/基础设施 | {{ counts.internet }} |
+| 重点关注 | {{ highlights|length }} 个（创新游戏/多智能体） |
+
+---
+
+## 🔥 今日 Top 10
+
+| 排名 | 项目 | 来源 | 热度 | 摘要 |
+|------|------|------|------|------|
+{% for item in top10 %}
+| {{ loop.index }} | [{{ item.title }}]({{ item.url }}) | {{ item.source }} | {{ item.stars }} | {{ item.cn_summary }} |
+{% endfor %}
+
+---
+
+## 🤖 AI 相关
+
+| 项目 | Stars | 摘要 |
+|------|-------|------|
+{% for item in ai_items %}
+| [{{ item.title }}]({{ item.url }}) | {{ item.stars }} | {{ item.cn_summary }} |
+{% endfor %}
+
+---
+
+## 🎮 游戏相关
+
+### 🔧 GODOT 项目（重点关注）
+
+| 项目 | Stars | 摘要 | 创意度 |
+|------|-------|------|--------|
+{% for item in godot_items %}
+| [{{ item.title }}]({{ item.url }}) | {{ item.stars }} | {{ item.cn_summary }} | {{ item.creativity_score }}/10 |
+{% else %}
+> 今日暂无新的 GODOT 热门项目
+{% endfor %}
+
+### 开源游戏
+
+{% for item in game_oss_items %}
+- **[{{ item.title }}]({{ item.url }})** — {{ item.cn_summary }} (⭐ {{ item.stars }})
+{% else %}
+> 今日暂无新的开源游戏项目
+{% endfor %}
+
+### 💡 创意新游
+
+{% for item in creative_games %}
+- **[{{ item.title }}]({{ item.url }})** ({{ item.source }}) — {{ item.cn_summary }}
+{% else %}
+> 今日暂无新的创意游戏
+{% endfor %}
+
+---
+
+## 📱 Android 相关
+
+| 项目 | Stars | 摘要 |
+|------|-------|------|
+{% for item in android_items %}
+| [{{ item.title }}]({{ item.url }}) | {{ item.stars }} | {{ item.cn_summary }} |
+{% endfor %}
+
+---
+
+## 🌐 互联网 / 基础设施
+
+| 项目 | Stars | 摘要 |
+|------|-------|------|
+{% for item in internet_items %}
+| [{{ item.title }}]({{ item.url }}) | {{ item.stars }} | {{ item.cn_summary }} |
+{% endfor %}
+
+---
+
+## 📌 多智能体协同（重点关注）
+
+{% for item in multi_agent_items %}
+- **[{{ item.title }}]({{ item.url }})** — {{ item.cn_summary }}
+{% else %}
+> 今日暂无新的多智能体协同项目
+{% endfor %}
+
+---
+
+> 自动生成于 {{ date }} | 数据来源: GitHub, HN, Reddit, ProductHunt, HuggingFace, itch.io

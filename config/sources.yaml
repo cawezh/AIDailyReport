@@ -1,0 +1,54 @@
+sources:
+  github_trending:
+    enabled: true
+    max_items: 25
+  github_search:
+    enabled: true
+    queries:
+      - "godot"
+      - "godot-engine"
+      - "godot-plugin"
+      - "godot-game"
+      - "multi-agent"
+      - "agent-framework"
+      - "open-source-game"
+      - "llm"
+      - "rag"
+      - "android"
+      - "game-engine"
+    per_query: 10
+  hackernews:
+    enabled: true
+    max_items: 100
+  reddit:
+    enabled: true
+    subreddits:
+      - gamedev
+      - MachineLearning
+      - androiddev
+      - programming
+      - indiegames
+      - godot
+    per_subreddit: 25
+  producthunt:
+    enabled: true
+    max_items: 30
+  huggingface:
+    enabled: true
+    max_items: 20
+  indie_games:
+    enabled: true
+    max_items: 20
+
+llm:
+  model: "deepseek-chat"
+  max_tokens_per_batch: 4000
+  temperature: 0.3
+
+report:
+  top_n: 10
+  per_category: 8
+
+output:
+  reports_dir: "reports"
+  docs_dir: "docs"

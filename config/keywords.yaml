@@ -1,0 +1,75 @@
+categories:
+  ai:
+    - llm
+    - agent
+    - rag
+    - multimodal
+    - fine-tune
+    - inference
+    - transformer
+    - embedding
+    - vector-db
+    - prompt-engineering
+    - chain-of-thought
+    - openai
+    - claude
+    - deepseek
+    - ollama
+    - langchain
+    - llama-index
+    - sora
+    - stable-diffusion
+    - diffusion
+    - text-to-image
+    - text-to-video
+    - speech-to-text
+    - tts
+
+  game:
+    - godot
+    - godot-engine
+    - godot-plugin
+    - godot-game
+    - gdscript
+    - godot-shader
+    - godot-tool
+    - game-engine
+    - open-source-game
+    - indie-game
+    - bevy
+    - roguelike
+    - sandbox
+    - procedural-generation
+    - game-ai
+    - multiplayer
+    - pixel-art
+    - voxel
+    - game-jam
+
+  android:
+    - android
+    - jetpack-compose
+    - kotlin
+    - flutter
+    - react-native
+    - performance-optimization
+    - reverse-engineering
+    - android-security
+    - gradle
+    - kotlin-multiplatform
+
+  internet:
+    - distributed-system
+    - protocol
+    - devops
+    - kubernetes
+    - docker
+    - rust
+    - golang
+    - database
+    - streaming
+    - edge-computing
+    - webassembly
+    - wasm
+    - serverless
+    - microservices

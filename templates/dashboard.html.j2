@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 技术日报 — {{ date }}</title>
+<style>
+  :root { --bg: #0d1117; --card: #161b22; --border: #30363d; --text: #c9d1d9; --accent: #58a6ff; --green: #3fb950; --orange: #d2991d; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); padding: 20px; }
+  header { text-align: center; padding: 40px 0 20px; }
+  h1 { font-size: 1.8rem; color: var(--accent); }
+  .date-picker { margin: 20px 0; display: flex; justify-content: center; gap: 10px; }
+  .date-picker input { background: var(--card); border: 1px solid var(--border); color: var(--text); padding: 8px 16px; border-radius: 6px; font-size: 1rem; }
+  .tabs { display: flex; gap: 8px; margin: 20px 0; flex-wrap: wrap; justify-content: center; }
+  .tab { padding: 8px 20px; background: var(--card); border: 1px solid var(--border); border-radius: 20px; cursor: pointer; font-size: 0.9rem; }
+  .tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .stats { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; margin: 20px 0; }
+  .stat { background: var(--card); padding: 12px 24px; border-radius: 8px; text-align: center; min-width: 100px; }
+  .stat .num { font-size: 1.5rem; font-weight: bold; color: var(--accent); }
+  .stat .label { font-size: 0.8rem; color: #8b949e; }
+  .highlight-section { background: linear-gradient(135deg, #1a2332, #1a1a2e); border: 1px solid var(--orange); border-radius: 12px; padding: 20px; margin: 20px 0; }
+  .highlight-section h2 { color: var(--orange); }
+  .section { margin: 20px 0; }
+  .section h2 { font-size: 1.3rem; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+  .section h2 .emoji { margin-right: 8px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin: 10px 0; }
+  .card .title { font-size: 1rem; font-weight: 600; }
+  .card .title a { color: var(--accent); text-decoration: none; }
+  .card .meta { font-size: 0.8rem; color: #8b949e; margin-top: 4px; }
+  .card .summary { margin-top: 8px; font-size: 0.9rem; line-height: 1.5; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; margin-left: 6px; }
+  .badge-star { background: #1f3a23; color: var(--green); }
+  .badge-creative { background: #3a2f1f; color: var(--orange); }
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+  footer { text-align: center; padding: 40px 0 20px; color: #8b949e; font-size: 0.8rem; }
+  .search-box { display: flex; justify-content: center; margin: 16px 0; }
+  .search-box input { background: var(--card); border: 1px solid var(--border); color: var(--text); padding: 8px 16px; border-radius: 6px; width: 100%; max-width: 400px; font-size: 1rem; }
+  @media (max-width: 600px) { body { padding: 10px; } .stats { gap: 8px; } .stat { padding: 8px 12px; min-width: 70px; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>AI 技术日报</h1>
+  <p style="color:#8b949e;margin-top:8px;">{{ date }}</p>
+</header>
+
+<div class="stats">
+  <div class="stat"><div class="num">{{ total }}</div><div class="label">收录项目</div></div>
+  <div class="stat"><div class="num">{{ counts.ai }}</div><div class="label">AI</div></div>
+  <div class="stat"><div class="num">{{ counts.game }}</div><div class="label">游戏</div></div>
+  <div class="stat"><div class="num">{{ counts.android }}</div><div class="label">Android</div></div>
+  <div class="stat"><div class="num">{{ counts.internet }}</div><div class="label">互联网</div></div>
+</div>
+
+<div class="search-box">
+  <input type="text" id="search" placeholder="搜索项目..." oninput="filterCards(this.value)">
+</div>
+
+<div class="tabs">
+  <div class="tab active" onclick="switchTab('all')">全部</div>
+  <div class="tab" onclick="switchTab('ai')">AI</div>
+  <div class="tab" onclick="switchTab('game')">游戏</div>
+  <div class="tab" onclick="switchTab('godot')">GODOT</div>
+  <div class="tab" onclick="switchTab('android')">Android</div>
+  <div class="tab" onclick="switchTab('internet')">互联网</div>
+  <div class="tab" onclick="switchTab('highlight')">重点关注</div>
+</div>
+
+{% if highlights %}
+<div class="highlight-section" id="tab-highlight">
+  <h2>重点关注 — 创新游戏 & 多智能体协同</h2>
+  {% for item in highlights %}
+  <div class="card" data-category="highlight" data-keywords="{{ item.title }} {{ item.cn_summary }}">
+    <div class="title"><a href="{{ item.url }}" target="_blank">{{ item.title }}</a><span class="badge badge-creative">创意 {{ item.creativity_score }}/10</span></div>
+    <div class="meta">来源: {{ item.source }} | 热度: {{ item.stars }}</div>
+    <div class="summary">{{ item.cn_summary }}</div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% for cat in ['ai', 'game', 'android', 'internet'] %}
+<div class="section tab-content {% if cat == 'ai' %}active{% endif %}" id="tab-{{ cat }}">
+  <h2>{{ cat_labels[cat] }}</h2>
+  {% for item in categorized[cat] %}
+  <div class="card" data-category="{{ item.primary_category }}" data-keywords="{{ item.title }} {{ item.cn_summary }}">
+    <div class="title"><a href="{{ item.url }}" target="_blank">{{ item.title }}</a>
+      {% if item.stars %}<span class="badge badge-star">⭐ {{ item.stars }}</span>{% endif %}
+    </div>
+    <div class="meta">来源: {{ item.source }}{% if item.language %} | 语言: {{ item.language }}{% endif %}</div>
+    <div class="summary">{{ item.cn_summary }}</div>
+  </div>
+  {% else %}
+  <p style="color:#8b949e;">今日暂无收录</p>
+  {% endfor %}
+</div>
+{% endfor %}
+
+<footer>自动生成于 {{ date }} | 数据来源: GitHub, Hacker News, Reddit, ProductHunt, HuggingFace, itch.io</footer>
+
+<script>
+function switchTab(tab) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.querySelector(`.tab:nth-child(${['all','ai','game','godot','android','internet','highlight'].indexOf(tab)+1})`).classList.add('active');
+  if (tab === 'all') {
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.add('active'));
+  } else {
+    document.getElementById('tab-' + tab).classList.add('active');
+  }
+}
+function filterCards(query) {
+  const q = query.toLowerCase();
+  document.querySelectorAll('.card').forEach(card => {
+    const kw = card.getAttribute('data-keywords').toLowerCase();
+    card.style.display = kw.includes(q) ? '' : 'none';
+  });
+}
+</script>
+</body>
+</html>
