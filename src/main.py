@@ -317,7 +317,14 @@ def run_weekly():
 
 def main():
     today = date.today()
-    # Sunday = 6
+    today_str = today.isoformat()
+
+    # 当天已跑过则跳过
+    pool = _load_pool()
+    if today_str in pool.get("daily_top5", {}):
+        print(f"[guard] Already ran today ({today_str}), skipping")
+        return
+
     if today.weekday() == 6:
         run_weekly()
     else:
