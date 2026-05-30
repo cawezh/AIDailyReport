@@ -205,43 +205,42 @@ def generate_index_html() -> Path:
       .date-nav {{ display: flex; align-items: center; justify-content: center; gap: 12px; margin: 12px 0; }}
       .date-nav button {{ background: var(--card); border: 1px solid var(--border); color: var(--text); padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 1rem; }}
       .date-nav button:hover {{ border-color: var(--accent); }}
-      .date-nav select {{ background: var(--card); border: 1px solid var(--border); color: var(--text); padding: 6px 12px; border-radius: 6px; font-size: 1rem; cursor: pointer; }}
-      .stats {{ display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin: 16px 0; }}
-      .stat {{ background: var(--card); padding: 10px 18px; border-radius: 8px; text-align: center; min-width: 80px; cursor: pointer; transition: border-color 0.2s; border: 1px solid var(--border); }}
-      .stat:hover {{ border-color: var(--accent); }}
-      .stat.active {{ border-color: var(--accent); background: #1a2332; }}
-      .stat .num {{ font-size: 1.3rem; font-weight: bold; color: var(--accent); }}
-      .stat .label {{ font-size: 0.75rem; color: #8b949e; }}
-      .overview-box {{ background: linear-gradient(135deg, #1a2332, #16233a); border: 1px solid var(--accent); border-radius: 12px; padding: 16px; margin: 16px auto; display: none; }}
-      .overview-box p {{ line-height: 1.6; }}
-      .trends {{ display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }}
-      .trend {{ background: #1f3a5f; color: var(--accent); padding: 2px 10px; border-radius: 12px; font-size: 0.8rem; }}
-      .search-box {{ display: flex; justify-content: center; margin: 12px 0; }}
-      .search-box input {{ background: var(--card); border: 1px solid var(--border); color: var(--text); padding: 8px 16px; border-radius: 6px; width: 100%; max-width: 400px; font-size: 1rem; }}
+      .date-nav select {{ background: var(--card); border: 1px solid var(--border); color: var(--text); padding: 6px 12px; border-radius: 6px; font-size: 1rem; cursor: pointer; max-width: 200px; }}
+      .overview-box {{ background: linear-gradient(135deg, #1a2332, #16233a); border: 1px solid var(--accent); border-radius: 12px; padding: 14px; margin: 12px auto; display: none; }}
+      .overview-box p {{ line-height: 1.6; font-size: 0.92rem; }}
+      .trends {{ display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }}
+      .trend {{ background: #1f3a5f; color: var(--accent); padding: 2px 10px; border-radius: 12px; font-size: 0.78rem; }}
+      /* ── L1 Tabs ── */
+      .l1-tabs {{ display: flex; gap: 6px; margin: 14px 0 8px; flex-wrap: wrap; justify-content: center; }}
+      .l1-tab {{ padding: 6px 16px; background: var(--card); border: 1px solid var(--border); border-radius: 16px; cursor: pointer; font-size: 0.88rem; user-select: none; white-space: nowrap; }}
+      .l1-tab:hover {{ border-color: var(--accent); }}
+      .l1-tab.active {{ background: var(--accent); color: #fff; border-color: var(--accent); }}
+      .l1-tab .cnt {{ font-size: 0.75rem; opacity: 0.7; margin-left: 2px; }}
+      /* ── L2 Tabs ── */
+      .l2-tabs {{ display: flex; gap: 4px; margin: 6px 0 12px; flex-wrap: wrap; }}
+      .l2-tab {{ padding: 4px 12px; background: transparent; border: 1px solid var(--border); border-radius: 12px; cursor: pointer; font-size: 0.8rem; user-select: none; white-space: nowrap; }}
+      .l2-tab:hover {{ border-color: var(--accent); color: var(--accent); }}
+      .l2-tab.active {{ background: #1f3a5f; color: var(--accent); border-color: var(--accent); }}
+      /* ── Content ── */
+      .l1-panel {{ display: none; }}
+      .l1-panel.active {{ display: block; }}
+      .l2-panel {{ display: none; }}
+      .l2-panel.active {{ display: block; }}
+      .search-box {{ display: flex; justify-content: center; margin: 10px 0; }}
+      .search-box input {{ background: var(--card); border: 1px solid var(--border); color: var(--text); padding: 7px 14px; border-radius: 6px; width: 100%; max-width: 400px; font-size: 0.95rem; }}
       .search-box input:focus {{ outline: none; border-color: var(--accent); }}
-      .l1-section {{ margin: 16px 0; display: none; }}
-      .l1-section.active {{ display: block; }}
-      .l1-title {{ font-size: 1.2rem; margin: 20px 0 10px; padding-bottom: 6px; border-bottom: 2px solid var(--accent); display: flex; align-items: center; gap: 8px; }}
-      .l1-title .count {{ font-size: 0.85rem; color: #8b949e; font-weight: normal; }}
-      .l2-group {{ margin: 12px 0; }}
-      .l2-header {{ font-size: 1rem; font-weight: 600; padding: 10px 14px; background: var(--card); border: 1px solid var(--border); border-radius: 8px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; }}
-      .l2-header:hover {{ border-color: var(--accent); }}
-      .l2-header .arrow {{ transition: transform 0.2s; }}
-      .l2-header.open .arrow {{ transform: rotate(90deg); }}
-      .l2-body {{ display: none; padding: 4px 0 4px 8px; }}
-      .l2-body.open {{ display: block; }}
-      .card {{ background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 12px; margin: 6px 0; }}
-      .card .title {{ font-size: 0.95rem; font-weight: 600; }}
+      .card {{ background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 10px 14px; margin: 5px 0; }}
+      .card .title {{ font-size: 0.92rem; font-weight: 600; }}
       .card .title a {{ color: var(--accent); text-decoration: none; }}
-      .card .meta {{ font-size: 0.78rem; color: #8b949e; margin-top: 2px; }}
-      .card .summary {{ margin-top: 6px; font-size: 0.88rem; line-height: 1.5; }}
-      .badge {{ display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.72rem; margin-left: 6px; }}
+      .card .meta {{ font-size: 0.75rem; color: #8b949e; margin-top: 2px; }}
+      .card .summary {{ margin-top: 5px; font-size: 0.85rem; line-height: 1.5; }}
+      .badge {{ display: inline-block; padding: 1px 7px; border-radius: 10px; font-size: 0.7rem; margin-left: 5px; }}
       .badge-star {{ background: #1f3a23; color: var(--green); }}
       .badge-creative {{ background: #3a2f1f; color: var(--orange); }}
       .loading {{ text-align: center; padding: 40px; color: #8b949e; }}
-      .empty {{ text-align: center; padding: 20px; color: #8b949e; font-style: italic; }}
+      .no-items {{ text-align: center; padding: 16px; color: #8b949e; font-style: italic; font-size: 0.88rem; }}
       footer {{ text-align: center; padding: 30px 0 20px; color: #8b949e; font-size: 0.8rem; }}
-      @media (max-width: 600px) {{ body {{ padding: 10px; }} .stats {{ gap: 6px; }} .stat {{ padding: 6px 10px; min-width: 60px; }} }}
+      @media (max-width: 600px) {{ body {{ padding: 10px; }} .l1-tab {{ padding: 5px 12px; font-size: 0.82rem; }} .l2-tab {{ padding: 3px 10px; font-size: 0.75rem; }} }}
     </style>
     </head>
     <body>
@@ -252,11 +251,14 @@ def generate_index_html() -> Path:
         <select id="dateSelect" onchange="loadDate(this.value)"></select>
         <button onclick="nextDay()" title="后一天">▶</button>
       </div>
-      <div class="stats" id="stats"></div>
       <div class="overview-box" id="overviewBox">
         <p id="overviewText"></p>
         <div class="trends" id="trendsList"></div>
       </div>
+      <!-- L1 Tabs -->
+      <div class="l1-tabs" id="l1Tabs"></div>
+      <!-- L2 Tabs (dynamic per L1) -->
+      <div class="l2-tabs" id="l2Tabs"></div>
       <div class="search-box">
         <input type="text" id="search" placeholder="搜索项目..." oninput="filterCards(this.value)">
       </div>
@@ -269,6 +271,7 @@ def generate_index_html() -> Path:
     var CURRENT_DATA = null;
     var CURRENT_DATE = '';
     var ACTIVE_L1 = '全部';
+    var ACTIVE_L2 = '全部';
     var ALL_DATES = [];
 
     async function init() {{
@@ -300,7 +303,6 @@ def generate_index_html() -> Path:
       document.getElementById('dateSelect').value = d;
       window.location.hash = d;
       document.getElementById('content').innerHTML = '<div class="loading">加载中...</div>';
-
       try {{
         var r = await fetch('data/' + d + '.json');
         CURRENT_DATA = await r.json();
@@ -326,20 +328,6 @@ def generate_index_html() -> Path:
       if (!d) return;
       document.title = 'AI 技术日报 — ' + d.date;
 
-      // 统计卡片
-      var stats = document.getElementById('stats');
-      var cats = ['全部', '游戏', 'AI', '互联网', '产品', '科研'];
-      var counts = {{}};
-      cats.slice(1).forEach(function(c) {{ counts[c] = 0; }});
-      Object.entries(d.categories || {{}}).forEach(function(e) {{ counts[e[0]] = e[1].count; }});
-      counts['全部'] = d.total;
-
-      stats.innerHTML = cats.map(function(c, i) {{
-        return '<div class="stat' + (i === 0 ? ' active' : '') + '" onclick="filterL1(\\'' + c + '\\', this)" data-cat="' + c + '">'
-          + '<div class="num">' + (counts[c] || 0) + '</div>'
-          + '<div class="label">' + c + '</div></div>';
-      }}).join('');
-
       // 概览
       var ov = d.overview || {{}};
       var ovBox = document.getElementById('overviewBox');
@@ -354,65 +342,140 @@ def generate_index_html() -> Path:
         ovBox.style.display = 'none';
       }}
 
-      // 分类内容
-      var content = document.getElementById('content');
+      // 计算各L1数量
       var l1Order = ['游戏', 'AI', '互联网', '产品', '科研'];
-      var l1Icons = {{'游戏': '🎮', 'AI': '🤖', '互联网': '🌐', '产品': '🚀', '科研': '📄'}};
+      var counts = {{}};
+      l1Order.forEach(function(c) {{ counts[c] = (d.categories && d.categories[c]) ? d.categories[c].count : 0; }});
+      counts['全部'] = d.total;
 
+      // L1 Tabs
+      var l1Tabs = document.getElementById('l1Tabs');
+      l1Tabs.innerHTML = ['全部'].concat(l1Order).map(function(c) {{
+        var icon = {{'游戏':'🎮','AI':'🤖','互联网':'🌐','产品':'🚀','科研':'📄'}}[c] || '';
+        return '<div class="l1-tab' + (c === ACTIVE_L1 ? ' active' : '') + '" onclick="switchL1(\\'' + c + '\\')">'
+          + icon + ' ' + c + ' <span class="cnt">' + (counts[c] || 0) + '</span></div>';
+      }}).join('');
+
+      // Content: render all L1 panels (hidden except active)
+      var content = document.getElementById('content');
       content.innerHTML = l1Order.map(function(l1) {{
         var l1Data = (d.categories || {{}})[l1];
-        if (!l1Data || l1Data.count === 0) return '';
-        var icon = l1Icons[l1] || '';
+        if (!l1Data) return '';
         var children = l1Data.children || [];
-        return '<div class="l1-section active" data-l1="' + l1 + '">'
-          + '<div class="l1-title">' + icon + ' ' + l1 + ' <span class="count">(' + l1Data.count + '项)</span></div>'
-          + children.map(function(ch, ci) {{
+        // build item cards for each L2
+        return '<div class="l1-panel' + (l1 === ACTIVE_L1 || ACTIVE_L1 === '全部' ? ' active' : '') + '" data-l1="' + l1 + '">'
+          + children.map(function(ch) {{
               var itemsHtml = ch.items.map(function(it) {{
                 var badges = '';
                 if (it.stars) badges += '<span class="badge badge-star">⭐ ' + it.stars + '</span>';
                 if (it.is_novel) badges += '<span class="badge badge-creative">潜力股</span>';
                 if (it.creativity_score) badges += '<span class="badge badge-creative">创意 ' + it.creativity_score + '/10</span>';
                 var kw = (it.title + ' ' + (it.cn_summary || '') + ' ' + (it.source || '')).toLowerCase();
-                return '<div class="card" data-keywords="' + kw + '" data-l1="' + l1 + '">'
+                return '<div class="card" data-keywords="' + kw + '">'
                   + '<div class="title"><a href="' + it.url + '" target="_blank">' + it.title + '</a>' + badges + '</div>'
                   + '<div class="meta">来源: ' + (it.source || '') + '</div>'
                   + '<div class="summary">' + (it.cn_summary || it.description || '') + '</div>'
                   + '</div>';
               }}).join('');
-              return '<div class="l2-group">'
-                + '<div class="l2-header' + (ci === 0 ? ' open' : '') + '" onclick="toggleL2(this)">'
-                + '<span>' + ch.name + ' (' + ch.count + ')</span>'
-                + '<span class="arrow">▶</span></div>'
-                + '<div class="l2-body' + (ci === 0 ? ' open' : '') + '">' + itemsHtml + '</div>'
-                + '</div>';
+              return '<div class="l2-panel' + (ch.name === _lastActiveL2(l1) ? ' active' : '') + '" data-l1="' + l1 + '" data-l2="' + ch.name + '">'
+                + (itemsHtml || '<div class="no-items">暂无项目</div>') + '</div>';
           }}).join('')
           + '</div>';
       }}).join('');
 
-      ACTIVE_L1 = '全部';
-      filterL1('全部', document.querySelector('.stat[data-cat="全部"]'));
+      // After rendering content, render L2 tabs for active L1
+      renderL2Tabs(ACTIVE_L1 === '全部' ? l1Order[0] : ACTIVE_L1);
     }}
 
-    function toggleL2(el) {{
-      el.classList.toggle('open');
-      el.nextElementSibling.classList.toggle('open');
+    function _lastActiveL2(l1) {{
+      // default first L2 as active
+      var d = CURRENT_DATA;
+      if (!d || !d.categories || !d.categories[l1]) return '';
+      var children = d.categories[l1].children || [];
+      return children.length > 0 ? children[0].name : '';
     }}
 
-    function filterL1(cat, el) {{
-      ACTIVE_L1 = cat;
-      document.querySelectorAll('.stat').forEach(function(s) {{ s.classList.remove('active'); }});
-      if (el) el.classList.add('active');
+    function renderL2Tabs(l1) {{
+      var l2Tabs = document.getElementById('l2Tabs');
+      var d = CURRENT_DATA;
+      if (!d || !d.categories || !d.categories[l1]) {{
+        l2Tabs.innerHTML = '';
+        return;
+      }}
+      var children = d.categories[l1].children || [];
+      var tabs = ['全部'];
+      children.forEach(function(ch) {{ tabs.push(ch.name); }});
+      l2Tabs.innerHTML = tabs.map(function(t) {{
+        return '<div class="l2-tab' + (t === ACTIVE_L2 ? ' active' : '') + '" onclick="switchL2(\\'' + t + '\\')">'
+          + t + '</div>';
+      }}).join('');
 
-      document.querySelectorAll('.l1-section').forEach(function(s) {{
-        if (cat === '全部') {{ s.classList.add('active'); }}
-        else {{ s.classList.toggle('active', s.getAttribute('data-l1') === cat); }}
+      // Apply current L2 filter
+      if (ACTIVE_L1 !== l1) {{
+        ACTIVE_L2 = '全部';
+        // update active tab visually
+        var allTab = l2Tabs.querySelector('.l2-tab');
+        if (allTab) l2Tabs.querySelectorAll('.l2-tab').forEach(function(t, i) {{ t.classList.toggle('active', i === 0); }});
+      }}
+      applyL2Filter();
+    }}
+
+    function switchL1(l1) {{
+      ACTIVE_L1 = l1;
+      ACTIVE_L2 = '全部';
+
+      // Update L1 tab active states
+      document.querySelectorAll('.l1-tab').forEach(function(t) {{
+        t.classList.toggle('active', t.textContent.trim().startsWith(l1));
+      }});
+
+      // Show/hide L1 panels
+      document.querySelectorAll('.l1-panel').forEach(function(p) {{
+        if (l1 === '全部') {{
+          p.classList.add('active');
+        }} else {{
+          p.classList.toggle('active', p.getAttribute('data-l1') === l1);
+        }}
+      }});
+
+      // Render L2 tabs for this L1 (or first L1 if '全部')
+      var targetL1 = l1 === '全部' ? (document.querySelector('.l1-panel') ? document.querySelector('.l1-panel').getAttribute('data-l1') : '游戏') : l1;
+      renderL2Tabs(targetL1);
+    }}
+
+    function switchL2(l2) {{
+      ACTIVE_L2 = l2;
+
+      // Update L2 tab active states
+      document.querySelectorAll('.l2-tab').forEach(function(t) {{
+        t.classList.toggle('active', t.textContent.trim() === l2);
+      }});
+
+      applyL2Filter();
+    }}
+
+    function applyL2Filter() {{
+      // Find visible L1 panels
+      var visiblePanels = document.querySelectorAll('.l1-panel.active');
+      visiblePanels.forEach(function(panel) {{
+        var l1 = panel.getAttribute('data-l1');
+        var l2Panels = panel.querySelectorAll('.l2-panel');
+        l2Panels.forEach(function(lp) {{
+          if (ACTIVE_L2 === '全部') {{
+            lp.classList.add('active');
+          }} else {{
+            lp.classList.toggle('active', lp.getAttribute('data-l2') === ACTIVE_L2);
+          }}
+        }});
       }});
     }}
 
     function filterCards(query) {{
       var q = query.toLowerCase().trim();
-      // 搜索时显示全部 L1
-      if (q) filterL1('全部', document.querySelector('.stat[data-cat="全部"]'));
+      // 搜索时展开全部显示
+      if (q && ACTIVE_L1 !== '全部') {{
+        switchL1('全部');
+      }}
       document.querySelectorAll('.card').forEach(function(card) {{
         var kw = (card.getAttribute('data-keywords') || '').toLowerCase();
         card.style.display = (!q || kw.includes(q)) ? '' : 'none';
