@@ -160,7 +160,7 @@ function render() {
   var l1Tabs = document.getElementById('l1Tabs');
   l1Tabs.innerHTML = ['全部'].concat(l1Order).map(function(c) {
     var icon = {'游戏':'🎮','AI':'🤖','互联网':'🌐','产品':'🚀','科研':'📄'}[c] || '';
-    return '<div class="l1-tab' + (c === ACTIVE_L1 ? ' active' : '') + '" onclick="switchL1(\'' + c + '\')">'
+    return '<div class="l1-tab' + (c === ACTIVE_L1 ? ' active' : '') + '" data-cat="' + c + '" onclick="switchL1(\'' + c + '\')">'
       + icon + ' ' + c + ' <span class="cnt">' + (counts[c] || 0) + '</span></div>';
   }).join('');
 
@@ -234,23 +234,24 @@ function switchL1(l1) {
   SEARCHING = false;
   document.getElementById('search').value = '';
 
-  // Update L1 tab active states
+  // Update L1 tab active by data-cat attribute
   document.querySelectorAll('.l1-tab').forEach(function(t) {
-    t.classList.toggle('active', t.textContent.trim().startsWith(l1));
+    t.classList.toggle('active', t.getAttribute('data-cat') === l1);
   });
 
-  // Show/hide L1 panels
+  // Show/hide L1 panels + all their L2 sub-panels
   document.querySelectorAll('.l1-panel').forEach(function(p) {
-    if (l1 === '全部') {
-      p.classList.add('active');
-    } else {
-      p.classList.toggle('active', p.getAttribute('data-l1') === l1);
-    }
+    var show = (l1 === '全部') || (p.getAttribute('data-l1') === l1);
+    p.classList.toggle('active', show);
+    // 展开该 panel 下所有 L2 面板
+    p.querySelectorAll('.l2-panel').forEach(function(lp) { lp.classList.toggle('active', show); });
   });
 
-  // Render L2 tabs for this L1 (or first L1 if '全部')
-  var targetL1 = l1 === '全部' ? (document.querySelector('.l1-panel') ? document.querySelector('.l1-panel').getAttribute('data-l1') : '游戏') : l1;
-  renderL2Tabs(targetL1);
+  if (l1 === '全部') {
+    document.getElementById('l2Tabs').innerHTML = '';
+  } else {
+    renderL2Tabs(l1);
+  }
 }
 
 function switchL2(l2) {
