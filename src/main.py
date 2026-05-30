@@ -102,6 +102,58 @@ def _save_seen_weekly(urls: set):
     SEEN_WEEKLY_FILE.write_text(json.dumps({"week": _week_key(), "urls": list(urls)}, ensure_ascii=False))
 
 
+def _curate_daily(items: list[dict]) -> list[dict]:
+    """精选日报：每 L1 最多 5 项，每 L2 最多 1 项"""
+    from src.dashboard import _pick_l1, L2_RULES
+
+    # 按 L1 分组
+    l1_buckets = {}
+    for it in items:
+        l1 = _pick_l1(it)
+        l1_buckets.setdefault(l1, []).append(it)
+
+    curated = []
+    for l1, pool in l1_buckets.items():
+        # 按 L2 规则分组
+        assigned = set()
+        l2_groups = {}
+        for rule_l1, l2_name, fn in L2_RULES:
+            if rule_l1 != l1:
+                continue
+            matched = []
+            for i, it in enumerate(pool):
+                if i not in assigned and fn(it):
+                    matched.append(it)
+                    assigned.add(i)
+            if matched:
+                matched.sort(key=lambda x: x.get("relevance_score", 0), reverse=True)
+                l2_groups[l2_name] = matched
+
+        # 每个 L2 取 Top 1
+        for l2_name, group in l2_groups.items():
+            if group:
+                curated.append(group[0])
+
+        # 如果该 L1 精选数量不足 5，从剩余中补齐
+        l1_picks = [c for c in curated if _pick_l1(c) == l1]
+        if len(l1_picks) < 5:
+            unassigned = [it for i, it in enumerate(pool) if i not in assigned]
+            unassigned.sort(key=lambda x: x.get("relevance_score", 0), reverse=True)
+            for it in unassigned:
+                if len([c for c in curated if _pick_l1(c) == l1]) >= 5:
+                    break
+                curated.append(it)
+
+    # 整体排重 + 按 relevance 排序
+    seen = set()
+    result = []
+    for it in sorted(curated, key=lambda x: x.get("relevance_score", 0), reverse=True):
+        if it["url"] not in seen:
+            result.append(it)
+            seen.add(it["url"])
+    return result
+
+
 # ── Daily (Mon-Sat) ─────────────────────────────────────────
 
 def run_daily():
@@ -138,17 +190,20 @@ def run_daily():
         seen.add(it["url"])
     _save_seen_weekly(seen)
 
-    # 挑选 Top 5
+    # 挑选 Top 5 推送
     top5 = sorted(summarized, key=lambda x: x.get("relevance_score", 0), reverse=True)[:5]
+
+    # 精选日报展示 (每 L1 最多 5 项，每 L2 最多 1 项)
+    curated = _curate_daily(summarized)
+    print(f"[curate] Daily highlights: {len(curated)} items")
 
     # 推送
     dashboard_url = get_env("DASHBOARD_URL", "https://cawezh.github.io/AIDailyReport/")
     send_feishu(top5, dashboard_url)
     send_wechat(top5, dashboard_url)
 
-    # 存入本周 pool
+    # 存入本周 pool（完整数据）
     pool = _load_pool()
-    # 去重后追加
     existing_urls = {it["url"] for it in pool["items"]}
     for it in summarized:
         if it["url"] not in existing_urls:
@@ -156,7 +211,15 @@ def run_daily():
     pool["daily_top5"][today] = [it["title"] for it in top5]
     _save_pool(pool)
 
-    print(f"[daily] Top 5 pushed, pool now has {len(pool['items'])} items")
+    # 生成精选 Dashboard
+    overview = generate_overview(curated)
+    data_path = save_daily_data(curated, overview=overview)
+    print(f"[dashboard] Saved curated data to {data_path}")
+    update_manifest(curated, overview=overview)
+    generate_index_html()
+    print("[dashboard] Generated SPA index")
+
+    print(f"[daily] Top 5 pushed, pool has {len(pool['items'])} items, dashboard shows {len(curated)} picks")
     print(f"=== Done: {today} ===")
 
 
