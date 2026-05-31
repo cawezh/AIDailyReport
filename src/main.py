@@ -100,8 +100,9 @@ def run_daily():
 
     save_seen(daily_picks)
 
-    # 推送
-    url = get_env("DASHBOARD_URL", "https://cawezh.github.io/AIDailyReport/")
+    # 推送（链接带日期 hash，直接跳到当天）
+    base_url = get_env("DASHBOARD_URL", "https://cawezh.github.io/AIDailyReport/")
+    url = f"{base_url}#{today}"
     send_feishu(daily_picks, url)
     send_wechat(daily_picks, url)
 
@@ -167,7 +168,8 @@ def run_weekly():
     generate_index_html()
 
     # 推送周报
-    url = get_env("DASHBOARD_URL", "https://cawezh.github.io/AIDailyReport/")
+    base_url = get_env("DASHBOARD_URL", "https://cawezh.github.io/AIDailyReport/")
+    url = f"{base_url}#{week}"
     l1_order = ['游戏', 'AI', '互联网', '产品', '科研']
     top5 = []
     for l1 in l1_order:
