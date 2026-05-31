@@ -135,7 +135,8 @@ def run_weekly():
     print(f"[weekly] Pool: {len(items)} items")
 
     if not items:
-        print("[weekly] No items this week")
+        print("[weekly] No items this week, fallback to daily")
+        run_daily()
         return
 
     # 去重
