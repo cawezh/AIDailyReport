@@ -130,33 +130,32 @@ def _ensure_data_dir():
     DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 
-def save_daily_data(items: list[dict], overview: dict = None):
-    """保存当天分类数据到 docs/data/{date}.json"""
+def save_daily_data(items: list[dict], overview: dict = None, key: str = None):
+    """保存分类数据到 docs/data/{key}.json，默认当天日期。周报用 week_key"""
     _ensure_data_dir()
 
-    # 热度统一
     for it in items:
         it["stars"] = it.get("stars", 0) or it.get("points", 0) or it.get("score", 0) or it.get("votes", 0)
 
-    today = date.today().isoformat()
+    day_key = key or date.today().isoformat()
     categorized = classify(items)
 
     payload = {
-        "date": today,
+        "date": day_key,
         "total": len(items),
         "overview": overview or {"overview": "", "hot_trends": []},
         "categories": categorized,
     }
-    out = DATA_DIR / f"{today}.json"
+    out = DATA_DIR / f"{day_key}.json"
     out.write_text(json.dumps(payload, ensure_ascii=False))
     return out
 
 
-def update_manifest(items: list[dict], overview: dict = None):
-    """更新 manifest.json，保持已有记录"""
+def update_manifest(items: list[dict], overview: dict = None, key: str = None, weekly: bool = False):
+    """更新 manifest.json"""
     _ensure_data_dir()
 
-    today = date.today().isoformat()
+    day_key = key or date.today().isoformat()
     overview = overview or {}
 
     mf = DATA_DIR / "manifest.json"
@@ -168,15 +167,16 @@ def update_manifest(items: list[dict], overview: dict = None):
     import collections
     l1_counts = collections.Counter(_pick_l1(it) for it in items)
     entry = {
-        "date": today,
+        "date": day_key,
         "total": len(items),
         "overview": overview.get("overview", "")[:80],
         "counts": dict(l1_counts),
+        "type": "weekly" if weekly else "daily",
     }
-    # upsert: 更新已有日期或新增
+    # upsert
     replaced = False
     for i, d in enumerate(dates):
-        if d["date"] == today:
+        if d["date"] == day_key:
             dates[i] = entry
             replaced = True
             break

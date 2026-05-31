@@ -152,6 +152,60 @@ def generate_overview(items: list[dict]) -> dict:
         return {"overview": "", "hot_trends": []}
 
 
+def analyze_weekly(items: list[dict]) -> list[dict]:
+    """
+    对本周精选项目做深度分析（每项 50-80 字）。
+    返回增强后的 items，cn_summary 替换为深度分析文本。
+    """
+    api_key = get_env("DEEPSEEK_API_KEY")
+    if not api_key:
+        return items  # 无 key 时保持原有摘要
+
+    results = []
+    for i in range(0, len(items), 10):
+        batch = items[i:i + 10]
+        try:
+            results.extend(_analyze_batch(batch, api_key))
+        except Exception:
+            results.extend(batch)
+    return results
+
+
+def _analyze_batch(items: list[dict], api_key: str) -> list[dict]:
+    items_json = json.dumps([
+        {"id": idx, "title": it["title"], "source": it.get("source", ""),
+         "cn_summary": it.get("cn_summary", ""), "description": it.get("description", "")[:200]}
+        for idx, it in enumerate(items)
+    ], ensure_ascii=False)
+
+    prompt = f"""你是技术周报主编。对以下本周精选项目做深度分析。
+
+返回 JSON 数组（只返回 JSON）：
+[{{"id": <原id>, "deep_summary": "<50-80字深度分析>", "why_important": "<10-20字：为什么值得关注>"}}]
+
+分析要求：
+- deep_summary: 不是简单翻译，要说明项目解决了什么问题、用了什么技术方案、有什么创新点
+- why_important: 对开发者的价值/启示，一句话
+
+项目列表：
+{items_json}"""
+
+    headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
+    payload = {"model": "deepseek-chat", "messages": [{"role": "user", "content": prompt}], "temperature": 0.3, "max_tokens": 4000}
+    resp = requests.post(DEEPSEEK_API_URL, headers=headers, json=payload, timeout=120)
+    resp.raise_for_status()
+    content = resp.json()["choices"][0]["message"]["content"]
+    scores = json.loads(content)
+
+    for idx, it in enumerate(items):
+        s = scores[idx] if idx < len(scores) else {}
+        if s.get("deep_summary"):
+            it["cn_summary"] = s["deep_summary"]
+            it["why_important"] = s.get("why_important", "")
+
+    return items
+
+
 def _fallback_summary(items: list[dict]) -> list[dict]:
     """无 API Key 时的降级处理"""
     for item in items:
