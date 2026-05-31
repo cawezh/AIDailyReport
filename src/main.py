@@ -157,7 +157,7 @@ def run_weekly():
     week_start = today - timedelta(days=today.weekday())
     week_end = today
     week_range = f"{week_start.strftime('%m.%d')} - {week_end.strftime('%m.%d')}"
-    overview = generate_overview(items)
+    overview = generate_overview(items, weekly=True)
 
     report_path = generate_report(items, output_dir=cfg["output"]["reports_dir"], overview=overview, week_label=week_range)
     print(f"[report] {report_path}")

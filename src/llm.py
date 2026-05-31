@@ -98,9 +98,9 @@ def _summarize_batch(items: list[dict], api_key: str) -> list[dict]:
     return items
 
 
-def generate_overview(items: list[dict]) -> dict:
+def generate_overview(items: list[dict], weekly: bool = False) -> dict:
     """
-    在所有 item 摘要完成后，再调用一次 DeepSeek，生成 2-3 句"今日技术趋势概述"。
+    生成趋势概述。周报模式会做更深入的趋势分析。
 
     返回: {"overview": "...", "hot_trends": ["...", "..."]}
     """
@@ -108,21 +108,31 @@ def generate_overview(items: list[dict]) -> dict:
     if not api_key or not items:
         return {"overview": "", "hot_trends": []}
 
-    # 取 top 20 个项目作为概览素材
-    top_items = sorted(items, key=lambda x: x.get("relevance_score", 0), reverse=True)[:20]
+    top_items = sorted(items, key=lambda x: x.get("relevance_score", 0), reverse=True)[:30]
     items_json = json.dumps([
-        {
-            "title": it["title"],
-            "cn_summary": it.get("cn_summary", ""),
-            "source": it.get("source", ""),
-            "is_novel": it.get("is_novel", False),
-        }
+        {"title": it["title"], "cn_summary": it.get("cn_summary", ""),
+         "source": it.get("source", ""), "category": it.get("primary_category", ""),
+         "is_novel": it.get("is_novel", False)}
         for it in top_items
     ], ensure_ascii=False)
 
-    prompt = f"""你是技术日报主编。基于今天收录的以下项目，生成一份简短的"今日技术趋势概述"。
+    if weekly:
+        prompt = f"""你是技术周报主编。以下是本周收录的全部项目，请做深度趋势分析。
 
-返回 JSON（只返回 JSON，不要任何其他文本）：
+返回 JSON（只返回 JSON）：
+{{"overview": "<3-5句话中文概述，分析本周最重要的技术趋势、最值得关注的信号、与上周的对比变化>", "hot_trends": ["<趋势1 - 具体描述>", "<趋势2 - 具体描述>", "<趋势3 - 具体描述>", "<趋势4>", "<趋势5>"]}}
+
+要求：
+- 不要笼统说"AI持续火热"，要具体指出哪个细分领域在爆发
+- 举例说明（引用具体项目名称）
+- 趋势描述要能指导读者下一步关注什么
+
+本周项目：
+{items_json}"""
+    else:
+        prompt = f"""你是技术日报主编。基于今天收录的以下项目，生成一份简短的"今日技术趋势概述"。
+
+返回 JSON（只返回 JSON）：
 {{"overview": "<2-3句话的中文概述，总结今天的技术热点和趋势>", "hot_trends": ["<趋势1>", "<趋势2>", "<趋势3>"]}}
 
 今日项目：
@@ -154,16 +164,16 @@ def generate_overview(items: list[dict]) -> dict:
 
 def analyze_weekly(items: list[dict]) -> list[dict]:
     """
-    对本周精选项目做深度分析（每项 50-80 字）。
-    返回增强后的 items，cn_summary 替换为深度分析文本。
+    周报深度分析。不是简单摘要，而是分析项目价值和趋势。
+    分两步：1) 整体趋势分析 2) 逐项深度解读
     """
     api_key = get_env("DEEPSEEK_API_KEY")
     if not api_key:
-        return items  # 无 key 时保持原有摘要
+        return items
 
     results = []
-    for i in range(0, len(items), 10):
-        batch = items[i:i + 10]
+    for i in range(0, len(items), 15):
+        batch = items[i:i + 15]
         try:
             results.extend(_analyze_batch(batch, api_key))
         except Exception:
@@ -174,24 +184,29 @@ def analyze_weekly(items: list[dict]) -> list[dict]:
 def _analyze_batch(items: list[dict], api_key: str) -> list[dict]:
     items_json = json.dumps([
         {"id": idx, "title": it["title"], "source": it.get("source", ""),
-         "cn_summary": it.get("cn_summary", ""), "description": it.get("description", "")[:200]}
+         "cn_summary": it.get("cn_summary", ""), "description": it.get("description", "")[:200],
+         "category": it.get("primary_category", ""), "relevance": it.get("relevance_score", 0),
+         "innovation": it.get("innovation_score", 0), "value": it.get("value_score", 0)}
         for idx, it in enumerate(items)
     ], ensure_ascii=False)
 
-    prompt = f"""你是技术周报主编。对以下本周精选项目做深度分析。
+    prompt = f"""你是技术周报主编。以下是本周精选项目，请做深度解读。
 
 返回 JSON 数组（只返回 JSON）：
-[{{"id": <原id>, "deep_summary": "<50-80字深度分析>", "why_important": "<10-20字：为什么值得关注>"}}]
+[{{"id": <原id>, "deep_summary": "<80-120字深度分析>", "why_matters": "<30字：对开发者的启示/价值>", "tag": "<分类标签>"}}]
 
-分析要求：
-- deep_summary: 不是简单翻译，要说明项目解决了什么问题、用了什么技术方案、有什么创新点
-- why_important: 对开发者的价值/启示，一句话
+分析要求（每项 80-120 字，不要敷衍）：
+- 这个项目到底解决了什么实际问题？
+- 技术方案有什么独特之处？和同类竞品比有什么优势？
+- 对开发者意味着什么？能不能用到自己的项目里？
+- 趋势信号：它代表了什么技术方向？
+- tag 选择: "突破性技术" / "实用工具" / "值得关注" / "游戏创新" / "学术前沿" / "开源亮点"
 
 项目列表：
 {items_json}"""
 
     headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
-    payload = {"model": "deepseek-chat", "messages": [{"role": "user", "content": prompt}], "temperature": 0.3, "max_tokens": 4000}
+    payload = {"model": "deepseek-chat", "messages": [{"role": "user", "content": prompt}], "temperature": 0.5, "max_tokens": 6000}
     resp = requests.post(DEEPSEEK_API_URL, headers=headers, json=payload, timeout=120)
     resp.raise_for_status()
     content = resp.json()["choices"][0]["message"]["content"]
@@ -201,7 +216,8 @@ def _analyze_batch(items: list[dict], api_key: str) -> list[dict]:
         s = scores[idx] if idx < len(scores) else {}
         if s.get("deep_summary"):
             it["cn_summary"] = s["deep_summary"]
-            it["why_important"] = s.get("why_important", "")
+            it["why_matters"] = s.get("why_matters", "")
+            it["tag"] = s.get("tag", "")
 
     return items
 
