@@ -1,15 +1,5 @@
 {
   "urls": [
-    "https://github.com/godotengine/godot",
-    "https://github.com/ollama/ollama",
-    "https://github.com/run-llama/liteparse",
-    "https://www.producthunt.com/products/kilocode/launches/kilo-code-v7-for-vs-code?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2605.30350",
-    "https://store.steampowered.com/app/3240220/",
-    "https://github.com/huggingface/transformers",
-    "https://github.com/bytedance/deer-flow",
-    "https://www.producthunt.com/products/spellar/launches/spellar-3-0-5?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2605.30348",
     "https://github.com/godotengine/godot-docs",
     "https://github.com/harry0703/MoneyPrinterTurbo",
     "https://github.com/crewAIInc/crewAI",
@@ -22,19 +12,13 @@
     "https://github.com/godot-rust/gdext",
     "https://github.com/nobodywho-ooo/nobodywho",
     "https://github.com/flutter/flutter",
-    "https://www.producthunt.com/products/tycoon-us?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29"
+    "https://www.producthunt.com/products/tycoon-us?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://github.com/4ian/GDevelop",
+    "https://github.com/chopratejas/headroom",
+    "https://github.com/aquasecurity/trivy",
+    "https://www.producthunt.com/products/pollyreach/launches/pollyreach?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29"
   ],
   "records": {
-    "https://github.com/godotengine/godot": "2026-05-31",
-    "https://github.com/ollama/ollama": "2026-05-31",
-    "https://github.com/run-llama/liteparse": "2026-05-31",
-    "https://www.producthunt.com/products/kilocode/launches/kilo-code-v7-for-vs-code?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-05-31",
-    "https://arxiv.org/abs/2605.30350": "2026-05-31",
-    "https://store.steampowered.com/app/3240220/": "2026-05-31",
-    "https://github.com/huggingface/transformers": "2026-05-31",
-    "https://github.com/bytedance/deer-flow": "2026-05-31",
-    "https://www.producthunt.com/products/spellar/launches/spellar-3-0-5?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-05-31",
-    "https://arxiv.org/abs/2605.30348": "2026-05-31",
     "https://github.com/godotengine/godot-docs": "2026-06-01",
     "https://github.com/harry0703/MoneyPrinterTurbo": "2026-06-01",
     "https://github.com/crewAIInc/crewAI": "2026-06-01",
@@ -47,6 +31,10 @@
     "https://github.com/godot-rust/gdext": "2026-06-03",
     "https://github.com/nobodywho-ooo/nobodywho": "2026-06-03",
     "https://github.com/flutter/flutter": "2026-06-03",
-    "https://www.producthunt.com/products/tycoon-us?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-06-03"
+    "https://www.producthunt.com/products/tycoon-us?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-06-03",
+    "https://github.com/4ian/GDevelop": "2026-06-04",
+    "https://github.com/chopratejas/headroom": "2026-06-04",
+    "https://github.com/aquasecurity/trivy": "2026-06-04",
+    "https://www.producthunt.com/products/pollyreach/launches/pollyreach?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-06-04"
   }
 }
