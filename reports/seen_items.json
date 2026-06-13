@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/hi-godot/godot-ai",
-    "https://github.com/Panniantong/Agent-Reach",
-    "https://github.com/facebook/react-native",
-    "https://www.producthunt.com/products/pollyreach/launches/pollyreach?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2606.09828",
     "https://github.com/godotengine/godot",
     "https://github.com/huggingface/transformers",
     "https://github.com/obra/superpowers",
@@ -19,14 +14,14 @@
     "https://github.com/nobodywho-ooo/nobodywho",
     "https://github.com/denoland/clawpatrol",
     "https://www.producthunt.com/products/fundraisly?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2606.13662"
+    "https://arxiv.org/abs/2606.13662",
+    "https://github.com/Cysharp/ZLinq",
+    "https://github.com/openai/openai-agents-python",
+    "https://github.com/ionic-team/ionic-framework",
+    "https://www.producthunt.com/products/tycoon-us/launches/tycoon-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2606.13681"
   ],
   "records": {
-    "https://github.com/hi-godot/godot-ai": "2026-06-09",
-    "https://github.com/Panniantong/Agent-Reach": "2026-06-09",
-    "https://github.com/facebook/react-native": "2026-06-09",
-    "https://www.producthunt.com/products/pollyreach/launches/pollyreach?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-06-09",
-    "https://arxiv.org/abs/2606.09828": "2026-06-09",
     "https://github.com/godotengine/godot": "2026-06-10",
     "https://github.com/huggingface/transformers": "2026-06-10",
     "https://github.com/obra/superpowers": "2026-06-10",
@@ -41,6 +36,11 @@
     "https://github.com/nobodywho-ooo/nobodywho": "2026-06-12",
     "https://github.com/denoland/clawpatrol": "2026-06-12",
     "https://www.producthunt.com/products/fundraisly?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-06-12",
-    "https://arxiv.org/abs/2606.13662": "2026-06-12"
+    "https://arxiv.org/abs/2606.13662": "2026-06-12",
+    "https://github.com/Cysharp/ZLinq": "2026-06-13",
+    "https://github.com/openai/openai-agents-python": "2026-06-13",
+    "https://github.com/ionic-team/ionic-framework": "2026-06-13",
+    "https://www.producthunt.com/products/tycoon-us/launches/tycoon-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-06-13",
+    "https://arxiv.org/abs/2606.13681": "2026-06-13"
   }
 }
