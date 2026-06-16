@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/godotengine/godot-demo-projects",
-    "https://github.com/nobodywho-ooo/nobodywho",
-    "https://github.com/denoland/clawpatrol",
-    "https://www.producthunt.com/products/fundraisly?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2606.13662",
     "https://github.com/Cysharp/ZLinq",
     "https://github.com/openai/openai-agents-python",
     "https://github.com/ionic-team/ionic-framework",
@@ -14,14 +9,14 @@
     "https://github.com/NVIDIA/SkillSpector",
     "https://github.com/freeCodeCamp/freeCodeCamp",
     "https://www.producthunt.com/products/unabyss/launches/unabyss?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2606.14674"
+    "https://arxiv.org/abs/2606.14674",
+    "https://github.com/godotengine/godot",
+    "https://github.com/Panniantong/Agent-Reach",
+    "https://github.com/flutter/flutter",
+    "https://www.producthunt.com/products/stitch-by-google/launches/stitch-3-0-by-google?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2606.17030"
   ],
   "records": {
-    "https://github.com/godotengine/godot-demo-projects": "2026-06-12",
-    "https://github.com/nobodywho-ooo/nobodywho": "2026-06-12",
-    "https://github.com/denoland/clawpatrol": "2026-06-12",
-    "https://www.producthunt.com/products/fundraisly?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-06-12",
-    "https://arxiv.org/abs/2606.13662": "2026-06-12",
     "https://github.com/Cysharp/ZLinq": "2026-06-13",
     "https://github.com/openai/openai-agents-python": "2026-06-13",
     "https://github.com/ionic-team/ionic-framework": "2026-06-13",
@@ -31,6 +26,11 @@
     "https://github.com/NVIDIA/SkillSpector": "2026-06-15",
     "https://github.com/freeCodeCamp/freeCodeCamp": "2026-06-15",
     "https://www.producthunt.com/products/unabyss/launches/unabyss?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-06-15",
-    "https://arxiv.org/abs/2606.14674": "2026-06-15"
+    "https://arxiv.org/abs/2606.14674": "2026-06-15",
+    "https://github.com/godotengine/godot": "2026-06-16",
+    "https://github.com/Panniantong/Agent-Reach": "2026-06-16",
+    "https://github.com/flutter/flutter": "2026-06-16",
+    "https://www.producthunt.com/products/stitch-by-google/launches/stitch-3-0-by-google?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-06-16",
+    "https://arxiv.org/abs/2606.17030": "2026-06-16"
   }
 }
