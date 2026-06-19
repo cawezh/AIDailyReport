@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/godotengine/godot-docs",
-    "https://github.com/NVIDIA/SkillSpector",
-    "https://github.com/freeCodeCamp/freeCodeCamp",
-    "https://www.producthunt.com/products/unabyss/launches/unabyss?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2606.14674",
     "https://github.com/godotengine/godot",
     "https://github.com/Panniantong/Agent-Reach",
     "https://github.com/flutter/flutter",
@@ -19,14 +14,14 @@
     "https://github.com/continuedev/continue",
     "https://github.com/obra/superpowers",
     "https://www.producthunt.com/products/tycoon-us/launches/tycoon-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2606.19341"
+    "https://arxiv.org/abs/2606.19341",
+    "https://github.com/godotengine/godot-vscode-plugin",
+    "https://github.com/ollama/ollama",
+    "https://github.com/rustdesk/rustdesk",
+    "https://www.producthunt.com/products/bond-12?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2606.20554"
   ],
   "records": {
-    "https://github.com/godotengine/godot-docs": "2026-06-15",
-    "https://github.com/NVIDIA/SkillSpector": "2026-06-15",
-    "https://github.com/freeCodeCamp/freeCodeCamp": "2026-06-15",
-    "https://www.producthunt.com/products/unabyss/launches/unabyss?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-06-15",
-    "https://arxiv.org/abs/2606.14674": "2026-06-15",
     "https://github.com/godotengine/godot": "2026-06-16",
     "https://github.com/Panniantong/Agent-Reach": "2026-06-16",
     "https://github.com/flutter/flutter": "2026-06-16",
@@ -41,6 +36,11 @@
     "https://github.com/continuedev/continue": "2026-06-18",
     "https://github.com/obra/superpowers": "2026-06-18",
     "https://www.producthunt.com/products/tycoon-us/launches/tycoon-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-06-18",
-    "https://arxiv.org/abs/2606.19341": "2026-06-18"
+    "https://arxiv.org/abs/2606.19341": "2026-06-18",
+    "https://github.com/godotengine/godot-vscode-plugin": "2026-06-19",
+    "https://github.com/ollama/ollama": "2026-06-19",
+    "https://github.com/rustdesk/rustdesk": "2026-06-19",
+    "https://www.producthunt.com/products/bond-12?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-06-19",
+    "https://arxiv.org/abs/2606.20554": "2026-06-19"
   }
 }
