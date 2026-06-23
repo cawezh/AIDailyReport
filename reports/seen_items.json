@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/godotengine/godot-vscode-plugin",
-    "https://github.com/ollama/ollama",
-    "https://github.com/rustdesk/rustdesk",
-    "https://www.producthunt.com/products/bond-12?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2606.20554",
     "https://github.com/godotengine/godot-docs",
     "https://github.com/chopratejas/headroom",
     "https://github.com/firecrawl/firecrawl",
@@ -14,14 +9,14 @@
     "https://github.com/nobodywho-ooo/nobodywho",
     "https://www.phoronix.com/news/Linux-7.2-Drops-strncpy",
     "https://www.producthunt.com/products/upstream-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2606.20537"
+    "https://arxiv.org/abs/2606.20537",
+    "https://github.com/4ian/GDevelop",
+    "https://github.com/openai/openai-agents-python",
+    "https://github.com/crewAIInc/crewAI",
+    "https://www.producthunt.com/products/stitch-by-google/launches/stitch-3-0-by-google?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2606.23671"
   ],
   "records": {
-    "https://github.com/godotengine/godot-vscode-plugin": "2026-06-19",
-    "https://github.com/ollama/ollama": "2026-06-19",
-    "https://github.com/rustdesk/rustdesk": "2026-06-19",
-    "https://www.producthunt.com/products/bond-12?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-06-19",
-    "https://arxiv.org/abs/2606.20554": "2026-06-19",
     "https://github.com/godotengine/godot-docs": "2026-06-20",
     "https://github.com/chopratejas/headroom": "2026-06-20",
     "https://github.com/firecrawl/firecrawl": "2026-06-20",
@@ -31,6 +26,11 @@
     "https://github.com/nobodywho-ooo/nobodywho": "2026-06-22",
     "https://www.phoronix.com/news/Linux-7.2-Drops-strncpy": "2026-06-22",
     "https://www.producthunt.com/products/upstream-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-06-22",
-    "https://arxiv.org/abs/2606.20537": "2026-06-22"
+    "https://arxiv.org/abs/2606.20537": "2026-06-22",
+    "https://github.com/4ian/GDevelop": "2026-06-23",
+    "https://github.com/openai/openai-agents-python": "2026-06-23",
+    "https://github.com/crewAIInc/crewAI": "2026-06-23",
+    "https://www.producthunt.com/products/stitch-by-google/launches/stitch-3-0-by-google?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-06-23",
+    "https://arxiv.org/abs/2606.23671": "2026-06-23"
   }
 }
