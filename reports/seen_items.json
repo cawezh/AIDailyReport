@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/godotengine/godot-docs",
-    "https://github.com/chopratejas/headroom",
-    "https://github.com/firecrawl/firecrawl",
-    "https://www.producthunt.com/products/fundraisly/launches/fundraisly-4?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2606.20561",
     "https://github.com/godotengine/godot",
     "https://github.com/nobodywho-ooo/nobodywho",
     "https://www.phoronix.com/news/Linux-7.2-Drops-strncpy",
@@ -14,14 +9,14 @@
     "https://github.com/openai/openai-agents-python",
     "https://github.com/crewAIInc/crewAI",
     "https://www.producthunt.com/products/stitch-by-google/launches/stitch-3-0-by-google?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2606.23671"
+    "https://arxiv.org/abs/2606.23671",
+    "https://store.steampowered.com/app/32470/",
+    "https://github.com/calesthio/OpenMontage",
+    "https://github.com/jamiepine/voicebox",
+    "https://www.producthunt.com/products/pancake-6/launches/pancake-6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2606.24888"
   ],
   "records": {
-    "https://github.com/godotengine/godot-docs": "2026-06-20",
-    "https://github.com/chopratejas/headroom": "2026-06-20",
-    "https://github.com/firecrawl/firecrawl": "2026-06-20",
-    "https://www.producthunt.com/products/fundraisly/launches/fundraisly-4?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-06-20",
-    "https://arxiv.org/abs/2606.20561": "2026-06-20",
     "https://github.com/godotengine/godot": "2026-06-22",
     "https://github.com/nobodywho-ooo/nobodywho": "2026-06-22",
     "https://www.phoronix.com/news/Linux-7.2-Drops-strncpy": "2026-06-22",
@@ -31,6 +26,11 @@
     "https://github.com/openai/openai-agents-python": "2026-06-23",
     "https://github.com/crewAIInc/crewAI": "2026-06-23",
     "https://www.producthunt.com/products/stitch-by-google/launches/stitch-3-0-by-google?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-06-23",
-    "https://arxiv.org/abs/2606.23671": "2026-06-23"
+    "https://arxiv.org/abs/2606.23671": "2026-06-23",
+    "https://store.steampowered.com/app/32470/": "2026-06-24",
+    "https://github.com/calesthio/OpenMontage": "2026-06-24",
+    "https://github.com/jamiepine/voicebox": "2026-06-24",
+    "https://www.producthunt.com/products/pancake-6/launches/pancake-6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-06-24",
+    "https://arxiv.org/abs/2606.24888": "2026-06-24"
   }
 }
