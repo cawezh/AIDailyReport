@@ -14,7 +14,12 @@
     "https://github.com/calesthio/OpenMontage",
     "https://github.com/jamiepine/voicebox",
     "https://www.producthunt.com/products/pancake-6/launches/pancake-6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2606.24888"
+    "https://arxiv.org/abs/2606.24888",
+    "https://github.com/hi-godot/godot-ai",
+    "https://github.com/ollama/ollama",
+    "https://github.com/flutter/flutter",
+    "https://www.producthunt.com/products/unabyss/launches/unabyss?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2606.26057"
   ],
   "records": {
     "https://github.com/godotengine/godot": "2026-06-22",
@@ -31,6 +36,11 @@
     "https://github.com/calesthio/OpenMontage": "2026-06-24",
     "https://github.com/jamiepine/voicebox": "2026-06-24",
     "https://www.producthunt.com/products/pancake-6/launches/pancake-6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-06-24",
-    "https://arxiv.org/abs/2606.24888": "2026-06-24"
+    "https://arxiv.org/abs/2606.24888": "2026-06-24",
+    "https://github.com/hi-godot/godot-ai": "2026-06-25",
+    "https://github.com/ollama/ollama": "2026-06-25",
+    "https://github.com/flutter/flutter": "2026-06-25",
+    "https://www.producthunt.com/products/unabyss/launches/unabyss?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-06-25",
+    "https://arxiv.org/abs/2606.26057": "2026-06-25"
   }
 }
