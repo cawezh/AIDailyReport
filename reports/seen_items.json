@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/4ian/GDevelop",
-    "https://github.com/openai/openai-agents-python",
-    "https://github.com/crewAIInc/crewAI",
-    "https://www.producthunt.com/products/stitch-by-google/launches/stitch-3-0-by-google?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2606.23671",
     "https://store.steampowered.com/app/32470/",
     "https://github.com/calesthio/OpenMontage",
     "https://github.com/jamiepine/voicebox",
@@ -19,14 +14,14 @@
     "https://github.com/huggingface/transformers",
     "https://github.com/bytedance/deer-flow",
     "https://www.producthunt.com/products/framer?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2606.27369"
+    "https://arxiv.org/abs/2606.27369",
+    "https://github.com/godotengine/godot",
+    "https://github.com/nobodywho-ooo/nobodywho",
+    "https://github.com/grafana/grafana",
+    "https://www.producthunt.com/products/browseract?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2606.27376"
   ],
   "records": {
-    "https://github.com/4ian/GDevelop": "2026-06-23",
-    "https://github.com/openai/openai-agents-python": "2026-06-23",
-    "https://github.com/crewAIInc/crewAI": "2026-06-23",
-    "https://www.producthunt.com/products/stitch-by-google/launches/stitch-3-0-by-google?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-06-23",
-    "https://arxiv.org/abs/2606.23671": "2026-06-23",
     "https://store.steampowered.com/app/32470/": "2026-06-24",
     "https://github.com/calesthio/OpenMontage": "2026-06-24",
     "https://github.com/jamiepine/voicebox": "2026-06-24",
@@ -41,6 +36,11 @@
     "https://github.com/huggingface/transformers": "2026-06-26",
     "https://github.com/bytedance/deer-flow": "2026-06-26",
     "https://www.producthunt.com/products/framer?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-06-26",
-    "https://arxiv.org/abs/2606.27369": "2026-06-26"
+    "https://arxiv.org/abs/2606.27369": "2026-06-26",
+    "https://github.com/godotengine/godot": "2026-06-27",
+    "https://github.com/nobodywho-ooo/nobodywho": "2026-06-27",
+    "https://github.com/grafana/grafana": "2026-06-27",
+    "https://www.producthunt.com/products/browseract?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-06-27",
+    "https://arxiv.org/abs/2606.27376": "2026-06-27"
   }
 }
