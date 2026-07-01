@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/godotengine/godot",
-    "https://github.com/nobodywho-ooo/nobodywho",
-    "https://github.com/grafana/grafana",
-    "https://www.producthunt.com/products/browseract?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2606.27376",
     "https://github.com/heroiclabs/nakama",
     "https://github.com/xbtlin/ai-berkshire",
     "https://github.com/simplex-chat/simplex-chat",
@@ -14,14 +9,14 @@
     "https://github.com/deepset-ai/haystack",
     "https://github.com/ripienaar/free-for-dev",
     "https://www.producthunt.com/products/publora/launches/publora-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2606.30616"
+    "https://arxiv.org/abs/2606.30616",
+    "https://github.com/godotengine/godot-docs",
+    "https://github.com/ollama/ollama",
+    "https://github.com/bytedance/deer-flow",
+    "https://www.producthunt.com/products/framer?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2606.32034"
   ],
   "records": {
-    "https://github.com/godotengine/godot": "2026-06-27",
-    "https://github.com/nobodywho-ooo/nobodywho": "2026-06-27",
-    "https://github.com/grafana/grafana": "2026-06-27",
-    "https://www.producthunt.com/products/browseract?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-06-27",
-    "https://arxiv.org/abs/2606.27376": "2026-06-27",
     "https://github.com/heroiclabs/nakama": "2026-06-29",
     "https://github.com/xbtlin/ai-berkshire": "2026-06-29",
     "https://github.com/simplex-chat/simplex-chat": "2026-06-29",
@@ -31,6 +26,11 @@
     "https://github.com/deepset-ai/haystack": "2026-06-30",
     "https://github.com/ripienaar/free-for-dev": "2026-06-30",
     "https://www.producthunt.com/products/publora/launches/publora-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-06-30",
-    "https://arxiv.org/abs/2606.30616": "2026-06-30"
+    "https://arxiv.org/abs/2606.30616": "2026-06-30",
+    "https://github.com/godotengine/godot-docs": "2026-07-01",
+    "https://github.com/ollama/ollama": "2026-07-01",
+    "https://github.com/bytedance/deer-flow": "2026-07-01",
+    "https://www.producthunt.com/products/framer?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-07-01",
+    "https://arxiv.org/abs/2606.32034": "2026-07-01"
   }
 }
