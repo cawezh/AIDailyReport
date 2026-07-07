@@ -1,9 +1,5 @@
 {
   "urls": [
-    "https://github.com/Orama-Interactive/Pixelorama",
-    "https://github.com/msitarzewski/agency-agents",
-    "https://github.com/crewAIInc/crewAI",
-    "https://www.producthunt.com/products/cursor?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
     "https://github.com/heroiclabs/nakama",
     "https://github.com/anthropics/claude-code",
     "https://github.com/usestrix/strix",
@@ -13,13 +9,14 @@
     "https://github.com/langchain-ai/langchain",
     "https://github.com/firecrawl/firecrawl",
     "https://www.producthunt.com/products/context-dev?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2607.02517"
+    "https://arxiv.org/abs/2607.02517",
+    "https://github.com/godotengine/godot",
+    "https://github.com/ollama/ollama",
+    "https://github.com/bytedance/deer-flow",
+    "https://www.producthunt.com/products/framer/launches/framer-3-0-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2607.05391"
   ],
   "records": {
-    "https://github.com/Orama-Interactive/Pixelorama": "2026-07-03",
-    "https://github.com/msitarzewski/agency-agents": "2026-07-03",
-    "https://github.com/crewAIInc/crewAI": "2026-07-03",
-    "https://www.producthunt.com/products/cursor?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-07-03",
     "https://github.com/heroiclabs/nakama": "2026-07-04",
     "https://github.com/anthropics/claude-code": "2026-07-04",
     "https://github.com/usestrix/strix": "2026-07-04",
@@ -29,6 +26,11 @@
     "https://github.com/langchain-ai/langchain": "2026-07-06",
     "https://github.com/firecrawl/firecrawl": "2026-07-06",
     "https://www.producthunt.com/products/context-dev?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-07-06",
-    "https://arxiv.org/abs/2607.02517": "2026-07-06"
+    "https://arxiv.org/abs/2607.02517": "2026-07-06",
+    "https://github.com/godotengine/godot": "2026-07-07",
+    "https://github.com/ollama/ollama": "2026-07-07",
+    "https://github.com/bytedance/deer-flow": "2026-07-07",
+    "https://www.producthunt.com/products/framer/launches/framer-3-0-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-07-07",
+    "https://arxiv.org/abs/2607.05391": "2026-07-07"
   }
 }
