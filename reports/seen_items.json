@@ -14,7 +14,12 @@
     "https://github.com/huggingface/transformers",
     "https://github.com/obra/superpowers",
     "https://www.producthunt.com/products/browseract?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2607.06560"
+    "https://arxiv.org/abs/2607.06560",
+    "https://github.com/bitbrain/beehave",
+    "https://github.com/openai/openai-agents-python",
+    "https://github.com/prisma/prisma",
+    "https://www.producthunt.com/products/tencent-edgeone-2/launches/tencent-edgeone-makers?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2607.07695"
   ],
   "records": {
     "https://github.com/4ian/GDevelop": "2026-07-06",
@@ -31,6 +36,11 @@
     "https://github.com/huggingface/transformers": "2026-07-08",
     "https://github.com/obra/superpowers": "2026-07-08",
     "https://www.producthunt.com/products/browseract?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-07-08",
-    "https://arxiv.org/abs/2607.06560": "2026-07-08"
+    "https://arxiv.org/abs/2607.06560": "2026-07-08",
+    "https://github.com/bitbrain/beehave": "2026-07-09",
+    "https://github.com/openai/openai-agents-python": "2026-07-09",
+    "https://github.com/prisma/prisma": "2026-07-09",
+    "https://www.producthunt.com/products/tencent-edgeone-2/launches/tencent-edgeone-makers?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-07-09",
+    "https://arxiv.org/abs/2607.07695": "2026-07-09"
   }
 }
