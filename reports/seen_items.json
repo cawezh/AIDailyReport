@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/4ian/GDevelop",
-    "https://github.com/langchain-ai/langchain",
-    "https://github.com/firecrawl/firecrawl",
-    "https://www.producthunt.com/products/context-dev?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2607.02517",
     "https://github.com/godotengine/godot",
     "https://github.com/ollama/ollama",
     "https://github.com/bytedance/deer-flow",
@@ -19,14 +14,14 @@
     "https://github.com/openai/openai-agents-python",
     "https://github.com/prisma/prisma",
     "https://www.producthunt.com/products/tencent-edgeone-2/launches/tencent-edgeone-makers?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2607.07695"
+    "https://arxiv.org/abs/2607.07695",
+    "https://github.com/heroiclabs/nakama",
+    "https://github.com/nobodywho-ooo/nobodywho",
+    "https://github.com/crewAIInc/crewAI",
+    "https://www.producthunt.com/products/goldfish-early-access/launches/goldfish?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2607.08768"
   ],
   "records": {
-    "https://github.com/4ian/GDevelop": "2026-07-06",
-    "https://github.com/langchain-ai/langchain": "2026-07-06",
-    "https://github.com/firecrawl/firecrawl": "2026-07-06",
-    "https://www.producthunt.com/products/context-dev?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-07-06",
-    "https://arxiv.org/abs/2607.02517": "2026-07-06",
     "https://github.com/godotengine/godot": "2026-07-07",
     "https://github.com/ollama/ollama": "2026-07-07",
     "https://github.com/bytedance/deer-flow": "2026-07-07",
@@ -41,6 +36,11 @@
     "https://github.com/openai/openai-agents-python": "2026-07-09",
     "https://github.com/prisma/prisma": "2026-07-09",
     "https://www.producthunt.com/products/tencent-edgeone-2/launches/tencent-edgeone-makers?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-07-09",
-    "https://arxiv.org/abs/2607.07695": "2026-07-09"
+    "https://arxiv.org/abs/2607.07695": "2026-07-09",
+    "https://github.com/heroiclabs/nakama": "2026-07-10",
+    "https://github.com/nobodywho-ooo/nobodywho": "2026-07-10",
+    "https://github.com/crewAIInc/crewAI": "2026-07-10",
+    "https://www.producthunt.com/products/goldfish-early-access/launches/goldfish?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-07-10",
+    "https://arxiv.org/abs/2607.08768": "2026-07-10"
   }
 }
