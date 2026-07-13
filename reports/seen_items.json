@@ -1,15 +1,5 @@
 {
   "urls": [
-    "https://github.com/Orama-Interactive/Pixelorama",
-    "https://github.com/huggingface/transformers",
-    "https://github.com/obra/superpowers",
-    "https://www.producthunt.com/products/browseract?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2607.06560",
-    "https://github.com/bitbrain/beehave",
-    "https://github.com/openai/openai-agents-python",
-    "https://github.com/prisma/prisma",
-    "https://www.producthunt.com/products/tencent-edgeone-2/launches/tencent-edgeone-makers?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2607.07695",
     "https://github.com/heroiclabs/nakama",
     "https://github.com/nobodywho-ooo/nobodywho",
     "https://github.com/crewAIInc/crewAI",
@@ -19,19 +9,14 @@
     "https://openai.com/index/gpt-5-6/",
     "https://github.com/vercel/next.js",
     "https://www.producthunt.com/products/context-dev?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2607.08757"
+    "https://arxiv.org/abs/2607.08757",
+    "https://github.com/godotengine/godot",
+    "https://github.com/ollama/ollama",
+    "https://github.com/malisper/pgrust",
+    "https://www.producthunt.com/products/browseract/launches/browseract?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2607.09657"
   ],
   "records": {
-    "https://github.com/Orama-Interactive/Pixelorama": "2026-07-08",
-    "https://github.com/huggingface/transformers": "2026-07-08",
-    "https://github.com/obra/superpowers": "2026-07-08",
-    "https://www.producthunt.com/products/browseract?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-07-08",
-    "https://arxiv.org/abs/2607.06560": "2026-07-08",
-    "https://github.com/bitbrain/beehave": "2026-07-09",
-    "https://github.com/openai/openai-agents-python": "2026-07-09",
-    "https://github.com/prisma/prisma": "2026-07-09",
-    "https://www.producthunt.com/products/tencent-edgeone-2/launches/tencent-edgeone-makers?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-07-09",
-    "https://arxiv.org/abs/2607.07695": "2026-07-09",
     "https://github.com/heroiclabs/nakama": "2026-07-10",
     "https://github.com/nobodywho-ooo/nobodywho": "2026-07-10",
     "https://github.com/crewAIInc/crewAI": "2026-07-10",
@@ -41,6 +26,11 @@
     "https://openai.com/index/gpt-5-6/": "2026-07-11",
     "https://github.com/vercel/next.js": "2026-07-11",
     "https://www.producthunt.com/products/context-dev?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-07-11",
-    "https://arxiv.org/abs/2607.08757": "2026-07-11"
+    "https://arxiv.org/abs/2607.08757": "2026-07-11",
+    "https://github.com/godotengine/godot": "2026-07-13",
+    "https://github.com/ollama/ollama": "2026-07-13",
+    "https://github.com/malisper/pgrust": "2026-07-13",
+    "https://www.producthunt.com/products/browseract/launches/browseract?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-07-13",
+    "https://arxiv.org/abs/2607.09657": "2026-07-13"
   }
 }
