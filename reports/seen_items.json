@@ -14,7 +14,12 @@
     "https://github.com/ruvnet/ruflo",
     "https://github.com/OpenCut-app/OpenCut",
     "https://www.producthunt.com/products/goldfish-early-access/launches/goldfish?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2607.13027"
+    "https://arxiv.org/abs/2607.13027",
+    "https://github.com/godotengine/awesome-godot",
+    "https://github.com/langchain-ai/langchain",
+    "https://github.com/obra/superpowers",
+    "https://www.producthunt.com/products/clawteams?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2607.14088"
   ],
   "records": {
     "https://github.com/godotengine/godot": "2026-07-13",
@@ -31,6 +36,11 @@
     "https://github.com/ruvnet/ruflo": "2026-07-15",
     "https://github.com/OpenCut-app/OpenCut": "2026-07-15",
     "https://www.producthunt.com/products/goldfish-early-access/launches/goldfish?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-07-15",
-    "https://arxiv.org/abs/2607.13027": "2026-07-15"
+    "https://arxiv.org/abs/2607.13027": "2026-07-15",
+    "https://github.com/godotengine/awesome-godot": "2026-07-16",
+    "https://github.com/langchain-ai/langchain": "2026-07-16",
+    "https://github.com/obra/superpowers": "2026-07-16",
+    "https://www.producthunt.com/products/clawteams?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-07-16",
+    "https://arxiv.org/abs/2607.14088": "2026-07-16"
   }
 }
