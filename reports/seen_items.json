@@ -14,7 +14,12 @@
     "https://github.com/bojieli/ai-agent-book",
     "https://github.com/obra/superpowers",
     "https://www.producthunt.com/products/anysearch/launches/anysearch-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2607.19336"
+    "https://arxiv.org/abs/2607.19336",
+    "https://github.com/godotengine/godot",
+    "https://github.com/ollama/ollama",
+    "https://github.com/firecrawl/firecrawl",
+    "https://www.producthunt.com/products/sim-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2607.20399"
   ],
   "records": {
     "https://github.com/Zylann/godot_voxel": "2026-07-20",
@@ -31,6 +36,11 @@
     "https://github.com/bojieli/ai-agent-book": "2026-07-22",
     "https://github.com/obra/superpowers": "2026-07-22",
     "https://www.producthunt.com/products/anysearch/launches/anysearch-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-07-22",
-    "https://arxiv.org/abs/2607.19336": "2026-07-22"
+    "https://arxiv.org/abs/2607.19336": "2026-07-22",
+    "https://github.com/godotengine/godot": "2026-07-23",
+    "https://github.com/ollama/ollama": "2026-07-23",
+    "https://github.com/firecrawl/firecrawl": "2026-07-23",
+    "https://www.producthunt.com/products/sim-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-07-23",
+    "https://arxiv.org/abs/2607.20399": "2026-07-23"
   }
 }
