@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/heroiclabs/nakama",
-    "https://github.com/diegosouzapw/OmniRoute",
-    "https://github.com/crewAIInc/crewAI",
-    "https://www.producthunt.com/products/clawteams?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2607.18237",
     "https://github.com/TokisanGames/Terrain3D",
     "https://github.com/bojieli/ai-agent-book",
     "https://github.com/obra/superpowers",
@@ -19,14 +14,14 @@
     "https://github.com/alibaba/open-code-review",
     "https://github.com/koala73/worldmonitor",
     "https://www.producthunt.com/products/browseract/launches/browseract?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2607.21594"
+    "https://arxiv.org/abs/2607.21594",
+    "https://github.com/Orama-Interactive/Pixelorama",
+    "https://github.com/ComposioHQ/awesome-claude-skills",
+    "https://github.com/block/buzz",
+    "https://www.producthunt.com/products/acti-2/launches/acti-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2607.21592"
   ],
   "records": {
-    "https://github.com/heroiclabs/nakama": "2026-07-21",
-    "https://github.com/diegosouzapw/OmniRoute": "2026-07-21",
-    "https://github.com/crewAIInc/crewAI": "2026-07-21",
-    "https://www.producthunt.com/products/clawteams?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-07-21",
-    "https://arxiv.org/abs/2607.18237": "2026-07-21",
     "https://github.com/TokisanGames/Terrain3D": "2026-07-22",
     "https://github.com/bojieli/ai-agent-book": "2026-07-22",
     "https://github.com/obra/superpowers": "2026-07-22",
@@ -41,6 +36,11 @@
     "https://github.com/alibaba/open-code-review": "2026-07-24",
     "https://github.com/koala73/worldmonitor": "2026-07-24",
     "https://www.producthunt.com/products/browseract/launches/browseract?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-07-24",
-    "https://arxiv.org/abs/2607.21594": "2026-07-24"
+    "https://arxiv.org/abs/2607.21594": "2026-07-24",
+    "https://github.com/Orama-Interactive/Pixelorama": "2026-07-25",
+    "https://github.com/ComposioHQ/awesome-claude-skills": "2026-07-25",
+    "https://github.com/block/buzz": "2026-07-25",
+    "https://www.producthunt.com/products/acti-2/launches/acti-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-07-25",
+    "https://arxiv.org/abs/2607.21592": "2026-07-25"
   }
 }
