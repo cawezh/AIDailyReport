@@ -14,7 +14,12 @@
     "https://github.com/ollama/ollama",
     "https://github.com/obra/superpowers",
     "https://www.producthunt.com/products/osaurus/launches/osaurus-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2607.26052"
+    "https://arxiv.org/abs/2607.26052",
+    "https://github.com/heroiclabs/nakama",
+    "https://github.com/alibaba/open-code-review",
+    "https://github.com/drumih/turbo-fieldfare",
+    "https://www.producthunt.com/products/clawteams/launches/clawteams-a263d5d3-d341-45d9-9e9f-7154e7066e4a?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2607.27205"
   ],
   "records": {
     "https://github.com/godotengine/godot-docs": "2026-07-27",
@@ -31,6 +36,11 @@
     "https://github.com/ollama/ollama": "2026-07-29",
     "https://github.com/obra/superpowers": "2026-07-29",
     "https://www.producthunt.com/products/osaurus/launches/osaurus-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-07-29",
-    "https://arxiv.org/abs/2607.26052": "2026-07-29"
+    "https://arxiv.org/abs/2607.26052": "2026-07-29",
+    "https://github.com/heroiclabs/nakama": "2026-07-30",
+    "https://github.com/alibaba/open-code-review": "2026-07-30",
+    "https://github.com/drumih/turbo-fieldfare": "2026-07-30",
+    "https://www.producthunt.com/products/clawteams/launches/clawteams-a263d5d3-d341-45d9-9e9f-7154e7066e4a?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-07-30",
+    "https://arxiv.org/abs/2607.27205": "2026-07-30"
   }
 }
