@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/godot-rust/gdext",
-    "https://github.com/htdt/godogen",
-    "https://github.com/bytedance/deer-flow",
-    "https://www.producthunt.com/products/anysearch/launches/anysearch-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2607.24743",
     "https://github.com/godotengine/godot",
     "https://github.com/ollama/ollama",
     "https://github.com/obra/superpowers",
@@ -19,14 +14,14 @@
     "https://github.com/infiniflow/ragflow",
     "https://github.com/mastra-ai/mastra",
     "https://www.producthunt.com/products/sim-studio/launches/sim-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2607.28625"
+    "https://arxiv.org/abs/2607.28625",
+    "https://github.com/godotengine/godot-docs",
+    "https://github.com/different-ai/openwork",
+    "https://github.com/chatwoot/chatwoot",
+    "https://www.producthunt.com/products/context-dev/launches/context-dev-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2607.28591"
   ],
   "records": {
-    "https://github.com/godot-rust/gdext": "2026-07-28",
-    "https://github.com/htdt/godogen": "2026-07-28",
-    "https://github.com/bytedance/deer-flow": "2026-07-28",
-    "https://www.producthunt.com/products/anysearch/launches/anysearch-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-07-28",
-    "https://arxiv.org/abs/2607.24743": "2026-07-28",
     "https://github.com/godotengine/godot": "2026-07-29",
     "https://github.com/ollama/ollama": "2026-07-29",
     "https://github.com/obra/superpowers": "2026-07-29",
@@ -41,6 +36,11 @@
     "https://github.com/infiniflow/ragflow": "2026-07-31",
     "https://github.com/mastra-ai/mastra": "2026-07-31",
     "https://www.producthunt.com/products/sim-studio/launches/sim-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-07-31",
-    "https://arxiv.org/abs/2607.28625": "2026-07-31"
+    "https://arxiv.org/abs/2607.28625": "2026-07-31",
+    "https://github.com/godotengine/godot-docs": "2026-08-01",
+    "https://github.com/different-ai/openwork": "2026-08-01",
+    "https://github.com/chatwoot/chatwoot": "2026-08-01",
+    "https://www.producthunt.com/products/context-dev/launches/context-dev-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-01",
+    "https://arxiv.org/abs/2607.28591": "2026-08-01"
   }
 }
