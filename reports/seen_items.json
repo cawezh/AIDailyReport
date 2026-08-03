@@ -1,15 +1,5 @@
 {
   "urls": [
-    "https://github.com/godotengine/godot",
-    "https://github.com/ollama/ollama",
-    "https://github.com/obra/superpowers",
-    "https://www.producthunt.com/products/osaurus/launches/osaurus-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2607.26052",
-    "https://github.com/heroiclabs/nakama",
-    "https://github.com/alibaba/open-code-review",
-    "https://github.com/drumih/turbo-fieldfare",
-    "https://www.producthunt.com/products/clawteams/launches/clawteams-a263d5d3-d341-45d9-9e9f-7154e7066e4a?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2607.27205",
     "https://github.com/dialogic-godot/dialogic",
     "https://github.com/infiniflow/ragflow",
     "https://github.com/mastra-ai/mastra",
@@ -19,19 +9,14 @@
     "https://github.com/different-ai/openwork",
     "https://github.com/chatwoot/chatwoot",
     "https://www.producthunt.com/products/context-dev/launches/context-dev-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2607.28591"
+    "https://arxiv.org/abs/2607.28591",
+    "https://github.com/TokisanGames/Terrain3D",
+    "https://github.com/langchain-ai/langchain",
+    "https://github.com/bytedance/deer-flow",
+    "https://www.producthunt.com/products/openseo/launches/openseo?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2607.29679"
   ],
   "records": {
-    "https://github.com/godotengine/godot": "2026-07-29",
-    "https://github.com/ollama/ollama": "2026-07-29",
-    "https://github.com/obra/superpowers": "2026-07-29",
-    "https://www.producthunt.com/products/osaurus/launches/osaurus-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-07-29",
-    "https://arxiv.org/abs/2607.26052": "2026-07-29",
-    "https://github.com/heroiclabs/nakama": "2026-07-30",
-    "https://github.com/alibaba/open-code-review": "2026-07-30",
-    "https://github.com/drumih/turbo-fieldfare": "2026-07-30",
-    "https://www.producthunt.com/products/clawteams/launches/clawteams-a263d5d3-d341-45d9-9e9f-7154e7066e4a?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-07-30",
-    "https://arxiv.org/abs/2607.27205": "2026-07-30",
     "https://github.com/dialogic-godot/dialogic": "2026-07-31",
     "https://github.com/infiniflow/ragflow": "2026-07-31",
     "https://github.com/mastra-ai/mastra": "2026-07-31",
@@ -41,6 +26,11 @@
     "https://github.com/different-ai/openwork": "2026-08-01",
     "https://github.com/chatwoot/chatwoot": "2026-08-01",
     "https://www.producthunt.com/products/context-dev/launches/context-dev-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-01",
-    "https://arxiv.org/abs/2607.28591": "2026-08-01"
+    "https://arxiv.org/abs/2607.28591": "2026-08-01",
+    "https://github.com/TokisanGames/Terrain3D": "2026-08-03",
+    "https://github.com/langchain-ai/langchain": "2026-08-03",
+    "https://github.com/bytedance/deer-flow": "2026-08-03",
+    "https://www.producthunt.com/products/openseo/launches/openseo?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-03",
+    "https://arxiv.org/abs/2607.29679": "2026-08-03"
   }
 }
