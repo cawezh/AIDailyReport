@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/godotengine/godot-docs",
-    "https://github.com/different-ai/openwork",
-    "https://github.com/chatwoot/chatwoot",
-    "https://www.producthunt.com/products/context-dev/launches/context-dev-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2607.28591",
     "https://github.com/TokisanGames/Terrain3D",
     "https://github.com/langchain-ai/langchain",
     "https://github.com/bytedance/deer-flow",
@@ -14,14 +9,14 @@
     "https://github.com/lyogavin/airllm",
     "https://github.com/zhaoxuya520/reverse-skill",
     "https://www.producthunt.com/products/anysearch/launches/anysearch-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2608.02603"
+    "https://arxiv.org/abs/2608.02603",
+    "https://github.com/hi-godot/godot-ai",
+    "https://github.com/openai/openai-agents-python",
+    "https://github.com/obra/superpowers",
+    "https://www.producthunt.com/products/sim-studio/launches/sim-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2608.04010"
   ],
   "records": {
-    "https://github.com/godotengine/godot-docs": "2026-08-01",
-    "https://github.com/different-ai/openwork": "2026-08-01",
-    "https://github.com/chatwoot/chatwoot": "2026-08-01",
-    "https://www.producthunt.com/products/context-dev/launches/context-dev-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-01",
-    "https://arxiv.org/abs/2607.28591": "2026-08-01",
     "https://github.com/TokisanGames/Terrain3D": "2026-08-03",
     "https://github.com/langchain-ai/langchain": "2026-08-03",
     "https://github.com/bytedance/deer-flow": "2026-08-03",
@@ -31,6 +26,11 @@
     "https://github.com/lyogavin/airllm": "2026-08-04",
     "https://github.com/zhaoxuya520/reverse-skill": "2026-08-04",
     "https://www.producthunt.com/products/anysearch/launches/anysearch-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-04",
-    "https://arxiv.org/abs/2608.02603": "2026-08-04"
+    "https://arxiv.org/abs/2608.02603": "2026-08-04",
+    "https://github.com/hi-godot/godot-ai": "2026-08-05",
+    "https://github.com/openai/openai-agents-python": "2026-08-05",
+    "https://github.com/obra/superpowers": "2026-08-05",
+    "https://www.producthunt.com/products/sim-studio/launches/sim-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-05",
+    "https://arxiv.org/abs/2608.04010": "2026-08-05"
   }
 }
