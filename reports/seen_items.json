@@ -14,7 +14,12 @@
     "https://github.com/openai/openai-agents-python",
     "https://github.com/obra/superpowers",
     "https://www.producthunt.com/products/sim-studio/launches/sim-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2608.04010"
+    "https://arxiv.org/abs/2608.04010",
+    "https://github.com/godotengine/godot-docs",
+    "https://github.com/ruvnet/ruflo",
+    "https://github.com/crewAIInc/crewAI",
+    "https://www.producthunt.com/products/osaurus/launches/osaurus-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2608.05144"
   ],
   "records": {
     "https://github.com/TokisanGames/Terrain3D": "2026-08-03",
@@ -31,6 +36,11 @@
     "https://github.com/openai/openai-agents-python": "2026-08-05",
     "https://github.com/obra/superpowers": "2026-08-05",
     "https://www.producthunt.com/products/sim-studio/launches/sim-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-05",
-    "https://arxiv.org/abs/2608.04010": "2026-08-05"
+    "https://arxiv.org/abs/2608.04010": "2026-08-05",
+    "https://github.com/godotengine/godot-docs": "2026-08-06",
+    "https://github.com/ruvnet/ruflo": "2026-08-06",
+    "https://github.com/crewAIInc/crewAI": "2026-08-06",
+    "https://www.producthunt.com/products/osaurus/launches/osaurus-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-06",
+    "https://arxiv.org/abs/2608.05144": "2026-08-06"
   }
 }
