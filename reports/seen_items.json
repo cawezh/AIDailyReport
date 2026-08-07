@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/TokisanGames/Terrain3D",
-    "https://github.com/langchain-ai/langchain",
-    "https://github.com/bytedance/deer-flow",
-    "https://www.producthunt.com/products/openseo/launches/openseo?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2607.29679",
     "https://github.com/godotengine/godot",
     "https://github.com/lyogavin/airllm",
     "https://github.com/zhaoxuya520/reverse-skill",
@@ -19,14 +14,14 @@
     "https://github.com/ruvnet/ruflo",
     "https://github.com/crewAIInc/crewAI",
     "https://www.producthunt.com/products/osaurus/launches/osaurus-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2608.05144"
+    "https://arxiv.org/abs/2608.05144",
+    "https://github.com/godot-rust/gdext",
+    "https://github.com/HKUDS/nanobot",
+    "https://github.com/mastra-ai/mastra",
+    "https://www.producthunt.com/products/pazi/launches/pazi-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2608.06370"
   ],
   "records": {
-    "https://github.com/TokisanGames/Terrain3D": "2026-08-03",
-    "https://github.com/langchain-ai/langchain": "2026-08-03",
-    "https://github.com/bytedance/deer-flow": "2026-08-03",
-    "https://www.producthunt.com/products/openseo/launches/openseo?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-03",
-    "https://arxiv.org/abs/2607.29679": "2026-08-03",
     "https://github.com/godotengine/godot": "2026-08-04",
     "https://github.com/lyogavin/airllm": "2026-08-04",
     "https://github.com/zhaoxuya520/reverse-skill": "2026-08-04",
@@ -41,6 +36,11 @@
     "https://github.com/ruvnet/ruflo": "2026-08-06",
     "https://github.com/crewAIInc/crewAI": "2026-08-06",
     "https://www.producthunt.com/products/osaurus/launches/osaurus-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-06",
-    "https://arxiv.org/abs/2608.05144": "2026-08-06"
+    "https://arxiv.org/abs/2608.05144": "2026-08-06",
+    "https://github.com/godot-rust/gdext": "2026-08-07",
+    "https://github.com/HKUDS/nanobot": "2026-08-07",
+    "https://github.com/mastra-ai/mastra": "2026-08-07",
+    "https://www.producthunt.com/products/pazi/launches/pazi-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-07",
+    "https://arxiv.org/abs/2608.06370": "2026-08-07"
   }
 }
