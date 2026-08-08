@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/godotengine/godot",
-    "https://github.com/lyogavin/airllm",
-    "https://github.com/zhaoxuya520/reverse-skill",
-    "https://www.producthunt.com/products/anysearch/launches/anysearch-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2608.02603",
     "https://github.com/hi-godot/godot-ai",
     "https://github.com/openai/openai-agents-python",
     "https://github.com/obra/superpowers",
@@ -19,14 +14,14 @@
     "https://github.com/HKUDS/nanobot",
     "https://github.com/mastra-ai/mastra",
     "https://www.producthunt.com/products/pazi/launches/pazi-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2608.06370"
+    "https://arxiv.org/abs/2608.06370",
+    "https://github.com/Orama-Interactive/Pixelorama",
+    "https://github.com/zhayujie/CowAgent",
+    "https://github.com/bytedance/deer-flow",
+    "https://www.producthunt.com/products/ski?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2608.06362"
   ],
   "records": {
-    "https://github.com/godotengine/godot": "2026-08-04",
-    "https://github.com/lyogavin/airllm": "2026-08-04",
-    "https://github.com/zhaoxuya520/reverse-skill": "2026-08-04",
-    "https://www.producthunt.com/products/anysearch/launches/anysearch-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-04",
-    "https://arxiv.org/abs/2608.02603": "2026-08-04",
     "https://github.com/hi-godot/godot-ai": "2026-08-05",
     "https://github.com/openai/openai-agents-python": "2026-08-05",
     "https://github.com/obra/superpowers": "2026-08-05",
@@ -41,6 +36,11 @@
     "https://github.com/HKUDS/nanobot": "2026-08-07",
     "https://github.com/mastra-ai/mastra": "2026-08-07",
     "https://www.producthunt.com/products/pazi/launches/pazi-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-07",
-    "https://arxiv.org/abs/2608.06370": "2026-08-07"
+    "https://arxiv.org/abs/2608.06370": "2026-08-07",
+    "https://github.com/Orama-Interactive/Pixelorama": "2026-08-08",
+    "https://github.com/zhayujie/CowAgent": "2026-08-08",
+    "https://github.com/bytedance/deer-flow": "2026-08-08",
+    "https://www.producthunt.com/products/ski?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-08",
+    "https://arxiv.org/abs/2608.06362": "2026-08-08"
   }
 }
