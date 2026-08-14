@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/godotengine/godot",
-    "https://github.com/affaan-m/ECC",
-    "https://github.com/firecrawl/firecrawl",
-    "https://www.producthunt.com/products/openseo/launches/openseo?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2608.07468",
     "https://github.com/hi-godot/godot-ai",
     "https://github.com/openai/openai-agents-python",
     "https://github.com/shinyquagsire23/Klepton",
@@ -19,14 +14,14 @@
     "https://github.com/nobodywho-ooo/nobodywho",
     "https://github.com/crewAIInc/crewAI",
     "https://www.producthunt.com/products/unabyss/launches/unabyss-for-claude?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2608.12311"
+    "https://arxiv.org/abs/2608.12311",
+    "https://github.com/appsinacup/godot-rapier-physics",
+    "https://github.com/unslothai/unsloth",
+    "https://github.com/holaboss-ai/holaOS",
+    "https://www.producthunt.com/products/ski/launches/ski?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2608.13522"
   ],
   "records": {
-    "https://github.com/godotengine/godot": "2026-08-10",
-    "https://github.com/affaan-m/ECC": "2026-08-10",
-    "https://github.com/firecrawl/firecrawl": "2026-08-10",
-    "https://www.producthunt.com/products/openseo/launches/openseo?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-10",
-    "https://arxiv.org/abs/2608.07468": "2026-08-10",
     "https://github.com/hi-godot/godot-ai": "2026-08-11",
     "https://github.com/openai/openai-agents-python": "2026-08-11",
     "https://github.com/shinyquagsire23/Klepton": "2026-08-11",
@@ -41,6 +36,11 @@
     "https://github.com/nobodywho-ooo/nobodywho": "2026-08-13",
     "https://github.com/crewAIInc/crewAI": "2026-08-13",
     "https://www.producthunt.com/products/unabyss/launches/unabyss-for-claude?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-13",
-    "https://arxiv.org/abs/2608.12311": "2026-08-13"
+    "https://arxiv.org/abs/2608.12311": "2026-08-13",
+    "https://github.com/appsinacup/godot-rapier-physics": "2026-08-14",
+    "https://github.com/unslothai/unsloth": "2026-08-14",
+    "https://github.com/holaboss-ai/holaOS": "2026-08-14",
+    "https://www.producthunt.com/products/ski/launches/ski?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-14",
+    "https://arxiv.org/abs/2608.13522": "2026-08-14"
   }
 }
