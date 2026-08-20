@@ -14,7 +14,12 @@
     "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
     "https://github.com/mastra-ai/mastra",
     "https://www.producthunt.com/products/ski/launches/ski?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2608.18040"
+    "https://arxiv.org/abs/2608.18040",
+    "https://github.com/godot-rust/gdext",
+    "https://github.com/ruvnet/ruflo",
+    "https://github.com/bytedance/deer-flow",
+    "https://www.producthunt.com/products/adant-ai/launches/adant-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2608.19140"
   ],
   "records": {
     "https://github.com/godotengine/godot": "2026-08-17",
@@ -31,6 +36,11 @@
     "https://github.com/mukul975/Anthropic-Cybersecurity-Skills": "2026-08-19",
     "https://github.com/mastra-ai/mastra": "2026-08-19",
     "https://www.producthunt.com/products/ski/launches/ski?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-19",
-    "https://arxiv.org/abs/2608.18040": "2026-08-19"
+    "https://arxiv.org/abs/2608.18040": "2026-08-19",
+    "https://github.com/godot-rust/gdext": "2026-08-20",
+    "https://github.com/ruvnet/ruflo": "2026-08-20",
+    "https://github.com/bytedance/deer-flow": "2026-08-20",
+    "https://www.producthunt.com/products/adant-ai/launches/adant-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-20",
+    "https://arxiv.org/abs/2608.19140": "2026-08-20"
   }
 }
