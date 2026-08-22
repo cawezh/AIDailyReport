@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/hi-godot/godot-ai",
-    "https://github.com/openai/openai-agents-python",
-    "https://github.com/danny-avila/LibreChat",
-    "https://www.producthunt.com/products/coldtea?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2608.16889",
     "https://github.com/TokisanGames/Terrain3D",
     "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
     "https://github.com/mastra-ai/mastra",
@@ -19,14 +14,14 @@
     "https://github.com/volcengine/OpenViking",
     "https://github.com/react/react-native",
     "https://www.producthunt.com/products/prefactor/launches/prefactor?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2608.20318"
+    "https://arxiv.org/abs/2608.20318",
+    "https://github.com/godotengine/godot-docs",
+    "https://github.com/nobodywho-ooo/nobodywho",
+    "https://github.com/obra/superpowers",
+    "https://www.producthunt.com/products/memmy/launches/memmy-agent?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2608.20335"
   ],
   "records": {
-    "https://github.com/hi-godot/godot-ai": "2026-08-18",
-    "https://github.com/openai/openai-agents-python": "2026-08-18",
-    "https://github.com/danny-avila/LibreChat": "2026-08-18",
-    "https://www.producthunt.com/products/coldtea?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-18",
-    "https://arxiv.org/abs/2608.16889": "2026-08-18",
     "https://github.com/TokisanGames/Terrain3D": "2026-08-19",
     "https://github.com/mukul975/Anthropic-Cybersecurity-Skills": "2026-08-19",
     "https://github.com/mastra-ai/mastra": "2026-08-19",
@@ -41,6 +36,11 @@
     "https://github.com/volcengine/OpenViking": "2026-08-21",
     "https://github.com/react/react-native": "2026-08-21",
     "https://www.producthunt.com/products/prefactor/launches/prefactor?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-21",
-    "https://arxiv.org/abs/2608.20318": "2026-08-21"
+    "https://arxiv.org/abs/2608.20318": "2026-08-21",
+    "https://github.com/godotengine/godot-docs": "2026-08-22",
+    "https://github.com/nobodywho-ooo/nobodywho": "2026-08-22",
+    "https://github.com/obra/superpowers": "2026-08-22",
+    "https://www.producthunt.com/products/memmy/launches/memmy-agent?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-22",
+    "https://arxiv.org/abs/2608.20335": "2026-08-22"
   }
 }
