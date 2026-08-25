@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/heroiclabs/nakama",
-    "https://github.com/volcengine/OpenViking",
-    "https://github.com/react/react-native",
-    "https://www.producthunt.com/products/prefactor/launches/prefactor?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2608.20318",
     "https://github.com/godotengine/godot-docs",
     "https://github.com/nobodywho-ooo/nobodywho",
     "https://github.com/obra/superpowers",
@@ -14,14 +9,14 @@
     "https://github.com/huggingface/transformers",
     "https://github.com/firecrawl/firecrawl",
     "https://www.producthunt.com/products/lambdatest?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2608.21360"
+    "https://arxiv.org/abs/2608.21360",
+    "https://github.com/godotengine/godot",
+    "https://github.com/langgenius/dify",
+    "https://github.com/crewAIInc/crewAI",
+    "https://www.producthunt.com/products/ski/launches/ski?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2608.23566"
   ],
   "records": {
-    "https://github.com/heroiclabs/nakama": "2026-08-21",
-    "https://github.com/volcengine/OpenViking": "2026-08-21",
-    "https://github.com/react/react-native": "2026-08-21",
-    "https://www.producthunt.com/products/prefactor/launches/prefactor?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-21",
-    "https://arxiv.org/abs/2608.20318": "2026-08-21",
     "https://github.com/godotengine/godot-docs": "2026-08-22",
     "https://github.com/nobodywho-ooo/nobodywho": "2026-08-22",
     "https://github.com/obra/superpowers": "2026-08-22",
@@ -31,6 +26,11 @@
     "https://github.com/huggingface/transformers": "2026-08-24",
     "https://github.com/firecrawl/firecrawl": "2026-08-24",
     "https://www.producthunt.com/products/lambdatest?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-24",
-    "https://arxiv.org/abs/2608.21360": "2026-08-24"
+    "https://arxiv.org/abs/2608.21360": "2026-08-24",
+    "https://github.com/godotengine/godot": "2026-08-25",
+    "https://github.com/langgenius/dify": "2026-08-25",
+    "https://github.com/crewAIInc/crewAI": "2026-08-25",
+    "https://www.producthunt.com/products/ski/launches/ski?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-25",
+    "https://arxiv.org/abs/2608.23566": "2026-08-25"
   }
 }
