@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/godotengine/godot-docs",
-    "https://github.com/nobodywho-ooo/nobodywho",
-    "https://github.com/obra/superpowers",
-    "https://www.producthunt.com/products/memmy/launches/memmy-agent?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2608.20335",
     "https://github.com/hi-godot/godot-ai",
     "https://github.com/huggingface/transformers",
     "https://github.com/firecrawl/firecrawl",
@@ -14,14 +9,14 @@
     "https://github.com/langgenius/dify",
     "https://github.com/crewAIInc/crewAI",
     "https://www.producthunt.com/products/ski/launches/ski?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2608.23566"
+    "https://arxiv.org/abs/2608.23566",
+    "https://cua.ai/docs/how-to-guides/sandbox/minecraft",
+    "https://github.com/DietrichGebert/ponytail",
+    "https://github.com/openai/codex",
+    "https://www.producthunt.com/products/grok?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2608.24845"
   ],
   "records": {
-    "https://github.com/godotengine/godot-docs": "2026-08-22",
-    "https://github.com/nobodywho-ooo/nobodywho": "2026-08-22",
-    "https://github.com/obra/superpowers": "2026-08-22",
-    "https://www.producthunt.com/products/memmy/launches/memmy-agent?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-22",
-    "https://arxiv.org/abs/2608.20335": "2026-08-22",
     "https://github.com/hi-godot/godot-ai": "2026-08-24",
     "https://github.com/huggingface/transformers": "2026-08-24",
     "https://github.com/firecrawl/firecrawl": "2026-08-24",
@@ -31,6 +26,11 @@
     "https://github.com/langgenius/dify": "2026-08-25",
     "https://github.com/crewAIInc/crewAI": "2026-08-25",
     "https://www.producthunt.com/products/ski/launches/ski?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-25",
-    "https://arxiv.org/abs/2608.23566": "2026-08-25"
+    "https://arxiv.org/abs/2608.23566": "2026-08-25",
+    "https://cua.ai/docs/how-to-guides/sandbox/minecraft": "2026-08-26",
+    "https://github.com/DietrichGebert/ponytail": "2026-08-26",
+    "https://github.com/openai/codex": "2026-08-26",
+    "https://www.producthunt.com/products/grok?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-26",
+    "https://arxiv.org/abs/2608.24845": "2026-08-26"
   }
 }
