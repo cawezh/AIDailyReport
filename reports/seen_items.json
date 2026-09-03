@@ -14,7 +14,11 @@
     "https://github.com/langgenius/dify",
     "https://www.openshot.org/blog/2026/08/30/openshot-40-record-edit-color-like-never-before/",
     "https://www.producthunt.com/products/grok/launches/grok-bot?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2609.01607"
+    "https://arxiv.org/abs/2609.01607",
+    "https://github.com/CraterCrash/godot-orchestrator",
+    "https://github.com/huggingface/transformers",
+    "https://github.com/obra/superpowers",
+    "https://www.producthunt.com/products/kilocode?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29"
   ],
   "records": {
     "https://github.com/godotengine/godot": "2026-08-31",
@@ -31,6 +35,10 @@
     "https://github.com/langgenius/dify": "2026-09-02",
     "https://www.openshot.org/blog/2026/08/30/openshot-40-record-edit-color-like-never-before/": "2026-09-02",
     "https://www.producthunt.com/products/grok/launches/grok-bot?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-02",
-    "https://arxiv.org/abs/2609.01607": "2026-09-02"
+    "https://arxiv.org/abs/2609.01607": "2026-09-02",
+    "https://github.com/CraterCrash/godot-orchestrator": "2026-09-03",
+    "https://github.com/huggingface/transformers": "2026-09-03",
+    "https://github.com/obra/superpowers": "2026-09-03",
+    "https://www.producthunt.com/products/kilocode?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-03"
   }
 }
