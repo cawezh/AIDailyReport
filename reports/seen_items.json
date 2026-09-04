@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/godotengine/godot",
-    "https://github.com/K-Dense-AI/scientific-agent-skills",
-    "https://github.com/danny-avila/LibreChat",
-    "https://www.producthunt.com/products/cloudflare/launches/cloudflare-os-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2608.28511",
     "https://github.com/godotengine/godot-docs",
     "https://github.com/jingyaogong/minimind",
     "https://github.com/crewAIInc/crewAI",
@@ -18,14 +13,14 @@
     "https://github.com/CraterCrash/godot-orchestrator",
     "https://github.com/huggingface/transformers",
     "https://github.com/obra/superpowers",
-    "https://www.producthunt.com/products/kilocode?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29"
+    "https://www.producthunt.com/products/kilocode?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://github.com/hi-godot/godot-ai",
+    "https://github.com/nobodywho-ooo/nobodywho",
+    "https://github.com/debpalash/VoiceStudio",
+    "https://www.producthunt.com/products/monid?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2609.04196"
   ],
   "records": {
-    "https://github.com/godotengine/godot": "2026-08-31",
-    "https://github.com/K-Dense-AI/scientific-agent-skills": "2026-08-31",
-    "https://github.com/danny-avila/LibreChat": "2026-08-31",
-    "https://www.producthunt.com/products/cloudflare/launches/cloudflare-os-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-08-31",
-    "https://arxiv.org/abs/2608.28511": "2026-08-31",
     "https://github.com/godotengine/godot-docs": "2026-09-01",
     "https://github.com/jingyaogong/minimind": "2026-09-01",
     "https://github.com/crewAIInc/crewAI": "2026-09-01",
@@ -39,6 +34,11 @@
     "https://github.com/CraterCrash/godot-orchestrator": "2026-09-03",
     "https://github.com/huggingface/transformers": "2026-09-03",
     "https://github.com/obra/superpowers": "2026-09-03",
-    "https://www.producthunt.com/products/kilocode?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-03"
+    "https://www.producthunt.com/products/kilocode?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-03",
+    "https://github.com/hi-godot/godot-ai": "2026-09-04",
+    "https://github.com/nobodywho-ooo/nobodywho": "2026-09-04",
+    "https://github.com/debpalash/VoiceStudio": "2026-09-04",
+    "https://www.producthunt.com/products/monid?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-04",
+    "https://arxiv.org/abs/2609.04196": "2026-09-04"
   }
 }
