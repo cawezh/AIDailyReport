@@ -14,7 +14,12 @@
     "https://github.com/affaan-m/ECC",
     "https://github.com/obra/superpowers",
     "https://www.producthunt.com/products/astute-2/launches/astute-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2609.09140"
+    "https://arxiv.org/abs/2609.09140",
+    "https://github.com/godotengine/godot",
+    "https://github.com/htdt/godogen",
+    "https://github.com/Tencent/teamai-cli",
+    "https://www.producthunt.com/products/dograh/launches/dograh-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2609.10522"
   ],
   "records": {
     "https://store.steampowered.com/app/1623730/": "2026-09-07",
@@ -31,6 +36,11 @@
     "https://github.com/affaan-m/ECC": "2026-09-09",
     "https://github.com/obra/superpowers": "2026-09-09",
     "https://www.producthunt.com/products/astute-2/launches/astute-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-09",
-    "https://arxiv.org/abs/2609.09140": "2026-09-09"
+    "https://arxiv.org/abs/2609.09140": "2026-09-09",
+    "https://github.com/godotengine/godot": "2026-09-10",
+    "https://github.com/htdt/godogen": "2026-09-10",
+    "https://github.com/Tencent/teamai-cli": "2026-09-10",
+    "https://www.producthunt.com/products/dograh/launches/dograh-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-10",
+    "https://arxiv.org/abs/2609.10522": "2026-09-10"
   }
 }
