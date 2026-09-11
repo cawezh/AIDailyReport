@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://store.steampowered.com/app/1623730/",
-    "https://github.com/langchain-ai/langchain",
-    "https://github.com/crewAIInc/crewAI",
-    "https://www.producthunt.com/products/clipto-ai/launches/clipto-mcp?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2609.05395",
     "https://github.com/heroiclabs/nakama",
     "https://github.com/openai/openai-agents-python",
     "https://github.com/mastra-ai/mastra",
@@ -19,14 +14,14 @@
     "https://github.com/htdt/godogen",
     "https://github.com/Tencent/teamai-cli",
     "https://www.producthunt.com/products/dograh/launches/dograh-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2609.10522"
+    "https://arxiv.org/abs/2609.10522",
+    "https://github.com/godot-rust/gdext",
+    "https://github.com/ollama/ollama",
+    "https://github.com/firecrawl/firecrawl",
+    "https://www.producthunt.com/products/grok/launches/grok-bot?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2609.11929"
   ],
   "records": {
-    "https://store.steampowered.com/app/1623730/": "2026-09-07",
-    "https://github.com/langchain-ai/langchain": "2026-09-07",
-    "https://github.com/crewAIInc/crewAI": "2026-09-07",
-    "https://www.producthunt.com/products/clipto-ai/launches/clipto-mcp?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-07",
-    "https://arxiv.org/abs/2609.05395": "2026-09-07",
     "https://github.com/heroiclabs/nakama": "2026-09-08",
     "https://github.com/openai/openai-agents-python": "2026-09-08",
     "https://github.com/mastra-ai/mastra": "2026-09-08",
@@ -41,6 +36,11 @@
     "https://github.com/htdt/godogen": "2026-09-10",
     "https://github.com/Tencent/teamai-cli": "2026-09-10",
     "https://www.producthunt.com/products/dograh/launches/dograh-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-10",
-    "https://arxiv.org/abs/2609.10522": "2026-09-10"
+    "https://arxiv.org/abs/2609.10522": "2026-09-10",
+    "https://github.com/godot-rust/gdext": "2026-09-11",
+    "https://github.com/ollama/ollama": "2026-09-11",
+    "https://github.com/firecrawl/firecrawl": "2026-09-11",
+    "https://www.producthunt.com/products/grok/launches/grok-bot?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-11",
+    "https://arxiv.org/abs/2609.11929": "2026-09-11"
   }
 }
