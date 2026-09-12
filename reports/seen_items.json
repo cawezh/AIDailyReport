@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/heroiclabs/nakama",
-    "https://github.com/openai/openai-agents-python",
-    "https://github.com/mastra-ai/mastra",
-    "https://www.producthunt.com/products/openai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2609.05415",
     "https://github.com/Orama-Interactive/Pixelorama",
     "https://github.com/affaan-m/ECC",
     "https://github.com/obra/superpowers",
@@ -19,14 +14,14 @@
     "https://github.com/ollama/ollama",
     "https://github.com/firecrawl/firecrawl",
     "https://www.producthunt.com/products/grok/launches/grok-bot?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2609.11929"
+    "https://arxiv.org/abs/2609.11929",
+    "https://github.com/stride3d/stride",
+    "https://github.com/TauricResearch/TradingAgents",
+    "https://shopify.engineering/back-to-native",
+    "https://www.producthunt.com/products/computable-gpu-index-cgi?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2609.11923"
   ],
   "records": {
-    "https://github.com/heroiclabs/nakama": "2026-09-08",
-    "https://github.com/openai/openai-agents-python": "2026-09-08",
-    "https://github.com/mastra-ai/mastra": "2026-09-08",
-    "https://www.producthunt.com/products/openai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-08",
-    "https://arxiv.org/abs/2609.05415": "2026-09-08",
     "https://github.com/Orama-Interactive/Pixelorama": "2026-09-09",
     "https://github.com/affaan-m/ECC": "2026-09-09",
     "https://github.com/obra/superpowers": "2026-09-09",
@@ -41,6 +36,11 @@
     "https://github.com/ollama/ollama": "2026-09-11",
     "https://github.com/firecrawl/firecrawl": "2026-09-11",
     "https://www.producthunt.com/products/grok/launches/grok-bot?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-11",
-    "https://arxiv.org/abs/2609.11929": "2026-09-11"
+    "https://arxiv.org/abs/2609.11929": "2026-09-11",
+    "https://github.com/stride3d/stride": "2026-09-12",
+    "https://github.com/TauricResearch/TradingAgents": "2026-09-12",
+    "https://shopify.engineering/back-to-native": "2026-09-12",
+    "https://www.producthunt.com/products/computable-gpu-index-cgi?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-12",
+    "https://arxiv.org/abs/2609.11923": "2026-09-12"
   }
 }
