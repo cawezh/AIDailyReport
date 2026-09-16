@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/stride3d/stride",
-    "https://github.com/TauricResearch/TradingAgents",
-    "https://shopify.engineering/back-to-native",
-    "https://www.producthunt.com/products/computable-gpu-index-cgi?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2609.11923",
     "https://github.com/hi-godot/godot-ai",
     "https://github.com/huggingface/transformers",
     "https://github.com/flutter/flutter",
@@ -12,14 +7,13 @@
     "https://github.com/4ian/GDevelop",
     "https://github.com/bojieli/ai-agent-book",
     "https://github.com/debpalash/VoiceStudio",
-    "https://www.producthunt.com/products/kilocode?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29"
+    "https://www.producthunt.com/products/kilocode?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://github.com/appsinacup/godot-rapier-physics",
+    "https://github.com/alibaba/open-code-review",
+    "https://github.com/NationalSecurityAgency/ghidra",
+    "https://www.producthunt.com/products/kilocode/launches/kilo-code-for-jetbrains-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29"
   ],
   "records": {
-    "https://github.com/stride3d/stride": "2026-09-12",
-    "https://github.com/TauricResearch/TradingAgents": "2026-09-12",
-    "https://shopify.engineering/back-to-native": "2026-09-12",
-    "https://www.producthunt.com/products/computable-gpu-index-cgi?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-12",
-    "https://arxiv.org/abs/2609.11923": "2026-09-12",
     "https://github.com/hi-godot/godot-ai": "2026-09-14",
     "https://github.com/huggingface/transformers": "2026-09-14",
     "https://github.com/flutter/flutter": "2026-09-14",
@@ -27,6 +21,10 @@
     "https://github.com/4ian/GDevelop": "2026-09-15",
     "https://github.com/bojieli/ai-agent-book": "2026-09-15",
     "https://github.com/debpalash/VoiceStudio": "2026-09-15",
-    "https://www.producthunt.com/products/kilocode?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-15"
+    "https://www.producthunt.com/products/kilocode?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-15",
+    "https://github.com/appsinacup/godot-rapier-physics": "2026-09-16",
+    "https://github.com/alibaba/open-code-review": "2026-09-16",
+    "https://github.com/NationalSecurityAgency/ghidra": "2026-09-16",
+    "https://www.producthunt.com/products/kilocode/launches/kilo-code-for-jetbrains-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-16"
   }
 }
