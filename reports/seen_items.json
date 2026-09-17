@@ -11,7 +11,12 @@
     "https://github.com/appsinacup/godot-rapier-physics",
     "https://github.com/alibaba/open-code-review",
     "https://github.com/NationalSecurityAgency/ghidra",
-    "https://www.producthunt.com/products/kilocode/launches/kilo-code-for-jetbrains-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29"
+    "https://www.producthunt.com/products/kilocode/launches/kilo-code-for-jetbrains-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://github.com/godot-rust/gdext",
+    "https://github.com/TauricResearch/TradingAgents",
+    "https://github.com/firecrawl/firecrawl",
+    "https://www.producthunt.com/products/clipto-ai/launches/clipto-mcp?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2609.19144"
   ],
   "records": {
     "https://github.com/hi-godot/godot-ai": "2026-09-14",
@@ -25,6 +30,11 @@
     "https://github.com/appsinacup/godot-rapier-physics": "2026-09-16",
     "https://github.com/alibaba/open-code-review": "2026-09-16",
     "https://github.com/NationalSecurityAgency/ghidra": "2026-09-16",
-    "https://www.producthunt.com/products/kilocode/launches/kilo-code-for-jetbrains-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-16"
+    "https://www.producthunt.com/products/kilocode/launches/kilo-code-for-jetbrains-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-16",
+    "https://github.com/godot-rust/gdext": "2026-09-17",
+    "https://github.com/TauricResearch/TradingAgents": "2026-09-17",
+    "https://github.com/firecrawl/firecrawl": "2026-09-17",
+    "https://www.producthunt.com/products/clipto-ai/launches/clipto-mcp?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-17",
+    "https://arxiv.org/abs/2609.19144": "2026-09-17"
   }
 }
