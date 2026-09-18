@@ -1,9 +1,5 @@
 {
   "urls": [
-    "https://github.com/hi-godot/godot-ai",
-    "https://github.com/huggingface/transformers",
-    "https://github.com/flutter/flutter",
-    "https://www.producthunt.com/products/openai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
     "https://github.com/4ian/GDevelop",
     "https://github.com/bojieli/ai-agent-book",
     "https://github.com/debpalash/VoiceStudio",
@@ -16,13 +12,14 @@
     "https://github.com/TauricResearch/TradingAgents",
     "https://github.com/firecrawl/firecrawl",
     "https://www.producthunt.com/products/clipto-ai/launches/clipto-mcp?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2609.19144"
+    "https://arxiv.org/abs/2609.19144",
+    "https://github.com/godotengine/godot",
+    "https://github.com/nobodywho-ooo/nobodywho",
+    "https://github.com/Genymobile/scrcpy",
+    "https://www.producthunt.com/products/mastra?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2609.20819"
   ],
   "records": {
-    "https://github.com/hi-godot/godot-ai": "2026-09-14",
-    "https://github.com/huggingface/transformers": "2026-09-14",
-    "https://github.com/flutter/flutter": "2026-09-14",
-    "https://www.producthunt.com/products/openai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-14",
     "https://github.com/4ian/GDevelop": "2026-09-15",
     "https://github.com/bojieli/ai-agent-book": "2026-09-15",
     "https://github.com/debpalash/VoiceStudio": "2026-09-15",
@@ -35,6 +32,11 @@
     "https://github.com/TauricResearch/TradingAgents": "2026-09-17",
     "https://github.com/firecrawl/firecrawl": "2026-09-17",
     "https://www.producthunt.com/products/clipto-ai/launches/clipto-mcp?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-17",
-    "https://arxiv.org/abs/2609.19144": "2026-09-17"
+    "https://arxiv.org/abs/2609.19144": "2026-09-17",
+    "https://github.com/godotengine/godot": "2026-09-18",
+    "https://github.com/nobodywho-ooo/nobodywho": "2026-09-18",
+    "https://github.com/Genymobile/scrcpy": "2026-09-18",
+    "https://www.producthunt.com/products/mastra?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-18",
+    "https://arxiv.org/abs/2609.20819": "2026-09-18"
   }
 }
