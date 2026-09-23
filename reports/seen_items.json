@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://www.theverge.com/tech/997315/valve-has-open-sourced-lepton-its-tool-to-bring-android-games-to-steam",
-    "https://github.com/anthropics/claude-code",
-    "https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/",
-    "https://www.producthunt.com/products/openai/launches/gpt-6-astra-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2609.20816",
     "https://github.com/C7-Game/OpenCiv3",
     "https://github.com/RandallLiuXin/GodotMaker",
     "https://github.com/topjohnwu/Magisk",
@@ -14,14 +9,14 @@
     "https://github.com/huggingface/transformers",
     "https://github.com/firecrawl/firecrawl",
     "https://www.producthunt.com/products/kilocode/launches/kilo-code-for-jetbrains-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2609.24997"
+    "https://arxiv.org/abs/2609.24997",
+    "https://github.com/appsinacup/godot-rapier-physics",
+    "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+    "https://minimaxir.com/2026/09/agentic-iteration/",
+    "https://www.producthunt.com/products/x1-2/launches/x1-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2609.26781"
   ],
   "records": {
-    "https://www.theverge.com/tech/997315/valve-has-open-sourced-lepton-its-tool-to-bring-android-games-to-steam": "2026-09-19",
-    "https://github.com/anthropics/claude-code": "2026-09-19",
-    "https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/": "2026-09-19",
-    "https://www.producthunt.com/products/openai/launches/gpt-6-astra-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-19",
-    "https://arxiv.org/abs/2609.20816": "2026-09-19",
     "https://github.com/C7-Game/OpenCiv3": "2026-09-21",
     "https://github.com/RandallLiuXin/GodotMaker": "2026-09-21",
     "https://github.com/topjohnwu/Magisk": "2026-09-21",
@@ -31,6 +26,11 @@
     "https://github.com/huggingface/transformers": "2026-09-22",
     "https://github.com/firecrawl/firecrawl": "2026-09-22",
     "https://www.producthunt.com/products/kilocode/launches/kilo-code-for-jetbrains-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-22",
-    "https://arxiv.org/abs/2609.24997": "2026-09-22"
+    "https://arxiv.org/abs/2609.24997": "2026-09-22",
+    "https://github.com/appsinacup/godot-rapier-physics": "2026-09-23",
+    "https://openai.com/index/introducing-gpt-6-sol-and-luna/": "2026-09-23",
+    "https://minimaxir.com/2026/09/agentic-iteration/": "2026-09-23",
+    "https://www.producthunt.com/products/x1-2/launches/x1-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-23",
+    "https://arxiv.org/abs/2609.26781": "2026-09-23"
   }
 }
