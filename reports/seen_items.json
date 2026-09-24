@@ -14,7 +14,12 @@
     "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
     "https://minimaxir.com/2026/09/agentic-iteration/",
     "https://www.producthunt.com/products/x1-2/launches/x1-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2609.26781"
+    "https://arxiv.org/abs/2609.26781",
+    "https://github.com/godotengine/godot",
+    "https://github.com/TauricResearch/TradingAgents",
+    "https://github.com/Open-Dev-Society/OpenStock",
+    "https://www.producthunt.com/products/openai/launches/gpt-6-astra-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2609.28470"
   ],
   "records": {
     "https://github.com/C7-Game/OpenCiv3": "2026-09-21",
@@ -31,6 +36,11 @@
     "https://openai.com/index/introducing-gpt-6-sol-and-luna/": "2026-09-23",
     "https://minimaxir.com/2026/09/agentic-iteration/": "2026-09-23",
     "https://www.producthunt.com/products/x1-2/launches/x1-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-23",
-    "https://arxiv.org/abs/2609.26781": "2026-09-23"
+    "https://arxiv.org/abs/2609.26781": "2026-09-23",
+    "https://github.com/godotengine/godot": "2026-09-24",
+    "https://github.com/TauricResearch/TradingAgents": "2026-09-24",
+    "https://github.com/Open-Dev-Society/OpenStock": "2026-09-24",
+    "https://www.producthunt.com/products/openai/launches/gpt-6-astra-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-24",
+    "https://arxiv.org/abs/2609.28470": "2026-09-24"
   }
 }
