@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/C7-Game/OpenCiv3",
-    "https://github.com/RandallLiuXin/GodotMaker",
-    "https://github.com/topjohnwu/Magisk",
-    "https://www.producthunt.com/products/switch-11?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2609.22083",
     "https://github.com/godot-rust/gdext",
     "https://github.com/huggingface/transformers",
     "https://github.com/firecrawl/firecrawl",
@@ -19,14 +14,14 @@
     "https://github.com/TauricResearch/TradingAgents",
     "https://github.com/Open-Dev-Society/OpenStock",
     "https://www.producthunt.com/products/openai/launches/gpt-6-astra-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2609.28470"
+    "https://arxiv.org/abs/2609.28470",
+    "https://github.com/heroiclabs/nakama",
+    "https://www.anthropic.com/claude-opus-5-5",
+    "https://github.com/2dust/v2rayNG",
+    "https://www.producthunt.com/products/mastra/launches/mastra-factory?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2609.30249"
   ],
   "records": {
-    "https://github.com/C7-Game/OpenCiv3": "2026-09-21",
-    "https://github.com/RandallLiuXin/GodotMaker": "2026-09-21",
-    "https://github.com/topjohnwu/Magisk": "2026-09-21",
-    "https://www.producthunt.com/products/switch-11?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-21",
-    "https://arxiv.org/abs/2609.22083": "2026-09-21",
     "https://github.com/godot-rust/gdext": "2026-09-22",
     "https://github.com/huggingface/transformers": "2026-09-22",
     "https://github.com/firecrawl/firecrawl": "2026-09-22",
@@ -41,6 +36,11 @@
     "https://github.com/TauricResearch/TradingAgents": "2026-09-24",
     "https://github.com/Open-Dev-Society/OpenStock": "2026-09-24",
     "https://www.producthunt.com/products/openai/launches/gpt-6-astra-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-24",
-    "https://arxiv.org/abs/2609.28470": "2026-09-24"
+    "https://arxiv.org/abs/2609.28470": "2026-09-24",
+    "https://github.com/heroiclabs/nakama": "2026-09-25",
+    "https://www.anthropic.com/claude-opus-5-5": "2026-09-25",
+    "https://github.com/2dust/v2rayNG": "2026-09-25",
+    "https://www.producthunt.com/products/mastra/launches/mastra-factory?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-25",
+    "https://arxiv.org/abs/2609.30249": "2026-09-25"
   }
 }
