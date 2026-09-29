@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/heroiclabs/nakama",
-    "https://www.anthropic.com/claude-opus-5-5",
-    "https://github.com/2dust/v2rayNG",
-    "https://www.producthunt.com/products/mastra/launches/mastra-factory?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2609.30249",
     "https://github.com/hi-godot/godot-ai",
     "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
     "https://github.com/crewAIInc/crewAI",
@@ -14,14 +9,14 @@
     "https://swarmtraces.org/",
     "https://shnatsel.github.io/state-of-simd-rust-2026/",
     "https://www.producthunt.com/products/kilocode/launches/kilo-code-for-jetbrains-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2609.31619"
+    "https://arxiv.org/abs/2609.31619",
+    "https://github.com/C7-Game/OpenCiv3",
+    "https://github.com/TauricResearch/TradingAgents",
+    "https://blog.cloudflare.com/cloudflare-cf-cli-launch/",
+    "https://www.producthunt.com/products/openai/launches/gpt-6-astra-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2609.35768"
   ],
   "records": {
-    "https://github.com/heroiclabs/nakama": "2026-09-25",
-    "https://www.anthropic.com/claude-opus-5-5": "2026-09-25",
-    "https://github.com/2dust/v2rayNG": "2026-09-25",
-    "https://www.producthunt.com/products/mastra/launches/mastra-factory?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-25",
-    "https://arxiv.org/abs/2609.30249": "2026-09-25",
     "https://github.com/hi-godot/godot-ai": "2026-09-26",
     "https://github.com/gamedev-skills/awesome-gamedev-agent-skills": "2026-09-26",
     "https://github.com/crewAIInc/crewAI": "2026-09-26",
@@ -31,6 +26,11 @@
     "https://swarmtraces.org/": "2026-09-28",
     "https://shnatsel.github.io/state-of-simd-rust-2026/": "2026-09-28",
     "https://www.producthunt.com/products/kilocode/launches/kilo-code-for-jetbrains-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-28",
-    "https://arxiv.org/abs/2609.31619": "2026-09-28"
+    "https://arxiv.org/abs/2609.31619": "2026-09-28",
+    "https://github.com/C7-Game/OpenCiv3": "2026-09-29",
+    "https://github.com/TauricResearch/TradingAgents": "2026-09-29",
+    "https://blog.cloudflare.com/cloudflare-cf-cli-launch/": "2026-09-29",
+    "https://www.producthunt.com/products/openai/launches/gpt-6-astra-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-09-29",
+    "https://arxiv.org/abs/2609.35768": "2026-09-29"
   }
 }
