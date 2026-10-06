@@ -1,9 +1,5 @@
 {
   "urls": [
-    "https://github.com/heroiclabs/nakama",
-    "https://github.com/Donchitos/Claude-Code-Game-Studios",
-    "https://github.com/NVIDIA/OpenShell",
-    "https://www.producthunt.com/products/switch-11/launches/switch-14?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
     "https://github.com/niklas2902/py4godot",
     "https://github.com/htdt/godogen",
     "https://github.com/topjohnwu/Magisk",
@@ -13,13 +9,13 @@
     "https://github.com/ollama/ollama",
     "https://github.com/flutter/flutter",
     "https://www.producthunt.com/products/floot?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2610.03716"
+    "https://arxiv.org/abs/2610.03716",
+    "https://github.com/C7-Game/OpenCiv3",
+    "https://github.com/TauricResearch/TradingAgents",
+    "https://github.com/crewAIInc/crewAI",
+    "https://www.producthunt.com/products/mastra/launches/mastra-factory?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29"
   ],
   "records": {
-    "https://github.com/heroiclabs/nakama": "2026-10-02",
-    "https://github.com/Donchitos/Claude-Code-Game-Studios": "2026-10-02",
-    "https://github.com/NVIDIA/OpenShell": "2026-10-02",
-    "https://www.producthunt.com/products/switch-11/launches/switch-14?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-02",
     "https://github.com/niklas2902/py4godot": "2026-10-03",
     "https://github.com/htdt/godogen": "2026-10-03",
     "https://github.com/topjohnwu/Magisk": "2026-10-03",
@@ -29,6 +25,10 @@
     "https://github.com/ollama/ollama": "2026-10-05",
     "https://github.com/flutter/flutter": "2026-10-05",
     "https://www.producthunt.com/products/floot?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-05",
-    "https://arxiv.org/abs/2610.03716": "2026-10-05"
+    "https://arxiv.org/abs/2610.03716": "2026-10-05",
+    "https://github.com/C7-Game/OpenCiv3": "2026-10-06",
+    "https://github.com/TauricResearch/TradingAgents": "2026-10-06",
+    "https://github.com/crewAIInc/crewAI": "2026-10-06",
+    "https://www.producthunt.com/products/mastra/launches/mastra-factory?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-06"
   }
 }
