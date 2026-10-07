@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/niklas2902/py4godot",
-    "https://github.com/htdt/godogen",
-    "https://github.com/topjohnwu/Magisk",
-    "https://www.producthunt.com/products/solid-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2610.02206",
     "https://github.com/hi-godot/godot-ai",
     "https://github.com/ollama/ollama",
     "https://github.com/flutter/flutter",
@@ -13,14 +8,14 @@
     "https://github.com/C7-Game/OpenCiv3",
     "https://github.com/TauricResearch/TradingAgents",
     "https://github.com/crewAIInc/crewAI",
-    "https://www.producthunt.com/products/mastra/launches/mastra-factory?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29"
+    "https://www.producthunt.com/products/mastra/launches/mastra-factory?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://github.com/Cysharp/ZLinq",
+    "https://github.com/langchain-ai/langchain",
+    "https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/",
+    "https://www.producthunt.com/products/solid-3/launches/solid-9?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2610.08791"
   ],
   "records": {
-    "https://github.com/niklas2902/py4godot": "2026-10-03",
-    "https://github.com/htdt/godogen": "2026-10-03",
-    "https://github.com/topjohnwu/Magisk": "2026-10-03",
-    "https://www.producthunt.com/products/solid-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-03",
-    "https://arxiv.org/abs/2610.02206": "2026-10-03",
     "https://github.com/hi-godot/godot-ai": "2026-10-05",
     "https://github.com/ollama/ollama": "2026-10-05",
     "https://github.com/flutter/flutter": "2026-10-05",
@@ -29,6 +24,11 @@
     "https://github.com/C7-Game/OpenCiv3": "2026-10-06",
     "https://github.com/TauricResearch/TradingAgents": "2026-10-06",
     "https://github.com/crewAIInc/crewAI": "2026-10-06",
-    "https://www.producthunt.com/products/mastra/launches/mastra-factory?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-06"
+    "https://www.producthunt.com/products/mastra/launches/mastra-factory?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-06",
+    "https://github.com/Cysharp/ZLinq": "2026-10-07",
+    "https://github.com/langchain-ai/langchain": "2026-10-07",
+    "https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/": "2026-10-07",
+    "https://www.producthunt.com/products/solid-3/launches/solid-9?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-07",
+    "https://arxiv.org/abs/2610.08791": "2026-10-07"
   }
 }
