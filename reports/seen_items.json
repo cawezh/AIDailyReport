@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/hi-godot/godot-ai",
-    "https://github.com/ollama/ollama",
-    "https://github.com/flutter/flutter",
-    "https://www.producthunt.com/products/floot?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2610.03716",
     "https://github.com/C7-Game/OpenCiv3",
     "https://github.com/TauricResearch/TradingAgents",
     "https://github.com/crewAIInc/crewAI",
@@ -18,14 +13,14 @@
     "https://github.com/htdt/godogen",
     "https://github.com/tester-army/e2e",
     "https://www.producthunt.com/products/clueso/launches/clueso-mcp-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2610.10536"
+    "https://arxiv.org/abs/2610.10536",
+    "https://github.com/TokisanGames/Terrain3D",
+    "https://github.com/nobodywho-ooo/nobodywho",
+    "https://github.com/p10node/k10s",
+    "https://www.producthunt.com/products/superset-5/launches/superset-mobile-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2610.12470"
   ],
   "records": {
-    "https://github.com/hi-godot/godot-ai": "2026-10-05",
-    "https://github.com/ollama/ollama": "2026-10-05",
-    "https://github.com/flutter/flutter": "2026-10-05",
-    "https://www.producthunt.com/products/floot?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-05",
-    "https://arxiv.org/abs/2610.03716": "2026-10-05",
     "https://github.com/C7-Game/OpenCiv3": "2026-10-06",
     "https://github.com/TauricResearch/TradingAgents": "2026-10-06",
     "https://github.com/crewAIInc/crewAI": "2026-10-06",
@@ -39,6 +34,11 @@
     "https://github.com/htdt/godogen": "2026-10-08",
     "https://github.com/tester-army/e2e": "2026-10-08",
     "https://www.producthunt.com/products/clueso/launches/clueso-mcp-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-08",
-    "https://arxiv.org/abs/2610.10536": "2026-10-08"
+    "https://arxiv.org/abs/2610.10536": "2026-10-08",
+    "https://github.com/TokisanGames/Terrain3D": "2026-10-09",
+    "https://github.com/nobodywho-ooo/nobodywho": "2026-10-09",
+    "https://github.com/p10node/k10s": "2026-10-09",
+    "https://www.producthunt.com/products/superset-5/launches/superset-mobile-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-09",
+    "https://arxiv.org/abs/2610.12470": "2026-10-09"
   }
 }
