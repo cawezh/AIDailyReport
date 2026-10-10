@@ -1,9 +1,5 @@
 {
   "urls": [
-    "https://github.com/C7-Game/OpenCiv3",
-    "https://github.com/TauricResearch/TradingAgents",
-    "https://github.com/crewAIInc/crewAI",
-    "https://www.producthunt.com/products/mastra/launches/mastra-factory?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
     "https://github.com/Cysharp/ZLinq",
     "https://github.com/langchain-ai/langchain",
     "https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/",
@@ -18,13 +14,14 @@
     "https://github.com/nobodywho-ooo/nobodywho",
     "https://github.com/p10node/k10s",
     "https://www.producthunt.com/products/superset-5/launches/superset-mobile-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2610.12470"
+    "https://arxiv.org/abs/2610.12470",
+    "https://github.com/hi-godot/godot-ai",
+    "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+    "https://github.com/rustdesk/rustdesk",
+    "https://www.producthunt.com/products/velozity-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2610.12445"
   ],
   "records": {
-    "https://github.com/C7-Game/OpenCiv3": "2026-10-06",
-    "https://github.com/TauricResearch/TradingAgents": "2026-10-06",
-    "https://github.com/crewAIInc/crewAI": "2026-10-06",
-    "https://www.producthunt.com/products/mastra/launches/mastra-factory?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-06",
     "https://github.com/Cysharp/ZLinq": "2026-10-07",
     "https://github.com/langchain-ai/langchain": "2026-10-07",
     "https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/": "2026-10-07",
@@ -39,6 +36,11 @@
     "https://github.com/nobodywho-ooo/nobodywho": "2026-10-09",
     "https://github.com/p10node/k10s": "2026-10-09",
     "https://www.producthunt.com/products/superset-5/launches/superset-mobile-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-09",
-    "https://arxiv.org/abs/2610.12470": "2026-10-09"
+    "https://arxiv.org/abs/2610.12470": "2026-10-09",
+    "https://github.com/hi-godot/godot-ai": "2026-10-10",
+    "https://github.com/gamedev-skills/awesome-gamedev-agent-skills": "2026-10-10",
+    "https://github.com/rustdesk/rustdesk": "2026-10-10",
+    "https://www.producthunt.com/products/velozity-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-10",
+    "https://arxiv.org/abs/2610.12445": "2026-10-10"
   }
 }
