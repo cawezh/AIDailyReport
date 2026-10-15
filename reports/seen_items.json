@@ -12,7 +12,12 @@
     "https://github.com/appsinacup/godot-rapier-physics",
     "https://github.com/langchain-ai/langchain",
     "https://github.com/flutter/flutter",
-    "https://www.producthunt.com/products/solid-3/launches/solid-9?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29"
+    "https://www.producthunt.com/products/solid-3/launches/solid-9?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://github.com/4ian/GDevelop",
+    "https://github.com/LibreChat-AI/LibreChat",
+    "https://github.com/rust-lang/rust/issues/164250",
+    "https://www.producthunt.com/products/velozity-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2610.20597"
   ],
   "records": {
     "https://github.com/thedivergentai/Game-Design-Agentic-Skills": "2026-10-12",
@@ -27,6 +32,11 @@
     "https://github.com/appsinacup/godot-rapier-physics": "2026-10-14",
     "https://github.com/langchain-ai/langchain": "2026-10-14",
     "https://github.com/flutter/flutter": "2026-10-14",
-    "https://www.producthunt.com/products/solid-3/launches/solid-9?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-14"
+    "https://www.producthunt.com/products/solid-3/launches/solid-9?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-14",
+    "https://github.com/4ian/GDevelop": "2026-10-15",
+    "https://github.com/LibreChat-AI/LibreChat": "2026-10-15",
+    "https://github.com/rust-lang/rust/issues/164250": "2026-10-15",
+    "https://www.producthunt.com/products/velozity-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-15",
+    "https://arxiv.org/abs/2610.20597": "2026-10-15"
   }
 }
