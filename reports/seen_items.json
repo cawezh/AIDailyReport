@@ -1,9 +1,5 @@
 {
   "urls": [
-    "https://github.com/godotengine/godot",
-    "https://github.com/K-Dense-AI/scientific-agent-skills",
-    "https://github.com/Genymobile/scrcpy",
-    "https://www.producthunt.com/products/rill-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
     "https://github.com/heroiclabs/nakama",
     "https://github.com/ollama/ollama",
     "https://github.com/paperclipai/paperclip",
@@ -13,13 +9,14 @@
     "https://github.com/huggingface/transformers",
     "https://github.com/kksimp/Mac.apk",
     "https://www.producthunt.com/products/claude-fable-5-1/launches/claude-opus-5-5?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2610.26863"
+    "https://arxiv.org/abs/2610.26863",
+    "https://github.com/Orama-Interactive/Pixelorama",
+    "https://github.com/Comfy-Org/ComfyUI",
+    "https://github.com/topjohnwu/Magisk",
+    "https://www.producthunt.com/products/rill-3/launches/rill-browser?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2610.28610"
   ],
   "records": {
-    "https://github.com/godotengine/godot": "2026-10-17",
-    "https://github.com/K-Dense-AI/scientific-agent-skills": "2026-10-17",
-    "https://github.com/Genymobile/scrcpy": "2026-10-17",
-    "https://www.producthunt.com/products/rill-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-17",
     "https://github.com/heroiclabs/nakama": "2026-10-19",
     "https://github.com/ollama/ollama": "2026-10-19",
     "https://github.com/paperclipai/paperclip": "2026-10-19",
@@ -29,6 +26,11 @@
     "https://github.com/huggingface/transformers": "2026-10-20",
     "https://github.com/kksimp/Mac.apk": "2026-10-20",
     "https://www.producthunt.com/products/claude-fable-5-1/launches/claude-opus-5-5?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-20",
-    "https://arxiv.org/abs/2610.26863": "2026-10-20"
+    "https://arxiv.org/abs/2610.26863": "2026-10-20",
+    "https://github.com/Orama-Interactive/Pixelorama": "2026-10-21",
+    "https://github.com/Comfy-Org/ComfyUI": "2026-10-21",
+    "https://github.com/topjohnwu/Magisk": "2026-10-21",
+    "https://www.producthunt.com/products/rill-3/launches/rill-browser?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-21",
+    "https://arxiv.org/abs/2610.28610": "2026-10-21"
   }
 }
