@@ -14,7 +14,12 @@
     "https://github.com/Comfy-Org/ComfyUI",
     "https://github.com/topjohnwu/Magisk",
     "https://www.producthunt.com/products/rill-3/launches/rill-browser?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2610.28610"
+    "https://arxiv.org/abs/2610.28610",
+    "https://github.com/godotengine/godot",
+    "https://github.com/vllm-project/vllm",
+    "https://github.com/supabase/supabase",
+    "https://www.producthunt.com/products/solid-3/launches/solid-9?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2610.30132"
   ],
   "records": {
     "https://github.com/heroiclabs/nakama": "2026-10-19",
@@ -31,6 +36,11 @@
     "https://github.com/Comfy-Org/ComfyUI": "2026-10-21",
     "https://github.com/topjohnwu/Magisk": "2026-10-21",
     "https://www.producthunt.com/products/rill-3/launches/rill-browser?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-21",
-    "https://arxiv.org/abs/2610.28610": "2026-10-21"
+    "https://arxiv.org/abs/2610.28610": "2026-10-21",
+    "https://github.com/godotengine/godot": "2026-10-22",
+    "https://github.com/vllm-project/vllm": "2026-10-22",
+    "https://github.com/supabase/supabase": "2026-10-22",
+    "https://www.producthunt.com/products/solid-3/launches/solid-9?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-22",
+    "https://arxiv.org/abs/2610.30132": "2026-10-22"
   }
 }
