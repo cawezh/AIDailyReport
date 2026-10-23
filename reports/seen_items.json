@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/heroiclabs/nakama",
-    "https://github.com/ollama/ollama",
-    "https://github.com/paperclipai/paperclip",
-    "https://www.producthunt.com/products/floot/launches/floot-mcp?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2610.23820",
     "https://github.com/Donchitos/Claude-Code-Game-Studios",
     "https://github.com/huggingface/transformers",
     "https://github.com/kksimp/Mac.apk",
@@ -19,14 +14,14 @@
     "https://github.com/vllm-project/vllm",
     "https://github.com/supabase/supabase",
     "https://www.producthunt.com/products/solid-3/launches/solid-9?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2610.30132"
+    "https://arxiv.org/abs/2610.30132",
+    "https://github.com/htdt/godogen",
+    "https://github.com/microsoft/autogen",
+    "https://github.com/flutter/flutter",
+    "https://www.producthunt.com/products/velozity-2/launches/velozity-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2610.31657"
   ],
   "records": {
-    "https://github.com/heroiclabs/nakama": "2026-10-19",
-    "https://github.com/ollama/ollama": "2026-10-19",
-    "https://github.com/paperclipai/paperclip": "2026-10-19",
-    "https://www.producthunt.com/products/floot/launches/floot-mcp?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-19",
-    "https://arxiv.org/abs/2610.23820": "2026-10-19",
     "https://github.com/Donchitos/Claude-Code-Game-Studios": "2026-10-20",
     "https://github.com/huggingface/transformers": "2026-10-20",
     "https://github.com/kksimp/Mac.apk": "2026-10-20",
@@ -41,6 +36,11 @@
     "https://github.com/vllm-project/vllm": "2026-10-22",
     "https://github.com/supabase/supabase": "2026-10-22",
     "https://www.producthunt.com/products/solid-3/launches/solid-9?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-22",
-    "https://arxiv.org/abs/2610.30132": "2026-10-22"
+    "https://arxiv.org/abs/2610.30132": "2026-10-22",
+    "https://github.com/htdt/godogen": "2026-10-23",
+    "https://github.com/microsoft/autogen": "2026-10-23",
+    "https://github.com/flutter/flutter": "2026-10-23",
+    "https://www.producthunt.com/products/velozity-2/launches/velozity-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-23",
+    "https://arxiv.org/abs/2610.31657": "2026-10-23"
   }
 }
