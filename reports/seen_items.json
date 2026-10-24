@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/Donchitos/Claude-Code-Game-Studios",
-    "https://github.com/huggingface/transformers",
-    "https://github.com/kksimp/Mac.apk",
-    "https://www.producthunt.com/products/claude-fable-5-1/launches/claude-opus-5-5?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2610.26863",
     "https://github.com/Orama-Interactive/Pixelorama",
     "https://github.com/Comfy-Org/ComfyUI",
     "https://github.com/topjohnwu/Magisk",
@@ -19,14 +14,14 @@
     "https://github.com/microsoft/autogen",
     "https://github.com/flutter/flutter",
     "https://www.producthunt.com/products/velozity-2/launches/velozity-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2610.31657"
+    "https://arxiv.org/abs/2610.31657",
+    "https://github.com/heroiclabs/nakama",
+    "https://github.com/paperclipai/paperclip",
+    "https://github.com/rustdesk/rustdesk",
+    "https://www.producthunt.com/products/directus/launches/monospace-from-directus?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2610.31639"
   ],
   "records": {
-    "https://github.com/Donchitos/Claude-Code-Game-Studios": "2026-10-20",
-    "https://github.com/huggingface/transformers": "2026-10-20",
-    "https://github.com/kksimp/Mac.apk": "2026-10-20",
-    "https://www.producthunt.com/products/claude-fable-5-1/launches/claude-opus-5-5?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-20",
-    "https://arxiv.org/abs/2610.26863": "2026-10-20",
     "https://github.com/Orama-Interactive/Pixelorama": "2026-10-21",
     "https://github.com/Comfy-Org/ComfyUI": "2026-10-21",
     "https://github.com/topjohnwu/Magisk": "2026-10-21",
@@ -41,6 +36,11 @@
     "https://github.com/microsoft/autogen": "2026-10-23",
     "https://github.com/flutter/flutter": "2026-10-23",
     "https://www.producthunt.com/products/velozity-2/launches/velozity-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-23",
-    "https://arxiv.org/abs/2610.31657": "2026-10-23"
+    "https://arxiv.org/abs/2610.31657": "2026-10-23",
+    "https://github.com/heroiclabs/nakama": "2026-10-24",
+    "https://github.com/paperclipai/paperclip": "2026-10-24",
+    "https://github.com/rustdesk/rustdesk": "2026-10-24",
+    "https://www.producthunt.com/products/directus/launches/monospace-from-directus?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-24",
+    "https://arxiv.org/abs/2610.31639": "2026-10-24"
   }
 }
