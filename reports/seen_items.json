@@ -1,15 +1,5 @@
 {
   "urls": [
-    "https://github.com/Orama-Interactive/Pixelorama",
-    "https://github.com/Comfy-Org/ComfyUI",
-    "https://github.com/topjohnwu/Magisk",
-    "https://www.producthunt.com/products/rill-3/launches/rill-browser?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2610.28610",
-    "https://github.com/godotengine/godot",
-    "https://github.com/vllm-project/vllm",
-    "https://github.com/supabase/supabase",
-    "https://www.producthunt.com/products/solid-3/launches/solid-9?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2610.30132",
     "https://github.com/htdt/godogen",
     "https://github.com/microsoft/autogen",
     "https://github.com/flutter/flutter",
@@ -19,19 +9,13 @@
     "https://github.com/paperclipai/paperclip",
     "https://github.com/rustdesk/rustdesk",
     "https://www.producthunt.com/products/directus/launches/monospace-from-directus?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2610.31639"
+    "https://arxiv.org/abs/2610.31639",
+    "https://github.com/appsinacup/godot-rapier-physics",
+    "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+    "https://github.com/makecindy/cindy",
+    "https://www.producthunt.com/products/openseo/launches/openseo-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29"
   ],
   "records": {
-    "https://github.com/Orama-Interactive/Pixelorama": "2026-10-21",
-    "https://github.com/Comfy-Org/ComfyUI": "2026-10-21",
-    "https://github.com/topjohnwu/Magisk": "2026-10-21",
-    "https://www.producthunt.com/products/rill-3/launches/rill-browser?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-21",
-    "https://arxiv.org/abs/2610.28610": "2026-10-21",
-    "https://github.com/godotengine/godot": "2026-10-22",
-    "https://github.com/vllm-project/vllm": "2026-10-22",
-    "https://github.com/supabase/supabase": "2026-10-22",
-    "https://www.producthunt.com/products/solid-3/launches/solid-9?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-22",
-    "https://arxiv.org/abs/2610.30132": "2026-10-22",
     "https://github.com/htdt/godogen": "2026-10-23",
     "https://github.com/microsoft/autogen": "2026-10-23",
     "https://github.com/flutter/flutter": "2026-10-23",
@@ -41,6 +25,10 @@
     "https://github.com/paperclipai/paperclip": "2026-10-24",
     "https://github.com/rustdesk/rustdesk": "2026-10-24",
     "https://www.producthunt.com/products/directus/launches/monospace-from-directus?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-24",
-    "https://arxiv.org/abs/2610.31639": "2026-10-24"
+    "https://arxiv.org/abs/2610.31639": "2026-10-24",
+    "https://github.com/appsinacup/godot-rapier-physics": "2026-10-26",
+    "https://github.com/gamedev-skills/awesome-gamedev-agent-skills": "2026-10-26",
+    "https://github.com/makecindy/cindy": "2026-10-26",
+    "https://www.producthunt.com/products/openseo/launches/openseo-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-26"
   }
 }
