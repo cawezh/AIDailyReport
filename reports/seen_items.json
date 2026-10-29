@@ -13,7 +13,12 @@
     "https://github.com/LibreChat-AI/LibreChat",
     "https://github.com/flutter/flutter",
     "https://www.producthunt.com/products/velozity-2/launches/velozity-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2610.37657"
+    "https://arxiv.org/abs/2610.37657",
+    "https://github.com/heroiclabs/nakama",
+    "https://github.com/nightly-labs/openbot",
+    "https://github.com/ruvnet/RuView",
+    "https://www.producthunt.com/products/beam-win?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2610.37666"
   ],
   "records": {
     "https://github.com/appsinacup/godot-rapier-physics": "2026-10-26",
@@ -29,6 +34,11 @@
     "https://github.com/LibreChat-AI/LibreChat": "2026-10-28",
     "https://github.com/flutter/flutter": "2026-10-28",
     "https://www.producthunt.com/products/velozity-2/launches/velozity-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-28",
-    "https://arxiv.org/abs/2610.37657": "2026-10-28"
+    "https://arxiv.org/abs/2610.37657": "2026-10-28",
+    "https://github.com/heroiclabs/nakama": "2026-10-29",
+    "https://github.com/nightly-labs/openbot": "2026-10-29",
+    "https://github.com/ruvnet/RuView": "2026-10-29",
+    "https://www.producthunt.com/products/beam-win?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-29",
+    "https://arxiv.org/abs/2610.37666": "2026-10-29"
   }
 }
