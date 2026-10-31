@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/hi-godot/godot-ai",
-    "https://github.com/huggingface/transformers",
-    "https://github.com/obra/superpowers",
-    "https://www.producthunt.com/products/rill-3/launches/rill-browser?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2610.35868",
     "https://github.com/godotengine/godot",
     "https://github.com/LibreChat-AI/LibreChat",
     "https://github.com/flutter/flutter",
@@ -19,14 +14,14 @@
     "https://github.com/THU-MAIC/OpenMAIC",
     "https://smsofdeath.com/",
     "https://www.producthunt.com/products/inbox-zero-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2610.40655"
+    "https://arxiv.org/abs/2610.40655",
+    "https://github.com/4ian/GDevelop",
+    "https://github.com/TauricResearch/TradingAgents",
+    "https://github.com/milind-soni/OpenMausBot",
+    "https://www.producthunt.com/products/openseo/launches/openseo-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2610.40607"
   ],
   "records": {
-    "https://github.com/hi-godot/godot-ai": "2026-10-27",
-    "https://github.com/huggingface/transformers": "2026-10-27",
-    "https://github.com/obra/superpowers": "2026-10-27",
-    "https://www.producthunt.com/products/rill-3/launches/rill-browser?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-27",
-    "https://arxiv.org/abs/2610.35868": "2026-10-27",
     "https://github.com/godotengine/godot": "2026-10-28",
     "https://github.com/LibreChat-AI/LibreChat": "2026-10-28",
     "https://github.com/flutter/flutter": "2026-10-28",
@@ -41,6 +36,11 @@
     "https://github.com/THU-MAIC/OpenMAIC": "2026-10-30",
     "https://smsofdeath.com/": "2026-10-30",
     "https://www.producthunt.com/products/inbox-zero-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-30",
-    "https://arxiv.org/abs/2610.40655": "2026-10-30"
+    "https://arxiv.org/abs/2610.40655": "2026-10-30",
+    "https://github.com/4ian/GDevelop": "2026-10-31",
+    "https://github.com/TauricResearch/TradingAgents": "2026-10-31",
+    "https://github.com/milind-soni/OpenMausBot": "2026-10-31",
+    "https://www.producthunt.com/products/openseo/launches/openseo-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-31",
+    "https://arxiv.org/abs/2610.40607": "2026-10-31"
   }
 }
