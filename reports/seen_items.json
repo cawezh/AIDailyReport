@@ -1,15 +1,5 @@
 {
   "urls": [
-    "https://github.com/godotengine/godot",
-    "https://github.com/LibreChat-AI/LibreChat",
-    "https://github.com/flutter/flutter",
-    "https://www.producthunt.com/products/velozity-2/launches/velozity-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2610.37657",
-    "https://github.com/heroiclabs/nakama",
-    "https://github.com/nightly-labs/openbot",
-    "https://github.com/ruvnet/RuView",
-    "https://www.producthunt.com/products/beam-win?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2610.37666",
     "https://github.com/godot-rust/gdext",
     "https://github.com/THU-MAIC/OpenMAIC",
     "https://smsofdeath.com/",
@@ -19,19 +9,14 @@
     "https://github.com/TauricResearch/TradingAgents",
     "https://github.com/milind-soni/OpenMausBot",
     "https://www.producthunt.com/products/openseo/launches/openseo-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2610.40607"
+    "https://arxiv.org/abs/2610.40607",
+    "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy",
+    "https://mistral.ai/news/mistral-large-4-oss/",
+    "https://github.com/ivankovic/omnidiff",
+    "https://www.producthunt.com/products/rill-3/launches/rill-browser?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2610.42149"
   ],
   "records": {
-    "https://github.com/godotengine/godot": "2026-10-28",
-    "https://github.com/LibreChat-AI/LibreChat": "2026-10-28",
-    "https://github.com/flutter/flutter": "2026-10-28",
-    "https://www.producthunt.com/products/velozity-2/launches/velozity-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-28",
-    "https://arxiv.org/abs/2610.37657": "2026-10-28",
-    "https://github.com/heroiclabs/nakama": "2026-10-29",
-    "https://github.com/nightly-labs/openbot": "2026-10-29",
-    "https://github.com/ruvnet/RuView": "2026-10-29",
-    "https://www.producthunt.com/products/beam-win?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-29",
-    "https://arxiv.org/abs/2610.37666": "2026-10-29",
     "https://github.com/godot-rust/gdext": "2026-10-30",
     "https://github.com/THU-MAIC/OpenMAIC": "2026-10-30",
     "https://smsofdeath.com/": "2026-10-30",
@@ -41,6 +26,11 @@
     "https://github.com/TauricResearch/TradingAgents": "2026-10-31",
     "https://github.com/milind-soni/OpenMausBot": "2026-10-31",
     "https://www.producthunt.com/products/openseo/launches/openseo-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-31",
-    "https://arxiv.org/abs/2610.40607": "2026-10-31"
+    "https://arxiv.org/abs/2610.40607": "2026-10-31",
+    "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy": "2026-11-02",
+    "https://mistral.ai/news/mistral-large-4-oss/": "2026-11-02",
+    "https://github.com/ivankovic/omnidiff": "2026-11-02",
+    "https://www.producthunt.com/products/rill-3/launches/rill-browser?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-02",
+    "https://arxiv.org/abs/2610.42149": "2026-11-02"
   }
 }
