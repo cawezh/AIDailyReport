@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/godot-rust/gdext",
-    "https://github.com/THU-MAIC/OpenMAIC",
-    "https://smsofdeath.com/",
-    "https://www.producthunt.com/products/inbox-zero-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2610.40655",
     "https://github.com/4ian/GDevelop",
     "https://github.com/TauricResearch/TradingAgents",
     "https://github.com/milind-soni/OpenMausBot",
@@ -14,14 +9,14 @@
     "https://mistral.ai/news/mistral-large-4-oss/",
     "https://github.com/ivankovic/omnidiff",
     "https://www.producthunt.com/products/rill-3/launches/rill-browser?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2610.42149"
+    "https://arxiv.org/abs/2610.42149",
+    "https://github.com/GameFrameX/GameFrameX",
+    "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+    "https://github.com/react/react-native",
+    "https://www.producthunt.com/products/velozity-2/launches/velozity-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2611.03647"
   ],
   "records": {
-    "https://github.com/godot-rust/gdext": "2026-10-30",
-    "https://github.com/THU-MAIC/OpenMAIC": "2026-10-30",
-    "https://smsofdeath.com/": "2026-10-30",
-    "https://www.producthunt.com/products/inbox-zero-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-10-30",
-    "https://arxiv.org/abs/2610.40655": "2026-10-30",
     "https://github.com/4ian/GDevelop": "2026-10-31",
     "https://github.com/TauricResearch/TradingAgents": "2026-10-31",
     "https://github.com/milind-soni/OpenMausBot": "2026-10-31",
@@ -31,6 +26,11 @@
     "https://mistral.ai/news/mistral-large-4-oss/": "2026-11-02",
     "https://github.com/ivankovic/omnidiff": "2026-11-02",
     "https://www.producthunt.com/products/rill-3/launches/rill-browser?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-02",
-    "https://arxiv.org/abs/2610.42149": "2026-11-02"
+    "https://arxiv.org/abs/2610.42149": "2026-11-02",
+    "https://github.com/GameFrameX/GameFrameX": "2026-11-03",
+    "https://github.com/gamedev-skills/awesome-gamedev-agent-skills": "2026-11-03",
+    "https://github.com/react/react-native": "2026-11-03",
+    "https://www.producthunt.com/products/velozity-2/launches/velozity-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-03",
+    "https://arxiv.org/abs/2611.03647": "2026-11-03"
   }
 }
