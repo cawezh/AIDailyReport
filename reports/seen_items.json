@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy",
-    "https://mistral.ai/news/mistral-large-4-oss/",
-    "https://github.com/ivankovic/omnidiff",
-    "https://www.producthunt.com/products/rill-3/launches/rill-browser?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2610.42149",
     "https://github.com/GameFrameX/GameFrameX",
     "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
     "https://github.com/react/react-native",
@@ -19,14 +14,14 @@
     "https://news.ycombinator.com/item?id=50363461",
     "https://www.interdb.jp/pg/index.html",
     "https://www.producthunt.com/products/wanaka-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2611.06918"
+    "https://arxiv.org/abs/2611.06918",
+    "https://github.com/heroiclabs/nakama",
+    "https://github.com/TauricResearch/TradingAgents",
+    "https://github.com/paperclipai/paperclip",
+    "https://www.producthunt.com/products/irisgo-public-beta/launches/irisgo-for-solopreneurs?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2611.08483"
   ],
   "records": {
-    "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy": "2026-11-02",
-    "https://mistral.ai/news/mistral-large-4-oss/": "2026-11-02",
-    "https://github.com/ivankovic/omnidiff": "2026-11-02",
-    "https://www.producthunt.com/products/rill-3/launches/rill-browser?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-02",
-    "https://arxiv.org/abs/2610.42149": "2026-11-02",
     "https://github.com/GameFrameX/GameFrameX": "2026-11-03",
     "https://github.com/gamedev-skills/awesome-gamedev-agent-skills": "2026-11-03",
     "https://github.com/react/react-native": "2026-11-03",
@@ -41,6 +36,11 @@
     "https://news.ycombinator.com/item?id=50363461": "2026-11-05",
     "https://www.interdb.jp/pg/index.html": "2026-11-05",
     "https://www.producthunt.com/products/wanaka-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-05",
-    "https://arxiv.org/abs/2611.06918": "2026-11-05"
+    "https://arxiv.org/abs/2611.06918": "2026-11-05",
+    "https://github.com/heroiclabs/nakama": "2026-11-06",
+    "https://github.com/TauricResearch/TradingAgents": "2026-11-06",
+    "https://github.com/paperclipai/paperclip": "2026-11-06",
+    "https://www.producthunt.com/products/irisgo-public-beta/launches/irisgo-for-solopreneurs?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-06",
+    "https://arxiv.org/abs/2611.08483": "2026-11-06"
   }
 }
