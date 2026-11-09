@@ -1,15 +1,5 @@
 {
   "urls": [
-    "https://github.com/C7-Game/OpenCiv3",
-    "https://github.com/huggingface/transformers",
-    "https://github.com/Genymobile/scrcpy",
-    "https://www.producthunt.com/products/asymptotelabs?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2611.05377",
-    "https://github.com/godotengine/godot",
-    "https://news.ycombinator.com/item?id=50363461",
-    "https://www.interdb.jp/pg/index.html",
-    "https://www.producthunt.com/products/wanaka-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2611.06918",
     "https://github.com/heroiclabs/nakama",
     "https://github.com/TauricResearch/TradingAgents",
     "https://github.com/paperclipai/paperclip",
@@ -19,19 +9,14 @@
     "https://github.com/bytedance/deer-flow",
     "https://webassembly.github.io/spec/core/",
     "https://www.producthunt.com/products/scalekit?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2611.08438"
+    "https://arxiv.org/abs/2611.08438",
+    "https://github.com/Cysharp/ZLinq",
+    "https://github.com/genex-games/genex-desktop",
+    "https://github.com/unclecode/crawl4ai",
+    "https://www.producthunt.com/products/screen-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2611.09894"
   ],
   "records": {
-    "https://github.com/C7-Game/OpenCiv3": "2026-11-04",
-    "https://github.com/huggingface/transformers": "2026-11-04",
-    "https://github.com/Genymobile/scrcpy": "2026-11-04",
-    "https://www.producthunt.com/products/asymptotelabs?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-04",
-    "https://arxiv.org/abs/2611.05377": "2026-11-04",
-    "https://github.com/godotengine/godot": "2026-11-05",
-    "https://news.ycombinator.com/item?id=50363461": "2026-11-05",
-    "https://www.interdb.jp/pg/index.html": "2026-11-05",
-    "https://www.producthunt.com/products/wanaka-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-05",
-    "https://arxiv.org/abs/2611.06918": "2026-11-05",
     "https://github.com/heroiclabs/nakama": "2026-11-06",
     "https://github.com/TauricResearch/TradingAgents": "2026-11-06",
     "https://github.com/paperclipai/paperclip": "2026-11-06",
@@ -41,6 +26,11 @@
     "https://github.com/bytedance/deer-flow": "2026-11-07",
     "https://webassembly.github.io/spec/core/": "2026-11-07",
     "https://www.producthunt.com/products/scalekit?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-07",
-    "https://arxiv.org/abs/2611.08438": "2026-11-07"
+    "https://arxiv.org/abs/2611.08438": "2026-11-07",
+    "https://github.com/Cysharp/ZLinq": "2026-11-09",
+    "https://github.com/genex-games/genex-desktop": "2026-11-09",
+    "https://github.com/unclecode/crawl4ai": "2026-11-09",
+    "https://www.producthunt.com/products/screen-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-09",
+    "https://arxiv.org/abs/2611.09894": "2026-11-09"
   }
 }
