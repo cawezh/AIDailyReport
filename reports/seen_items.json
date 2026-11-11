@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/IvanMurzak/Godot-MCP",
-    "https://github.com/bytedance/deer-flow",
-    "https://webassembly.github.io/spec/core/",
-    "https://www.producthunt.com/products/scalekit?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2611.08438",
     "https://github.com/Cysharp/ZLinq",
     "https://github.com/genex-games/genex-desktop",
     "https://github.com/unclecode/crawl4ai",
@@ -14,14 +9,14 @@
     "https://github.com/ruvnet/ruflo",
     "https://github.com/rustdesk/rustdesk",
     "https://www.producthunt.com/products/wanaka-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2611.12886"
+    "https://arxiv.org/abs/2611.12886",
+    "https://github.com/godotengine/godot",
+    "https://github.com/TauricResearch/TradingAgents",
+    "https://github.com/paperclipai/paperclip",
+    "https://www.producthunt.com/products/asymptotelabs?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2611.14492"
   ],
   "records": {
-    "https://github.com/IvanMurzak/Godot-MCP": "2026-11-07",
-    "https://github.com/bytedance/deer-flow": "2026-11-07",
-    "https://webassembly.github.io/spec/core/": "2026-11-07",
-    "https://www.producthunt.com/products/scalekit?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-07",
-    "https://arxiv.org/abs/2611.08438": "2026-11-07",
     "https://github.com/Cysharp/ZLinq": "2026-11-09",
     "https://github.com/genex-games/genex-desktop": "2026-11-09",
     "https://github.com/unclecode/crawl4ai": "2026-11-09",
@@ -31,6 +26,11 @@
     "https://github.com/ruvnet/ruflo": "2026-11-10",
     "https://github.com/rustdesk/rustdesk": "2026-11-10",
     "https://www.producthunt.com/products/wanaka-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-10",
-    "https://arxiv.org/abs/2611.12886": "2026-11-10"
+    "https://arxiv.org/abs/2611.12886": "2026-11-10",
+    "https://github.com/godotengine/godot": "2026-11-11",
+    "https://github.com/TauricResearch/TradingAgents": "2026-11-11",
+    "https://github.com/paperclipai/paperclip": "2026-11-11",
+    "https://www.producthunt.com/products/asymptotelabs?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-11",
+    "https://arxiv.org/abs/2611.14492": "2026-11-11"
   }
 }
