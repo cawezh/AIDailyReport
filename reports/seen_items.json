@@ -14,7 +14,12 @@
     "https://github.com/TauricResearch/TradingAgents",
     "https://github.com/paperclipai/paperclip",
     "https://www.producthunt.com/products/asymptotelabs?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2611.14492"
+    "https://arxiv.org/abs/2611.14492",
+    "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+    "https://github.com/Donchitos/Claude-Code-Game-Studios",
+    "https://github.com/appwrite/appwrite",
+    "https://www.producthunt.com/products/scalekit?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2611.14515"
   ],
   "records": {
     "https://github.com/Cysharp/ZLinq": "2026-11-09",
@@ -31,6 +36,11 @@
     "https://github.com/TauricResearch/TradingAgents": "2026-11-11",
     "https://github.com/paperclipai/paperclip": "2026-11-11",
     "https://www.producthunt.com/products/asymptotelabs?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-11",
-    "https://arxiv.org/abs/2611.14492": "2026-11-11"
+    "https://arxiv.org/abs/2611.14492": "2026-11-11",
+    "https://github.com/gamedev-skills/awesome-gamedev-agent-skills": "2026-11-12",
+    "https://github.com/Donchitos/Claude-Code-Game-Studios": "2026-11-12",
+    "https://github.com/appwrite/appwrite": "2026-11-12",
+    "https://www.producthunt.com/products/scalekit?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-12",
+    "https://arxiv.org/abs/2611.14515": "2026-11-12"
   }
 }
