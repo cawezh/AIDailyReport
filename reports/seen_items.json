@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/Cysharp/ZLinq",
-    "https://github.com/genex-games/genex-desktop",
-    "https://github.com/unclecode/crawl4ai",
-    "https://www.producthunt.com/products/screen-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2611.09894",
     "https://github.com/4ian/GDevelop",
     "https://github.com/ruvnet/ruflo",
     "https://github.com/rustdesk/rustdesk",
@@ -19,14 +14,14 @@
     "https://github.com/Donchitos/Claude-Code-Game-Studios",
     "https://github.com/appwrite/appwrite",
     "https://www.producthunt.com/products/scalekit?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2611.14515"
+    "https://arxiv.org/abs/2611.14515",
+    "https://github.com/hi-godot/godot-ai",
+    "https://github.com/bytedance/deer-flow",
+    "https://github.com/flutter/flutter",
+    "https://www.producthunt.com/products/glasshand?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2611.17334"
   ],
   "records": {
-    "https://github.com/Cysharp/ZLinq": "2026-11-09",
-    "https://github.com/genex-games/genex-desktop": "2026-11-09",
-    "https://github.com/unclecode/crawl4ai": "2026-11-09",
-    "https://www.producthunt.com/products/screen-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-09",
-    "https://arxiv.org/abs/2611.09894": "2026-11-09",
     "https://github.com/4ian/GDevelop": "2026-11-10",
     "https://github.com/ruvnet/ruflo": "2026-11-10",
     "https://github.com/rustdesk/rustdesk": "2026-11-10",
@@ -41,6 +36,11 @@
     "https://github.com/Donchitos/Claude-Code-Game-Studios": "2026-11-12",
     "https://github.com/appwrite/appwrite": "2026-11-12",
     "https://www.producthunt.com/products/scalekit?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-12",
-    "https://arxiv.org/abs/2611.14515": "2026-11-12"
+    "https://arxiv.org/abs/2611.14515": "2026-11-12",
+    "https://github.com/hi-godot/godot-ai": "2026-11-13",
+    "https://github.com/bytedance/deer-flow": "2026-11-13",
+    "https://github.com/flutter/flutter": "2026-11-13",
+    "https://www.producthunt.com/products/glasshand?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-13",
+    "https://arxiv.org/abs/2611.17334": "2026-11-13"
   }
 }
