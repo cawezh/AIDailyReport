@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/4ian/GDevelop",
-    "https://github.com/ruvnet/ruflo",
-    "https://github.com/rustdesk/rustdesk",
-    "https://www.producthunt.com/products/wanaka-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2611.12886",
     "https://github.com/godotengine/godot",
     "https://github.com/TauricResearch/TradingAgents",
     "https://github.com/paperclipai/paperclip",
@@ -19,14 +14,14 @@
     "https://github.com/bytedance/deer-flow",
     "https://github.com/flutter/flutter",
     "https://www.producthunt.com/products/glasshand?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2611.17334"
+    "https://arxiv.org/abs/2611.17334",
+    "https://github.com/luanti-org/luanti",
+    "https://github.com/esengine/DeepSeek-Reasonix",
+    "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
+    "https://www.producthunt.com/products/alsona?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2611.17330"
   ],
   "records": {
-    "https://github.com/4ian/GDevelop": "2026-11-10",
-    "https://github.com/ruvnet/ruflo": "2026-11-10",
-    "https://github.com/rustdesk/rustdesk": "2026-11-10",
-    "https://www.producthunt.com/products/wanaka-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-10",
-    "https://arxiv.org/abs/2611.12886": "2026-11-10",
     "https://github.com/godotengine/godot": "2026-11-11",
     "https://github.com/TauricResearch/TradingAgents": "2026-11-11",
     "https://github.com/paperclipai/paperclip": "2026-11-11",
@@ -41,6 +36,11 @@
     "https://github.com/bytedance/deer-flow": "2026-11-13",
     "https://github.com/flutter/flutter": "2026-11-13",
     "https://www.producthunt.com/products/glasshand?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-13",
-    "https://arxiv.org/abs/2611.17334": "2026-11-13"
+    "https://arxiv.org/abs/2611.17334": "2026-11-13",
+    "https://github.com/luanti-org/luanti": "2026-11-14",
+    "https://github.com/esengine/DeepSeek-Reasonix": "2026-11-14",
+    "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/": "2026-11-14",
+    "https://www.producthunt.com/products/alsona?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-14",
+    "https://arxiv.org/abs/2611.17330": "2026-11-14"
   }
 }
