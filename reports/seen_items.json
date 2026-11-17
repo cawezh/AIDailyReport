@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/hi-godot/godot-ai",
-    "https://github.com/bytedance/deer-flow",
-    "https://github.com/flutter/flutter",
-    "https://www.producthunt.com/products/glasshand?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2611.17334",
     "https://github.com/luanti-org/luanti",
     "https://github.com/esengine/DeepSeek-Reasonix",
     "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
@@ -14,14 +9,14 @@
     "https://github.com/ag-ui-protocol/ag-ui",
     "https://github.com/dream-num/univer",
     "https://www.producthunt.com/products/dev-null/launches/dev-null?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2611.18561"
+    "https://arxiv.org/abs/2611.18561",
+    "https://github.com/godotengine/godot",
+    "https://github.com/tradermonty/claude-trading-skills",
+    "https://github.com/getarcaneapp/arcane",
+    "https://www.producthunt.com/products/asymptotelabs/launches/beacon-sh?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2611.21605"
   ],
   "records": {
-    "https://github.com/hi-godot/godot-ai": "2026-11-13",
-    "https://github.com/bytedance/deer-flow": "2026-11-13",
-    "https://github.com/flutter/flutter": "2026-11-13",
-    "https://www.producthunt.com/products/glasshand?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-13",
-    "https://arxiv.org/abs/2611.17334": "2026-11-13",
     "https://github.com/luanti-org/luanti": "2026-11-14",
     "https://github.com/esengine/DeepSeek-Reasonix": "2026-11-14",
     "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/": "2026-11-14",
@@ -31,6 +26,11 @@
     "https://github.com/ag-ui-protocol/ag-ui": "2026-11-16",
     "https://github.com/dream-num/univer": "2026-11-16",
     "https://www.producthunt.com/products/dev-null/launches/dev-null?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-16",
-    "https://arxiv.org/abs/2611.18561": "2026-11-16"
+    "https://arxiv.org/abs/2611.18561": "2026-11-16",
+    "https://github.com/godotengine/godot": "2026-11-17",
+    "https://github.com/tradermonty/claude-trading-skills": "2026-11-17",
+    "https://github.com/getarcaneapp/arcane": "2026-11-17",
+    "https://www.producthunt.com/products/asymptotelabs/launches/beacon-sh?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-17",
+    "https://arxiv.org/abs/2611.21605": "2026-11-17"
   }
 }
