@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/luanti-org/luanti",
-    "https://github.com/esengine/DeepSeek-Reasonix",
-    "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
-    "https://www.producthunt.com/products/alsona?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2611.17330",
     "https://github.com/heroiclabs/nakama",
     "https://github.com/ag-ui-protocol/ag-ui",
     "https://github.com/dream-num/univer",
@@ -14,14 +9,14 @@
     "https://github.com/tradermonty/claude-trading-skills",
     "https://github.com/getarcaneapp/arcane",
     "https://www.producthunt.com/products/asymptotelabs/launches/beacon-sh?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2611.21605"
+    "https://arxiv.org/abs/2611.21605",
+    "https://github.com/RodZill4/material-maker",
+    "https://github.com/elementalsouls/Claude-BugHunter",
+    "https://github.com/obra/superpowers",
+    "https://www.producthunt.com/products/wanaka-studio/launches/wanaka-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2611.23229"
   ],
   "records": {
-    "https://github.com/luanti-org/luanti": "2026-11-14",
-    "https://github.com/esengine/DeepSeek-Reasonix": "2026-11-14",
-    "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/": "2026-11-14",
-    "https://www.producthunt.com/products/alsona?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-14",
-    "https://arxiv.org/abs/2611.17330": "2026-11-14",
     "https://github.com/heroiclabs/nakama": "2026-11-16",
     "https://github.com/ag-ui-protocol/ag-ui": "2026-11-16",
     "https://github.com/dream-num/univer": "2026-11-16",
@@ -31,6 +26,11 @@
     "https://github.com/tradermonty/claude-trading-skills": "2026-11-17",
     "https://github.com/getarcaneapp/arcane": "2026-11-17",
     "https://www.producthunt.com/products/asymptotelabs/launches/beacon-sh?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-17",
-    "https://arxiv.org/abs/2611.21605": "2026-11-17"
+    "https://arxiv.org/abs/2611.21605": "2026-11-17",
+    "https://github.com/RodZill4/material-maker": "2026-11-18",
+    "https://github.com/elementalsouls/Claude-BugHunter": "2026-11-18",
+    "https://github.com/obra/superpowers": "2026-11-18",
+    "https://www.producthunt.com/products/wanaka-studio/launches/wanaka-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-18",
+    "https://arxiv.org/abs/2611.23229": "2026-11-18"
   }
 }
