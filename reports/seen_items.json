@@ -14,7 +14,12 @@
     "https://github.com/elementalsouls/Claude-BugHunter",
     "https://github.com/obra/superpowers",
     "https://www.producthunt.com/products/wanaka-studio/launches/wanaka-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2611.23229"
+    "https://arxiv.org/abs/2611.23229",
+    "https://github.com/godotengine/godot-docs",
+    "https://github.com/HKUDS/CLI-Anything",
+    "https://github.com/astral-sh/uv",
+    "https://www.producthunt.com/products/alsona?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2611.24936"
   ],
   "records": {
     "https://github.com/heroiclabs/nakama": "2026-11-16",
@@ -31,6 +36,11 @@
     "https://github.com/elementalsouls/Claude-BugHunter": "2026-11-18",
     "https://github.com/obra/superpowers": "2026-11-18",
     "https://www.producthunt.com/products/wanaka-studio/launches/wanaka-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-18",
-    "https://arxiv.org/abs/2611.23229": "2026-11-18"
+    "https://arxiv.org/abs/2611.23229": "2026-11-18",
+    "https://github.com/godotengine/godot-docs": "2026-11-19",
+    "https://github.com/HKUDS/CLI-Anything": "2026-11-19",
+    "https://github.com/astral-sh/uv": "2026-11-19",
+    "https://www.producthunt.com/products/alsona?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-19",
+    "https://arxiv.org/abs/2611.24936": "2026-11-19"
   }
 }
