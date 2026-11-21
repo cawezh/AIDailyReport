@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/godotengine/godot",
-    "https://github.com/tradermonty/claude-trading-skills",
-    "https://github.com/getarcaneapp/arcane",
-    "https://www.producthunt.com/products/asymptotelabs/launches/beacon-sh?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2611.21605",
     "https://github.com/RodZill4/material-maker",
     "https://github.com/elementalsouls/Claude-BugHunter",
     "https://github.com/obra/superpowers",
@@ -19,14 +14,14 @@
     "https://github.com/jingyaogong/minimind",
     "https://github.com/firecrawl/firecrawl",
     "https://www.producthunt.com/products/empacer/launches/empacer?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2611.26629"
+    "https://arxiv.org/abs/2611.26629",
+    "https://github.com/Zylann/godot_voxel",
+    "https://github.com/openvinotoolkit/openvino",
+    "https://github.com/google-labs-code/stitch-skills",
+    "https://www.producthunt.com/products/screen-studio/launches/screen-studio-4-0?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2611.26627"
   ],
   "records": {
-    "https://github.com/godotengine/godot": "2026-11-17",
-    "https://github.com/tradermonty/claude-trading-skills": "2026-11-17",
-    "https://github.com/getarcaneapp/arcane": "2026-11-17",
-    "https://www.producthunt.com/products/asymptotelabs/launches/beacon-sh?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-17",
-    "https://arxiv.org/abs/2611.21605": "2026-11-17",
     "https://github.com/RodZill4/material-maker": "2026-11-18",
     "https://github.com/elementalsouls/Claude-BugHunter": "2026-11-18",
     "https://github.com/obra/superpowers": "2026-11-18",
@@ -41,6 +36,11 @@
     "https://github.com/jingyaogong/minimind": "2026-11-20",
     "https://github.com/firecrawl/firecrawl": "2026-11-20",
     "https://www.producthunt.com/products/empacer/launches/empacer?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-20",
-    "https://arxiv.org/abs/2611.26629": "2026-11-20"
+    "https://arxiv.org/abs/2611.26629": "2026-11-20",
+    "https://github.com/Zylann/godot_voxel": "2026-11-21",
+    "https://github.com/openvinotoolkit/openvino": "2026-11-21",
+    "https://github.com/google-labs-code/stitch-skills": "2026-11-21",
+    "https://www.producthunt.com/products/screen-studio/launches/screen-studio-4-0?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-21",
+    "https://arxiv.org/abs/2611.26627": "2026-11-21"
   }
 }
