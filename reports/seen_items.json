@@ -14,7 +14,12 @@
     "https://github.com/HKUDS/CLI-Anything",
     "https://github.com/firecrawl/firecrawl",
     "https://www.producthunt.com/products/wanaka-studio/launches/wanaka-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2611.33153"
+    "https://arxiv.org/abs/2611.33153",
+    "https://github.com/godotengine/godot-demo-projects",
+    "https://github.com/jingyaogong/minimind",
+    "https://github.com/google-labs-code/stitch-skills",
+    "https://www.producthunt.com/products/empacer/launches/empacer?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2611.34944"
   ],
   "records": {
     "https://github.com/godotengine/godot": "2026-11-23",
@@ -31,6 +36,11 @@
     "https://github.com/HKUDS/CLI-Anything": "2026-11-25",
     "https://github.com/firecrawl/firecrawl": "2026-11-25",
     "https://www.producthunt.com/products/wanaka-studio/launches/wanaka-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-25",
-    "https://arxiv.org/abs/2611.33153": "2026-11-25"
+    "https://arxiv.org/abs/2611.33153": "2026-11-25",
+    "https://github.com/godotengine/godot-demo-projects": "2026-11-26",
+    "https://github.com/jingyaogong/minimind": "2026-11-26",
+    "https://github.com/google-labs-code/stitch-skills": "2026-11-26",
+    "https://www.producthunt.com/products/empacer/launches/empacer?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-26",
+    "https://arxiv.org/abs/2611.34944": "2026-11-26"
   }
 }
