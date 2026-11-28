@@ -1,10 +1,5 @@
 {
   "urls": [
-    "https://github.com/heroiclabs/nakama",
-    "https://github.com/elementalsouls/Claude-BugHunter",
-    "https://github.com/obra/superpowers",
-    "https://www.producthunt.com/products/alsona/launches/alsona?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2611.31240",
     "https://store.steampowered.com/app/1174180/",
     "https://github.com/HKUDS/CLI-Anything",
     "https://github.com/firecrawl/firecrawl",
@@ -19,14 +14,14 @@
     "https://github.com/openvinotoolkit/openvino",
     "https://github.com/Tracer-Cloud/opensre",
     "https://www.producthunt.com/products/screen-studio/launches/screen-studio-4-0?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
-    "https://arxiv.org/abs/2611.34943"
+    "https://arxiv.org/abs/2611.34943",
+    "https://github.com/godotengine/godot",
+    "https://github.com/cathrynlavery/diagram-design",
+    "https://github.com/toeverything/AFFiNE",
+    "https://www.producthunt.com/products/asymptotelabs/launches/beacon-sh?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29",
+    "https://arxiv.org/abs/2611.34940"
   ],
   "records": {
-    "https://github.com/heroiclabs/nakama": "2026-11-24",
-    "https://github.com/elementalsouls/Claude-BugHunter": "2026-11-24",
-    "https://github.com/obra/superpowers": "2026-11-24",
-    "https://www.producthunt.com/products/alsona/launches/alsona?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-24",
-    "https://arxiv.org/abs/2611.31240": "2026-11-24",
     "https://store.steampowered.com/app/1174180/": "2026-11-25",
     "https://github.com/HKUDS/CLI-Anything": "2026-11-25",
     "https://github.com/firecrawl/firecrawl": "2026-11-25",
@@ -41,6 +36,11 @@
     "https://github.com/openvinotoolkit/openvino": "2026-11-27",
     "https://github.com/Tracer-Cloud/opensre": "2026-11-27",
     "https://www.producthunt.com/products/screen-studio/launches/screen-studio-4-0?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-27",
-    "https://arxiv.org/abs/2611.34943": "2026-11-27"
+    "https://arxiv.org/abs/2611.34943": "2026-11-27",
+    "https://github.com/godotengine/godot": "2026-11-28",
+    "https://github.com/cathrynlavery/diagram-design": "2026-11-28",
+    "https://github.com/toeverything/AFFiNE": "2026-11-28",
+    "https://www.producthunt.com/products/asymptotelabs/launches/beacon-sh?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Daily+Report+%28ID%3A+286303%29": "2026-11-28",
+    "https://arxiv.org/abs/2611.34940": "2026-11-28"
   }
 }
